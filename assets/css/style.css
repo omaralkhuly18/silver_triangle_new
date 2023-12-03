@@ -1550,7 +1550,7 @@ a.colordifrante:hover {
 	.header-navigation .primary-menu li.current>.dd-trigger,
 	.header-navigation .primary-menu li a:hover,
 	.header-navigation .primary-menu li a:hover~.dd-trigger {
-		color: #fff;
+		color: #fff !important;
 	}
 }
 
@@ -1988,26 +1988,26 @@ a.colordifrante:hover {
 
 .header-two .header-navigation .primary-menu li.current>a,
 .header-two .header-navigation .primary-menu li.current>.dd-trigger,
-.header-two .header-navigation .primary-menu li a:hover,
-.header-two .header-navigation .primary-menu li a:hover~.dd-trigger,
+.header-two .header-navigation .primary-menu li .nav-link:hover,
+.header-two .header-navigation .primary-menu li .nav-link:hover~.dd-trigger,
 .header-three .header-navigation .primary-menu li.current>a,
 .header-three .header-navigation .primary-menu li.current>.dd-trigger,
-.header-three .header-navigation .primary-menu li a:hover,
-.header-three .header-navigation .primary-menu li a:hover~.dd-trigger {
-	color: #0c59db;
+.header-three .header-navigation .primary-menu li .nav-link:hover,
+.header-three .header-navigation .primary-menu li .nav-link:hover~.dd-trigger {
+	color: #534ea5 !important;
 }
 
 @media (max-width: 991px) {
 
 	.header-two .header-navigation .primary-menu li.current>a,
 	.header-two .header-navigation .primary-menu li.current>.dd-trigger,
-	.header-two .header-navigation .primary-menu li a:hover,
-	.header-two .header-navigation .primary-menu li a:hover~.dd-trigger,
+	.header-two .header-navigation .primary-menu li .colornavpages:hover,
+	.header-two .header-navigation .primary-menu li .colornavpages:hover~.dd-trigger,
 	.header-three .header-navigation .primary-menu li.current>a,
 	.header-three .header-navigation .primary-menu li.current>.dd-trigger,
-	.header-three .header-navigation .primary-menu li a:hover,
-	.header-three .header-navigation .primary-menu li a:hover~.dd-trigger {
-		color: #fff;
+	.header-three .header-navigation .primary-menu li .colornavpages:hover,
+	.header-three .header-navigation .primary-menu li .colornavpages:hover~.dd-trigger {
+		color: #fff !important;
 	}
 }
 
@@ -2289,7 +2289,7 @@ a.colordifrante:hover {
 .sticky-header.sticky-on .header-navigation:not(.breakpoint-on) .primary-menu>li.current>.dd-trigger,
 .sticky-header.sticky-on .header-navigation:not(.breakpoint-on) .primary-menu>li a:hover,
 .sticky-header.sticky-on .header-navigation:not(.breakpoint-on) .primary-menu>li a:hover~.dd-trigger {
-	color: #0c59db;
+	color: #79a6f2 !important;
 }
 
 .sticky-header.sticky-on .header-navigation:not(.breakpoint-on) .primary-menu>li .submenu li a:hover {
@@ -2360,8 +2360,8 @@ a.colordifrante:hover {
 	display: block;
 }
 
-.header-navigation.breakpoint-on .site-nav-menu .primary-menu li a {
-	color: #fff;
+.header-navigation.breakpoint-on .site-nav-menu .primary-menu li .colornavpages {
+	color: #fff !important;
 	display: block;
 	padding: 15px 25px 15px 0;
 	font-size: 15px;
@@ -2903,7 +2903,7 @@ a.colordifrante:hover {
 	.header-two .header-navigation .primary-menu li a, 
 	.header-three .header-navigation .primary-menu li a{
 		padding: 7px;
-		font-size: 14px;
+		font-size: 15px;
 	}
 	.header-navigation .header-extra{
 		margin-left: 4px;
@@ -2924,6 +2924,7 @@ a.colordifrante:hover {
 	ul.primary-menu {
 		display: flex;
 		justify-content: space-between;
+		width: 90%;
 	}
 }
 @media (max-width: 767px) {

@@ -3,7 +3,9 @@
 	height: 75px;
 	display: flex;
 }
-
+.colornavpages{
+	color: #0f02ff !important;
+}
 .header-left {
 	width: 20%;
 	height: 100%;

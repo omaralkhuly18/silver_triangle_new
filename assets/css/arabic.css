@@ -1,3 +1,6 @@
+.section-title .title {
+    font-size: 40px;
+}
 /* header .textalignright */
 
 @media (min-width: 992px) and (max-width: 1199px) {

@@ -745,3 +745,36 @@ label {
 }
 
 /*=======  Team  =======*/
+
+/* works us */
+@media screen and (max-width: 767px) and (min-width: 220px){
+	.case-details-area .case-details-content .case-details-case img{
+		display: flex;
+		width: 99%;
+		margin-left: 0.5%;
+	}
+	.case-details-area .case-details-content .case-details-case p{
+		padding-right: 0 !important;
+	}
+}
+
+/* works us */
+
+/* spical */
+
+@media screen and (max-width: 280px) and (min-width: 230px){
+	.container{
+		overflow: visible;
+		padding: 0 3% 0 3% !important;
+		margin: 0 0 0 3% !important;
+	}
+	section{
+		overflow: visible !important;
+	}
+	.tile-gallery-two .img-one{
+		height: 205px !important;
+	}
+	.feature-list li{
+		padding: 0 30px 0 5px !important;
+	}
+}

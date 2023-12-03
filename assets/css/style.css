@@ -309,7 +309,7 @@ input[type=radio] {
 }
 
 .section-title .title {
-	font-size: 60px;
+	font-size: 30px;
 }
 
 .fontspciale {
@@ -2060,15 +2060,21 @@ a.colordifrante:hover {
 	right: 0;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 490px) and (min-width: 230px){
 
 	.header-two .header-navigation .navbar-btn,
 	.header-three .header-navigation .navbar-btn {
 		margin-left: 0px;
-		width: 45%;
+		width: 27%;
 	}
 }
-
+@media screen and (max-width: 991px) and (min-width: 768px){
+	.hoverstyle {
+		display: flex !important;
+		width: 90%;
+		justify-content: space-around;
+	}
+}
 .header-two .header-navigation .navbar-btn a,
 .header-three .header-navigation .navbar-btn a {
 	padding: 15px 40px;
@@ -4287,30 +4293,30 @@ a.colordifrante:hover {
 }
 
 .service-section.service-with-shape-two .section-title .title {
-	font-size: 55px;
+	font-size: 40px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.service-section.service-with-shape-two .section-title .title {
-		font-size: 42px;
+		font-size: 32px;
 	}
 }
 
 @media (max-width: 991px) {
 	.service-section.service-with-shape-two .section-title .title {
-		font-size: 46px;
+		font-size: 44px;
 	}
 }
 
 @media (max-width: 767px) {
 	.service-section.service-with-shape-two .section-title .title {
-		font-size: 40px;
+		font-size: 35px;
 	}
 }
 
 @media (max-width: 575px) {
 	.service-section.service-with-shape-two .section-title .title {
-		font-size: 26px;
+		font-size: 23px;
 	}
 }
 

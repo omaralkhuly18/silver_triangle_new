@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx" dir="rtl">
+<html lang="zxx">
 
 <head>
   <!--====== Required meta tags ======-->
@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!--====== Title ======-->
-  <title> Omnivus - Legal</title>
+  <title>triangle||Legal_EN</title>
   <!-- ====== font googel ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +28,6 @@
   <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
   <!--====== Main Css ======-->
   <link rel="stylesheet" href="assets/css/style.css" />
-  <!--====== Arabic Css ======-->
-  <link rel="stylesheet" href="assets/css/arabic.css" />
   <!--====== Jquery ======-->
   <script src="assets/js/jquery-1.12.4.min.js"></script>
 </head>
@@ -53,21 +51,19 @@
       <div class="container-fluid">
         <div class="row align-items-center justify-content-between">
           <div class="col-sm-auto col-12">
-            <ul class="contact-info text-center directionhover">
-              <li><a href="#" ><i class="fal fa-envelope "></i>
-                  info@webmail.com</a></li>
-              <li><a href="#" ><i class="fal fa-phone "></i> 786
-                  875 864 75 7</a></li>
+            <ul class="contact-info text-center">
+              <li><a href="#"><i class="fal fa-envelope"></i> info@webmail.com</a></li>
+              <li><a href="#"><i class="fal fa-phone"></i> 786 875 864 75 7</a></li>
             </ul>
           </div>
           <div class="col-sm-auto col-12">
             <div class="social-icon text-center">
               <ul>
-                <li><a href="#" ><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#" ><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" ><i class="fab fa-behance"></i></a></li>
-                <li><a href="#" ><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#" ><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
               </ul>
             </div>
           </div>
@@ -82,7 +78,7 @@
           <div class="site-logo">
             <a href="index.html" data-toggle="dropdown" aria-expanded="false">
               <!-- <h1 class="LogoWord">Silver</h1> -->
-              <img src="assets/img/logo/logo.png" alt="Omnivus">
+              <img src="assets/img/logo/logo.png" alt="triangle">
             </a>
           </div>
         </div>
@@ -91,39 +87,34 @@
         <div class="site-nav-menu">
           <ul class="primary-menu">
             <li class="current">
-              <a href="index.html">الصفحه الرئيسيه</a>
+              <a class="nav-link" href="index.html"> Home </a>
             </li>
             <li>
-              <a class="nav-link" href="about.html">من نحن</a>
+              <a class="nav-link" href="about.html"> About-Us </a>
             </li>
             <li>
-              <a class="nav-link" href="ourcompany.html">شركتنا</a>
+              <a class="nav-link" href="ourcompany.html"> Our-Company </a>
             </li>
             <li>
-              <a href="#" data-toggle="dropdown" aria-expanded="false">خدماتنا</a>
+              <a class="nav-link" href="services.html">Our services</a>
+            </li>
+            <li>
+              <a class="nav-link" href="works.html">works-us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="blog-grid.html"> Blog</a>
+            </li>
+            <li>
+              <a href="#" data-toggle="dropdown" aria-expanded="false" class="nav-link"> Page </a>
               <ul class="submenu">
-                <li><a href="services.html">الخدمات</a></li>
-                <li><a href="services-details.html">تفاصيل الخدمات</a></li>
+                <li><a href="Our Portfolio.html"> Our-Portfolio</a></li>
+                <li><a href="faq.html">faq</a></li>
+                <li><a href="checkout.html">checkout</a></li>
+                <li><a href="team.html">team</a></li>
               </ul>
             </li>
             <li>
-              <a href="#" data-toggle="dropdown" aria-expanded="false"> المدونة</a>
-              <ul class="submenu">
-                <li><a href="blog-details.html"> تفاصيل-المدونه</a></li>
-                <li><a href="blog-grid.html"> أخبار-المدونة </a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#" data-toggle="dropdown" aria-expanded="false"> صفحات أخؤى</a>
-              <ul class="submenu">
-                <li><a href="Our Portfolio.html"> لدينا-محفظة</a></li>
-                <li><a href="faq.html">التعليمات</a></li>
-                <li><a href="checkout.html">الدفع</a></li>
-                <li><a href="team.html">فريق</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="contact.html"> اتصل-بنا</a>
+              <a class="nav-link" href="contact.html"> Contact-US</a>
             </li>
           </ul>
           <a href="#" class="nav-close"><i class="fal fa-times"></i></a>
@@ -134,170 +125,174 @@
 
           <!-- === button header === -->
           <div class="nav-toggler">
-              <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
           </div>
+          <!-- the language -->
+          <div class="iconlanguage" onclick="menuToggleLanguage();">
+            <span>
+              <!-- <i class="fas fa-language "></i> --><i class="fas fa-globe languageicons"></i>
 
+            </span>
+            <div class="profile_menu_Language">
+              <ul class="sub-menu">
+                <li>
+                  <a href="legal.html"><span class="menu-text">English</span></a>
+                </li>
+                <li>
+                  <a href="legal_ar.html"><span class="menu-text">Arabic</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- the language -->
           <!-- === box login / register === -->
           <div class="navbar-btn hoverstyle">
 
-              <a type="button" class="main-btn rounded-btn icon-right small-size lgri"
-                  data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm"
-                  data-whatever="@mdo">تسجيل-دخول / تسجيل عضويه<i
-                      class="fal fa-long-arrow-right transformrotate"></i></a>
+            <a type="button" class="main-btn rounded-btn icon-right small-size lgri" data-animation="fadeInUp"
+              data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
+              Login/ registration <i class="fal fa-long-arrow-right transformrotate"></i></a>
 
-              <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
-                  data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                  <i class="fas fa-user cdnfont"></i></a>
+            <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww" data-animation="fadeInUp"
+              data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
+              <i class="fas fa-user cdnfont"></i></a>
 
-              <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
-                  aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
 
-                  <div class="modal-dialog">
+              <div class="modal-dialog">
 
-                      <div class="modal-content" style="border-radius: 1%;">
+                <div class="modal-content" style="border-radius: 1%;">
 
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
 
-                          <main class="login-main">
-                              <div class="box">
-                                  <div class="inner-box">
-                                      <div class="forms-wrap">
-                                          <!-- === box login === -->
-                                          <form autocomplete="off" class="sign-in-form">
-                                              <div class="logobox">
-                                                  <h1 class="LogoWord">Silver Tringle </h1>
-                                                  <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+                  <main class="login-main">
+                    <div class="box">
+                      <div class="inner-box">
+                        <div class="forms-wrap">
+                          <!-- === box login === -->
+                          <form autocomplete="off" class="sign-in-form">
+                            <div class="logobox">
+                              <h1 class="LogoWord">Silver Triangle </h1>
+                              <!-- <img src="./img/logo.png" alt="easyclass" /> -->
 
-                                              </div>
+                            </div>
 
-                                              <div class="heading">
-                                                  <h2>مرحبًا-بعودتك</h2>
-                                                  <h6> لم يتم تسجيله بعد </h6>
-                                                  <a href="#" class="toggle-box" data-toggle="dropdown"
-                                                      aria-expanded="false">إنشاء حساب</a>
-                                              </div>
+                            <div class="heading">
+                              <h2>welcome back</h2>
+                              <h6> Not registered yet</h6>
+                              <a href="#" class="toggle-box" data-toggle="dropdown" aria-expanded="false">Create
+                                account</a>
+                            </div>
 
-                                              <div class="actual-form">
-                                                  <div class="input-wrap">
-                                                      <input type="text" minlength="4" class="input-field"
-                                                          autocomplete="off" required />
-                                                      <label>الأسم</label>
-                                                  </div>
-
-                                                  <div class="input-wrap">
-                                                      <input type="password" minlength="4" class="input-field"
-                                                          autocomplete="off" required />
-                                                      <label>كلمة السر</label>
-                                                  </div>
-
-                                                  <input type="submit" value="تسجيل الدخول"
-                                                      class="sign-btn" />
-
-                                                  <p class="text">
-
-                                                      <a href="#"
-                                                          class="toggelBox main-btn rounded-btn icon-right small-size">
-                                                          احصل على مساعدة</a>
-                                                  </p>
-                                              </div>
-                                          </form>
-
-                                          <!-- === box register === -->
-                                          <form autocomplete="off" class="sign-up-form">
-                                              <div class="logobox">
-                                                  <h1 class="LogoWord"> Silver Tringle </h1>
-                                                  <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                              </div>
-
-                                              <div class="heading">
-                                                  <h2>البدء </h2>
-                                                  <h6> هل لديك حساب </h6>
-                                                  <a href="#" class="toggle-box" data-toggle="dropdown"
-                                                      aria-expanded="false"> تسجيل الدخول
-                                                  </a>
-                                              </div>
-
-                                              <div class="actual-form">
-                                                  <div class="input-wrap">
-                                                      <input type="text" minlength="4" class="input-field"
-                                                          autocomplete="off" required />
-                                                      <label> الإسم </label>
-                                                  </div>
-
-                                                  <div class="input-wrap">
-                                                      <input type="email" class="input-field"
-                                                          autocomplete="off" required />
-                                                      <label> بريد إلكتروني </label>
-                                                  </div>
-
-                                                  <div class="input-wrap">
-                                                      <input type="password" minlength="4" class="input-field"
-                                                          autocomplete="off" required />
-                                                      <label> كلمة السر </label>
-                                                  </div>
-
-                                                  <input type="submit" value=" اشتراك " class="sign-btn" />
-
-                                                  <p class="text">
-
-                                                      <a href="legal.html"
-                                                          class="toggelBox main-btn rounded-btn icon-right small-size">
-                                                          قانوني </a>
-                                                  </p>
-                                              </div>
-                                          </form>
-
-                                      </div>
-                                      <!-- === box image === -->
-                                      <div class="carousel">
-
-                                          <div class="images-wrapper">
-                                              <img src="assets/img/inside/image1.png" class="image img-1 show"
-                                                  alt="" />
-                                              <img src="assets/img/inside/image2.png" class="image img-2"
-                                                  alt="" />
-                                              <img src="assets/img/inside/image3.png" class="image img-3"
-                                                  alt="" />
-                                          </div>
-
-                                          <div class="text-slider">
-
-                                              <div class="text-wrap">
-                                                  <div class="text-group">
-                                                      <h2> إنشاء الدورات الخاصة بك </h2>
-                                                      <h2> تخصيص كما تريد </h2>
-                                                      <h2> قم بدعوة أصدقائك هنا </h2>
-                                                  </div>
-                                              </div>
-
-                                              <div class="bullets">
-                                                  <span class="active" data-value="1"></span>
-                                                  <span data-value="2"></span>
-                                                  <span data-value="3"></span>
-                                              </div>
-
-                                          </div>
-
-                                      </div>
-
-                                  </div>
-
+                            <div class="actual-form">
+                              <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Name</label>
                               </div>
 
-                          </main>
+                              <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Password</label>
+                              </div>
+
+                              <input type="submit" value="Login" class="sign-btn" />
+
+                              <p class="text">
+
+                                <a href="legal.html" class="toggelBox main-btn rounded-btn icon-right small-size">
+                                  Get help</a>
+                              </p>
+                            </div>
+                          </form>
+
+                          <!-- === box register === -->
+                          <form autocomplete="off" class="sign-up-form">
+                            <div class="logobox">
+                              <h1 class="LogoWord"> Silver Triangle </h1>
+                              <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                            </div>
+
+                            <div class="heading">
+                              <h2>Get started </h2>
+                              <h6> do you have an account </h6>
+                              <a href="#" class="toggle-box" data-toggle="dropdown" aria-expanded="false"> Login
+                              </a>
+                            </div>
+
+                            <div class="actual-form">
+                              <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                                <label> Name </label>
+                              </div>
+
+                              <div class="input-wrap">
+                                <input type="email" class="input-field" autocomplete="off" required />
+                                <label> Email </label>
+                              </div>
+
+                              <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                                <label> Password</label>
+                              </div>
+
+                              <input type="submit" value=" registration " class="sign-btn" />
+
+                              <p class="text">
+
+                                <a href="legal.html" class="toggelBox main-btn rounded-btn icon-right small-size">
+                                  Legal </a>
+                              </p>
+                            </div>
+                          </form>
+
+                        </div>
+                        <!-- === box image === -->
+                        <div class="carousel">
+
+                          <div class="images-wrapper">
+                            <img src="assets/img/inside/image1.png" class="image img-1 show" alt="" />
+                            <img src="assets/img/inside/image2.png" class="image img-2" alt="" />
+                            <img src="assets/img/inside/image3.png" class="image img-3" alt="" />
+                          </div>
+
+                          <div class="text-slider">
+
+                            <div class="text-wrap">
+                              <div class="text-group">
+                                <h2> Create your own courses</h2>
+                                <h2> Customize as you like</h2>
+                                <h2> Invite your friends here</h2>
+                              </div>
+                            </div>
+
+                            <div class="bullets">
+                              <span class="active" data-value="1"></span>
+                              <span data-value="2"></span>
+                              <span data-value="3"></span>
+                            </div>
+
+                          </div>
+
+                        </div>
 
                       </div>
 
-                  </div>
+                    </div>
+
+                  </main>
+
+                </div>
 
               </div>
 
+            </div>
+
           </div>
 
-      </div>
+        </div>
 
       </div>
 
@@ -323,8 +318,8 @@
                   Best IT Soluations Provider Agency
                 </h1>
                 <p data-animation="fadeInLeft" data-delay=".9s">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremda
-                  tium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                  If you're referring to programming related to legal companies or the legal industry, there are several
+                  areas where programming can be useful.
                 </p>
                 <a data-animation="fadeInUp" data-delay="1.1s" class="main-btn rounded-btn icon-right small-size"
                   href="services.html">
@@ -354,14 +349,15 @@
             <div class="banner-text">
               <div class="banner-content">
                 <span data-animation="fadeInUp" data-delay="0.3s" class="title-tag">
-                  IT Business Consulting
+                  Document Automation
                 </span>
                 <h1 data-animation="fadeInLeft" data-delay="0.6s" class="title">
-                  Best IT Soluations Provider Agency
+                  Programming can be used to automate the creation and generation of legal documents
                 </h1>
                 <p data-animation="fadeInLeft" data-delay=".9s">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremda
-                  tium totam rem aperiam eaque ipsa quae ab illo inventore veritatis
+                  This can save time and reduce errors by automating repetitive tasks such as filling
+                  in standard clauses, populating client information, and generating customized legal
+                  agreements.
                 </p>
                 <a data-animation="fadeInUp" data-delay="1.1s" class="main-btn rounded-btn icon-right small-size"
                   href="services.html">
@@ -599,82 +595,85 @@
   <!--====== Footer PART START ======-->
   <footer class="footer-area">
     <div class="container">
-        <div class="row footer-widgets ">
+      <div class="row footer-widgets ">
 
-            <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="widget about-widget ">
-                    <div class="footer-left">
-                        <img class="footer-logo" src="assets/img/logo/logo.png" alt="Omnivus">
-                        <div class="word-footer directionslider">
-                            The web has changed a lot since Vitaly published his first article in 2006. The team
-                            in
-                            Smashing has changed too
-                            And also the things we bring into our communities,
-                            Books, and our membership was added to the electronic magazine.
-                        </div>
-                    </div>
-
-                </div>
+        <div class="col-lg-3 col-md-6 col-sm-8">
+          <div class="widget about-widget ">
+            <div class="footer-left">
+              <img class="footer-logo" src="assets/img/logo/logo.png" alt="triangle">
+              <div class="word-footer directionslider">
+                The web has changed a lot since Vitaly published his first article in 2006. The team
+                in
+                Smashing has changed too
+                And also the things we bring into our communities,
+                Books, and our membership was added to the electronic magazine.
+              </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-8">
-                <div class="widget nav-widget row spacebetween">
-
-                    <div class="servieces col-lg-6 col-md-5 col-sm-6">
-                        <h4 class="widget-title"> services </h4>
-                        <div class="footer-list">
-                            <ul>
-                                <li><a href="services.html"><i class="fal fa-angle-right"></i> Our services </a></li>
-                                <li><a href="services-details.html"><i class="fal fa-angle-right"></i> Details services</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="pagesthinge col-lg-6 col-md-5 col-sm-6">
-                        <h4 class="widget-title">  pages</h4>
-                        <div class="footer-list">
-                            <ul>
-                                <li><a href="Our Portfolio.html"><i class="fal fa-angle-right"></i> Our-Portfolio</a>
-                                </li>
-                                <li><a href="faq.html"><i class="fal fa-angle-right"></i> FAQ </a></li>
-                                <li><a href="checkout.html"><i class="fal fa-angle-right"></i> checkout </a></li>
-                                <li><a href="team.html"><i class="fal fa-angle-right"></i> Team </a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-8 col-sm-8">
-                <div class="widget nav-widget row spacebetween">
-                    <div class="widget nav-widget col-lg-6 col-md-5 col-sm-6">
-                        <h4 class="widget-title"> blog </h4>
-                        <div class="footer-list">
-                            <ul>
-                                <li><a href="blog-details.html"><i class="fal fa-angle-right"></i> Details Blog 
-                                    </a></li>
-                                <li><a href="blog-grid.html"><i class="fal fa-angle-right"></i> News Blog </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="widget contact-widget col-lg-6 col-md-5 col-sm-6">
-                        <h4 class="widget-title"> work hours </h4>
-                        <ul>
-                            <li> Monday - Friday : 7:00 - 17:00</li>
-                            <li> Saturday : 7:00 - 12:00</li>
-                            <li> Sunday And holidays : 8:00 - 10:00</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="footer-copyright">
-            <p> @ Copyright by <a href="#" data-toggle="dropdown" aria-expanded="false"> 
-                Silver triangle</a> - 2022</p>
+
+        <div class="col-lg-4 col-md-6 col-sm-8">
+          <div class="widget nav-widget row spacebetween">
+
+            <div class="servieces col-lg-6 col-md-5 col-sm-6">
+              <h4 class="widget-title"> services </h4>
+              <div class="footer-list">
+                <ul>
+                  <li><a href="services.html"><i class="fal fa-angle-right"></i> Our services </a>
+                  </li>
+                  <li><a href="services-details.html"><i class="fal fa-angle-right"></i> Details
+                      services</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pagesthinge col-lg-6 col-md-5 col-sm-6">
+              <h4 class="widget-title"> pages</h4>
+              <div class="footer-list">
+                <ul>
+                  <li><a href="Our Portfolio.html"><i class="fal fa-angle-right"></i>
+                      Our-Portfolio</a>
+                  </li>
+                  <li><a href="faq.html"><i class="fal fa-angle-right"></i> FAQ </a></li>
+                  <li><a href="checkout.html"><i class="fal fa-angle-right"></i>checkout </a></li>
+                  <li><a href="team.html"><i class="fal fa-angle-right"></i> Team </a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
         </div>
+
+        <div class="col-lg-4 col-md-8 col-sm-8">
+          <div class="widget nav-widget row spacebetween">
+            <div class="widget nav-widget col-lg-6 col-md-5 col-sm-6">
+              <h4 class="widget-title"> blog </h4>
+              <div class="footer-list">
+                <ul>
+                  <li><a href="blog-details.html"><i class="fal fa-angle-right"></i> Details Blog
+                    </a></li>
+                  <li><a href="blog-grid.html"><i class="fal fa-angle-right"></i> News Blog </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="widget contact-widget col-lg-6 col-md-5 col-sm-6">
+              <h4 class="widget-title"> work hours </h4>
+              <ul>
+                <li> Monday - Friday : 7:00 - 17:00</li>
+                <li> Saturday : 7:00 - 12:00</li>
+                <li> Sunday And holidays : 8:00 - 10:00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p> @ Copyright by <a href="#" data-toggle="dropdown" aria-expanded="false">
+            Silver triangle</a> - 2022</p>
+      </div>
     </div>
   </footer>
   <!--====== Footer PART ENDS ======-->

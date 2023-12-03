@@ -620,7 +620,12 @@
 }
 
 /* FAQ page */
-
+/* team */
+.team-join .join-bg .team-join-title span::before{
+    left: -100px;
+    right: auto !important;
+}
+/* team */
 /* our-campany page */
 .dirctionsaboutus {
     direction: ltr !important;
@@ -707,9 +712,15 @@ i.transformar {
 
 .billing-details .form-group label {
     display: flex !important;
-    justify-content: end;
+    justify-content: start;
 }
 
+.billing-details .form-check{
+    display: flex;
+}
+.billing-details .form-check label{
+    margin-right: 3%;
+}
 .table {
     direction: rtl;
 }
@@ -727,7 +738,9 @@ i.transformar {
 .table .total-price span {
     display: flex !important;
 }
-
+.order-details .payment-box .main-btn{
+    display: flex;
+}
 /* checkout */
 
 /* services-details */

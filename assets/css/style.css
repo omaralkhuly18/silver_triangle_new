@@ -1936,10 +1936,6 @@ a.colordifrante:hover {
 	border-bottom: 1px solid #99c2f6;
 }
 
-.header-two .header-topbar .contact-info li a,
-.header-two .header-topbar .contact-info li i {
-	color: #4f79a9;
-}
 
 .header-two .header-topbar .social-icon li a {
 	color: #4f79a9;
@@ -2871,7 +2867,7 @@ a.colordifrante:hover {
 	}
 	.header-two .header-navigation .primary-menu li a, 
 	.header-three .header-navigation .primary-menu li a{
-		padding: 5px;
+		padding: 3px;
 		font-size: 16px;
 	}
 	.header-navigation .header-extra{
@@ -2924,7 +2920,7 @@ a.colordifrante:hover {
 	ul.primary-menu {
 		display: flex;
 		justify-content: space-between;
-		width: 90%;
+		width: 98%;
 	}
 }
 @media (max-width: 767px) {
@@ -9054,7 +9050,7 @@ img.simpelvedio {
 .page-Checkout-area,
 .page-Team-area,
 .page-BlogDetails-area {
-	background-color: #0000002b;
+	background-color: #0000006e;
 	position: relative;
 	text-align: center;
 	padding-top: 280px;

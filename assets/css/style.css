@@ -1704,11 +1704,48 @@ a.colordifrante:hover {
 		height: 290px !important;
 		margin-bottom: 3%;
 	}
+
 	.feature-box .feature-overlay .title {
 		font-size: 18px !important;
 	}
-	.feature-box .feature-overlay p{
+
+	.feature-box .feature-overlay p {
 		font-size: 12px !important;
+	}
+
+	.section-title .title {
+		font-size: 25px !important;
+	}
+
+	.banner-slider.banner-slider-one {
+		padding-top: 40% !important;
+	}
+
+	.banner-slider.banner-slider-one {
+		background-position: initial !important;
+	}
+
+	.banner-slider .banner-text .title-tag {
+		font-size: 27px !important;
+	}
+
+	.banner-content h1 {
+		font-size: 22px;
+	}
+
+	.banner-slider .banner-text p {
+		font-size: 15px !important;
+		padding-right: 15px !important;
+	}
+
+	.service-section.service-with-shape-two::before {
+		height: auto !important;
+	}
+
+	.section-title.white-color .title-tag,
+	.section-title.white-color .title,
+	.section-title.white-color p{
+		color: black;
 	}
 }
 
@@ -2991,7 +3028,8 @@ a.colordifrante:hover {
 		justify-content: space-between;
 		width: 98%;
 	}
-	.service-item-four .services-content .service-link{
+
+	.service-item-four .services-content .service-link {
 		width: 60% !important;
 	}
 }

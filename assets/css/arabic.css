@@ -142,6 +142,12 @@
     margin-left: 79% !important;
 }
 
+@media screen and (max-width: 280px) and (min-width: 230px){
+	.service-item-four .icon {
+		margin-left: 60% !important;
+	}
+}
+
 .tile-gallery-two .img-one {
     text-align: start;
     height: 375px;
@@ -157,6 +163,7 @@
 
 .service-item-four .services-content .service-link {
     direction: rtl;
+    float: right;
 }
 
 .service-item-four .services-content .service-link::before {
@@ -370,12 +377,12 @@
 /*====== Experience Area Start ======*/
 
 /* service Details */
-
-.text-color-2,
 .arabicwiththis {
     text-align: right !important;
 }
-
+.text-color-2{
+    text-align: center;
+}
 .service-details-text-block {
     padding-right: 35px;
     padding-left: 0 !important;
@@ -387,8 +394,8 @@
 }
 
 .section-title.with-right-border .abdf {
-    padding-right: 15% !important;
-    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 15% !important;
 }
 
 .section-title.with-right-border .title-tag::before {
@@ -396,7 +403,7 @@
 }
 
 .section-title.with-right-border .abdf::before {
-    right: 0 !important;
+    right: 45% !important;
 }
 
 .service-support-btn {
@@ -669,20 +676,25 @@ a.service-link{
 .feature-list li::before {
     right: 0;
     left: 90% !important;
-    margin-right: -6%;
+    margin-right: -3%;
 }
 
 @media (max-width: 575px) {
     .feature-list li {
-        padding-right: 30px;
+        padding-right: 50px;
     }
 
     .feature-list li::before {
         height: 45px;
         width: 40px;
         font-size: 15px;
-        margin-right: -5%;
+        margin-right: 0;
     }
+}
+@media screen and (max-width: 280px) and (min-width: 230px){
+	.feature-list li{
+		padding: 0 50px 0 5px !important;
+	}
 }
 
 /* our-campany page */

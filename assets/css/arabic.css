@@ -832,8 +832,9 @@ i.transformar {
     left: auto !important;
 }
 .case-details-area .case-details-content .case-details-case p {
-    padding-left: 0 !important;
-    padding-right: 256px;
+    position: absolute;
+    width: 80%;
+    right: 21%;
 }
 .case-details-area .case-video-thumb{
     display: flex;

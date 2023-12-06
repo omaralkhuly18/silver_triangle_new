@@ -774,7 +774,7 @@ label {
 	}
 
 	section {
-		overflow: visible !important;
+		overflow: auto !important;
 	}
 
 	.tile-gallery-two .img-one {
@@ -797,6 +797,9 @@ label {
 		height: 100%;
 	}
 	.service-item-eight .services-overlay{
-		height: 170px !important;
+		height: 179px !important;
+	}
+	.footer-area .footer-widgets .widget.contact-widget ul li{
+		font-size: 14px !important;
 	}
 }

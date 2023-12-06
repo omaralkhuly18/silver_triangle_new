@@ -8614,6 +8614,7 @@ img.simpelvedio {
 .accordion-four .card .card-header a.collapsed::before {
 	content: "";
 	color: #99b1c8;
+
 }
 
 .accordion-four .card .card-header a::before {

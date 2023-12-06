@@ -3,9 +3,11 @@
 	height: 75px;
 	display: flex;
 }
-.colornavpages{
+
+.colornavpages {
 	color: #4163fd !important;
 }
+
 .header-left {
 	width: 20%;
 	height: 100%;
@@ -272,7 +274,7 @@ button.close span {
 	width: 100%;
 	height: 100%;
 	top: 50%;
-    left: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
@@ -663,8 +665,9 @@ label {
 }
 
 @media screen and (max-width: 580px) and (min-width: 490px) {
+
 	.header-two .header-navigation .navbar-btn a,
-	.header-three .header-navigation .navbar-btn a{
+	.header-three .header-navigation .navbar-btn a {
 		padding: 15px 10px !important;
 		font-size: 12px !important;
 	}
@@ -747,13 +750,14 @@ label {
 /*=======  Team  =======*/
 
 /* works us */
-@media screen and (max-width: 767px) and (min-width: 220px){
-	.case-details-area .case-details-content .case-details-case img{
+@media screen and (max-width: 767px) and (min-width: 220px) {
+	.case-details-area .case-details-content .case-details-case img {
 		display: flex;
 		width: 99%;
 		margin-left: 0.5%;
 	}
-	.case-details-area .case-details-content .case-details-case p{
+
+	.case-details-area .case-details-content .case-details-case p {
 		padding-right: 0 !important;
 	}
 }
@@ -762,17 +766,37 @@ label {
 
 /* spical */
 
-@media screen and (max-width: 280px) and (min-width: 230px){
-	.container{
-		overflow: visible;
-		padding: 0 3% 0 3% !important;
-		margin: 0 0 0 3% !important;
+@media screen and (max-width: 280px) and (min-width: 230px) {
+	.container {
+		overflow: hidden;
+		/* padding: 0 3% 0 3% !important; */
+		/* margin: 0 0 0 3% !important; */
 	}
-	section{
+
+	section {
 		overflow: visible !important;
 	}
-	.tile-gallery-two .img-one{
+
+	.tile-gallery-two .img-one {
 		height: 205px !important;
 	}
-}
 
+	.service-item-eight .services-overlay .title {
+		padding-left: 75px !important;
+		font-size: 12px !important;
+	}
+
+	.service-item-eight .services-overlay p {
+		font-size: 12px !important;
+		padding-top: 10px !important;
+	}
+	.service-img {
+		height: 250px;
+	}
+	.service-item-eight .service-img img {
+		height: 100%;
+	}
+	.service-item-eight .services-overlay{
+		height: 170px !important;
+	}
+}

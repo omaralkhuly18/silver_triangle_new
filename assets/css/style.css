@@ -37,13 +37,7 @@
     25. Privacy
 -----------------------------------------------------------------------------------*/
 /*=======  COMMON CSS  =======*/
-@import url("https://fonts.googleapis.com/css?family=Karla:400,400i,600,700,700i&display=swap");
-
-@font-face {
-	font-family: "GilroyBold";
-	src: url("../fonts/GilroyBold.eot");
-	src: url("../fonts/GilroyBold.eot") format("embedded-opentype"), url("../fonts/GilroyBold.woff2") format("woff2"), url("../fonts/GilroyBold.woff") format("woff"), url("../fonts/GilroyBold.ttf") format("truetype"), url("../fonts/GilroyBold.svg#GilroyBold") format("svg");
-}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:400,400i,600,700,700i&display=swap');
 
 body {
 	font-weight: 400;
@@ -127,7 +121,7 @@ h6 {
 	font-weight: 700;
 	margin: 0px;
 	color: #002249;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 }
 
 ul,
@@ -439,7 +433,7 @@ input[type=radio] {
 .section-title-two .big-text {
 	position: absolute;
 	font-size: 180px;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	font-weight: 700;
 	bottom: 20px;
 	left: 0;
@@ -3935,7 +3929,7 @@ a.colordifrante:hover {
 	z-index: 2;
 	font-size: 20px;
 	line-height: 1.3;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	font-weight: 700;
 	color: #002249;
 	padding: 35px 40px;
@@ -4055,7 +4049,7 @@ a.colordifrante:hover {
 	color: #f5f6f7;
 	right: 18px;
 	bottom: 0;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	font-weight: 700;
 	z-index: -1;
 	line-height: 1;
@@ -5675,7 +5669,7 @@ img.simpelvedio {
 .counter-box .counter {
 	display: block;
 	line-height: 1;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	color: #fff;
 	font-size: 70px;
 }
@@ -5694,7 +5688,7 @@ img.simpelvedio {
 
 .counter-box .title {
 	color: #fff;
-	font-family: "Karla", sans-serif;
+	font-family: 'Cairo', sans-serif;
 	margin-top: 15px;
 	font-size: 18px;
 	letter-spacing: -1px;
@@ -5745,7 +5739,7 @@ img.simpelvedio {
 	line-height: 1;
 	color: #fff;
 	margin-bottom: 5px;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	font-weight: 700;
 }
 
@@ -5762,7 +5756,7 @@ img.simpelvedio {
 }
 
 .counter-box-two .counter-wrap sup {
-	font-family: "Karla", sans-serif;
+	font-family: 'Cairo', sans-serif;
 }
 
 .counter-box-two .title {
@@ -5787,7 +5781,7 @@ img.simpelvedio {
 	font-size: 55px;
 	font-weight: 500;
 	color: #0c59db;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	line-height: 1;
 }
 
@@ -5823,7 +5817,7 @@ img.simpelvedio {
 	font-size: 50px;
 	font-weight: 500;
 	color: #0c59db;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	line-height: 1;
 	position: relative;
 	margin-bottom: 5px;
@@ -5885,7 +5879,7 @@ img.simpelvedio {
 	font-size: 50px;
 	line-height: 1;
 	font-weight: 700;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	margin-bottom: 5px;
 }
 
@@ -5901,7 +5895,7 @@ img.simpelvedio {
 	text-transform: capitalize;
 	color: #fff;
 	opacity: 0.6;
-	font-family: "Karla", sans-serif;
+	font-family: 'Cairo', sans-serif;
 }
 
 .piechart-box {
@@ -5935,7 +5929,7 @@ img.simpelvedio {
 	text-align: center;
 	line-height: 1;
 	font-weight: 700;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 }
 
 .counter-section-two {
@@ -6632,7 +6626,7 @@ img.simpelvedio {
 
 .testimonial-box-two .testimonial-inner .content .name {
 	font-size: 16px;
-	font-family: "Karla", sans-serif;
+	font-family: 'Cairo', sans-serif;
 	font-weight: 700;
 	margin-bottom: 10px;
 }
@@ -7418,7 +7412,7 @@ img.simpelvedio {
 
 .about-text-block .about-experience span {
 	font-size: 30px;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	font-weight: 700;
 	color: #002249;
 	text-transform: capitalize;
@@ -8453,7 +8447,7 @@ img.simpelvedio {
 	text-decoration: none;
 	font-weight: 700;
 	font-size: 18px;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	width: 100%;
 	color: #0c59db;
 	position: relative;
@@ -8488,7 +8482,7 @@ img.simpelvedio {
 
 .accordion-one.white-version .card .card-header a {
 	color: #fff;
-	font-family: "Karla", sans-serif;
+	font-family: 'Cairo', sans-serif;
 }
 
 @media (max-width: 575px) {
@@ -11048,7 +11042,7 @@ img.simpelvedio {
 	line-height: 1.3;
 	position: relative;
 	z-index: 1;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -11072,7 +11066,7 @@ img.simpelvedio {
 	color: #0c59db;
 	line-height: 1;
 	margin-bottom: 10px;
-	font-family: "Karla", sans-serif;
+	font-family: 'Cairo', sans-serif;
 }
 
 .blog-dteails-content blockquote .quote-icon {
@@ -12014,7 +12008,7 @@ img.simpelvedio {
 .timer-items .syotimer .syotimer__body .syotimer-cell .syotimer-cell__value {
 	font-size: 50px;
 	font-weight: 700;
-	font-family: "GilroyBold";
+	font-family: 'Cairo', sans-serif;
 	color: #002249;
 	line-height: 1;
 }

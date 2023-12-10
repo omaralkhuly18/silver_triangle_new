@@ -630,6 +630,12 @@
 }
 
 /* FAQ page */
+/* servies pricing */
+.tile-gallery-four .img-two {
+    display: flex;
+    justify-content: flex-start;
+}
+/* servies pricing */
 /* team */
 .team-join .join-bg .team-join-title span::before{
     left: -100px;
@@ -672,8 +678,12 @@ a.service-link{
     transform: rotate(180deg);
     margin-right: 3%;
 }
-
-.feature-list li::before {
+.transformrotate {
+    transform: rotate(180deg);
+    margin-right: 5px !important;
+}
+.feature-list li::before,
+.list-pricing-details li::before{
     right: 0;
     left: 90% !important;
     margin-right: -3%;
@@ -684,7 +694,8 @@ a.service-link{
         padding-right: 50px;
     }
 
-    .feature-list li::before {
+    .feature-list li::before,
+    .list-pricing-details li::before{
         height: 45px;
         width: 40px;
         font-size: 15px;

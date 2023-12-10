@@ -4577,24 +4577,28 @@ a.colordifrante:hover {
 	}
 }
 
-.feature-list li {
+.feature-list li,
+.list-pricing-details li{
 	padding: 0 55px;
 	position: relative;
 }
 
 @media (max-width: 1199px) {
-	.feature-list li {
+	.feature-list li,
+	.list-pricing-details li{
 		padding-right: 50px;
 	}
 }
 
 @media (max-width: 575px) {
-	.feature-list li {
+	.feature-list li,
+	.list-pricing-details li{
 		padding-right: 0;
 	}
 }
 
-.feature-list li::before {
+.feature-list li::before,
+.list-pricing-details li::before{
 	height: 50px;
 	width: 50px;
 	display: flex;
@@ -4618,7 +4622,8 @@ a.colordifrante:hover {
 	content: "";
 }
 
-.feature-list li:not(:last-child) {
+.feature-list li:not(:last-child),
+.list-pricing-details li:not(:last-child){
 	margin-bottom: 40px;
 }
 
@@ -4626,22 +4631,30 @@ a.colordifrante:hover {
 	margin-bottom: 10px !important;
 }
 
-.feature-list li h4 {
+.feature-list li h4,
+.list-pricing-details li h4{
 	font-size: 24px;
 	margin-bottom: 15px;
 }
 
 @media (max-width: 575px) {
-	.feature-list li h4 {
+	.feature-list li h4,
+	.list-pricing-details li h4{
 		font-size: 18px;
 	}
 }
 
-.feature-list li p {
+.feature-list li p{
 	color: #81a3bb;
 }
-
-.feature-list li:hover::before {
+.list-pricing-details li p{
+	color: blanchedalmond;
+}
+.colorslip li p{
+	color: blanchedalmond;
+}
+.feature-list li:hover::before,
+.list-pricing-details li:hover::before{
 	background-color: #0c59db;
 	color: #fff;
 }
@@ -9659,7 +9672,11 @@ img.simpelvedio {
 	z-index: 22;
 	color: #0c59db;
 }
-
+/* servies pricing start*/
+.wow h2{
+	font-size: 30px !important;
+}
+/* servies pricing end*/
 /*======= Shop Sidebar =======*/
 @media (max-width: 1199px) {
 	.shop-sidebar {
@@ -10595,6 +10612,11 @@ img.simpelvedio {
 	text-align: center;
 }
 
+.blog-sidebar .widget .about-contnent img {
+    border-radius: 100%;
+    width: 150px;
+}
+
 .widthpriveate {
 	font-size: 50px;
 	color: #0c59db;
@@ -10710,6 +10732,8 @@ img.simpelvedio {
 	position: absolute;
 	left: 0;
 	top: -5px;
+	width: 20%;
+    border-radius: 50%;
 }
 
 .blog-sidebar .widget.categories-widget ul li:not(:last-child) {
@@ -11769,6 +11793,26 @@ img.simpelvedio {
 
 @media (max-width: 575px) {
 	.tile-gallery-two .img-two {
+		max-width: 90%;
+	}
+}
+
+.tile-gallery-four .img-two {
+	margin-top: -220px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width: 95%;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.tile-gallery-four .img-two {
+		max-width: 80%;
+	}
+}
+
+@media (max-width: 575px) {
+	.tile-gallery-four .img-two {
 		max-width: 90%;
 	}
 }

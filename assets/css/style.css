@@ -517,6 +517,10 @@ input[type=radio] {
 	border: none;
 }
 
+a.neww {
+    background: none !important;
+}
+
 .displayflexbutt {
 	display: flex;
 }

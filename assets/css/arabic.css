@@ -2,7 +2,9 @@
     font-size: 40px;
 }
 /* header .textalignright */
-
+.cdnfont{
+	color: #b6b1b1  !important;
+} 
 @media (min-width: 992px) and (max-width: 1199px) {
 
     .header-two .header-navigation .primary-menu li .dd-trigger,
@@ -403,7 +405,7 @@
 }
 
 .section-title.with-right-border .abdf::before {
-    right: 45% !important;
+    right: 70% !important;
 }
 
 .service-support-btn {
@@ -595,6 +597,8 @@
     .accordion-four .card .card-header a {
         padding: 22px 20px 22px 30px;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .accordion-four .card .card-header a i {
@@ -766,6 +770,7 @@ i.transformar {
 }
 .order-details .payment-box .main-btn{
     display: flex;
+    float: right;
 }
 /* checkout */
 

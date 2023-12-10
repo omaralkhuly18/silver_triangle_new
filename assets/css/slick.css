@@ -278,6 +278,12 @@ button.close span {
 	transform: translate(-50%, -50%);
 }
 
+a.fontwordsbox {
+    font-size: 15px;
+    color: black;
+    transition: 1s;
+}
+
 .forms-wrap {
 	position: absolute;
 	height: 100%;
@@ -765,14 +771,23 @@ label {
 /* works us */
 
 /* spical */
-
+@media screen and (max-width: 990px) and (min-width: 230px){
+	.marginspciealpric{
+		margin-top: 10%;
+	}
+	.marginspciealimgpric{
+		margin-bottom: 5%;
+	}
+}
 @media screen and (max-width: 280px) and (min-width: 230px) {
 	.container {
 		overflow: hidden;
 		/* padding: 0 3% 0 3% !important; */
 		/* margin: 0 0 0 3% !important; */
 	}
-
+	.history-timeline .history-item .history-content{
+		padding: 35px 5px !important;
+	}
 	section {
 		overflow: auto !important;
 	}

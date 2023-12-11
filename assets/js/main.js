@@ -40,6 +40,12 @@
 	});
 </script>
 -----------------------------------------------------------------------------------*/
+function howcontactyouEn(){
+	window.location.href= "contact.html#hello";
+}
+function howcontactyouAr(){
+	window.location.href= "contact_ar.html#hello";
+}
 const inputs = document.querySelectorAll(".input-field");
 const toggle_btn = document.querySelectorAll(".toggle-box");
 const main = document.querySelector("main");

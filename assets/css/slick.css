@@ -818,3 +818,14 @@ label {
 		font-size: 14px !important;
 	}
 }
+@media screen and (max-width: 450px) and (min-width: 230px){
+	.banner-slider.banner-slider-one{
+		padding: 42.5px 0 26% !important;
+	}
+	.header-navigation{
+		background-color: #f4f3fc;
+	}
+	.single-banner::before{
+		height: 734px !important;
+	}
+}

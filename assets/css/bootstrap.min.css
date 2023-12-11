@@ -279,7 +279,8 @@ select {
 [type=reset],
 [type=submit],
 button {
-    -webkit-appearance: button
+    -webkit-appearance: button;
+    appearance: button;
 }
 
 [type=button]:not(:disabled),
@@ -338,7 +339,8 @@ progress {
 
 [type=search] {
     outline-offset: -2px;
-    -webkit-appearance: none
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 [type=search]::-webkit-search-decoration {
@@ -2236,66 +2238,52 @@ pre code {
 
 @media (max-width:575.98px) {
     .table-responsive-sm {
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch
+        display: block !important;
+        width: auto !important;
+        overflow-x: scroll !important;
+        /* -webkit-overflow-scrolling: touch; */
     }
 
-    .table-responsive-sm>.table-bordered {
-        border: 0
-    }
 }
 
 @media (max-width:767.98px) {
     .table-responsive-md {
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch
+        display: block !important;
+        width: 100% !important;
+        overflow-x: scroll !important;
+        /* -webkit-overflow-scrolling: touch */
     }
 
-    .table-responsive-md>.table-bordered {
-        border: 0
-    }
 }
 
 @media (max-width:991.98px) {
     .table-responsive-lg {
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        /* -webkit-overflow-scrolling: touch */
     }
 
-    .table-responsive-lg>.table-bordered {
-        border: 0
-    }
+
 }
 
 @media (max-width:1199.98px) {
     .table-responsive-xl {
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        /* -webkit-overflow-scrolling: touch */
     }
 
-    .table-responsive-xl>.table-bordered {
-        border: 0
-    }
 }
 
 .table-responsive {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch
+    /* -webkit-overflow-scrolling: touch */
 }
 
-.table-responsive>.table-bordered {
-    border: 0
-}
 
 .form-control {
     display: block;
@@ -4185,7 +4173,7 @@ input[type=submit].btn-block {
     min-height: 1.5rem;
     padding-left: 1.5rem;
     -webkit-print-color-adjust: exact;
-    color-adjust: exact
+    print-color-adjust: exact;
 }
 
 .custom-control-inline {

@@ -663,76 +663,21 @@ div#preloader {
 	justify-content: center;
 }
 
-div#preloader .loader-cubes {
+div#preloader .loader {
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-left: -25px;
 	margin-top: -25px;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	-webkit-transform: rotateZ(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotateZ(45deg);
+	height: 15px;
+    aspect-ratio: 6;
+    background: radial-gradient(closest-side at 38.5% 56%, #0000ff5c 94%,#0000) 0/calc(80%/3) 100%;
+    animation: l47 .75s infinite;
 }
 
-div#preloader .loader-cubes .loader-cube {
-	float: left;
-	width: 50%;
-	height: 50%;
-	position: relative;
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
-}
-
-div#preloader .loader-cubes .loader-cube::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	-webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
-	animation: sk-foldCubeAngle 2.4s infinite linear both;
-	-webkit-transform-origin: 100% 100%;
-	-ms-transform-origin: 100% 100%;
-	transform-origin: 100% 100%;
-	background: #0c59db;
-}
-
-div#preloader .loader-cubes .loader-cube.loader-cube2 {
-	-webkit-transform: scale(1.1) rotateZ(90deg);
-	-ms-transform: scale(1.1) rotate(90deg);
-	transform: scale(1.1) rotateZ(90deg);
-}
-
-div#preloader .loader-cubes .loader-cube.loader-cube2::before {
-	-webkit-animation-delay: 0.3s;
-	animation-delay: 0.3s;
-}
-
-div#preloader .loader-cubes .loader-cube .loader-cube4 {
-	-webkit-transform: scale(1.1) rotateZ(270deg);
-	-ms-transform: scale(1.1) rotate(270deg);
-	transform: scale(1.1) rotateZ(270deg);
-}
-
-div#preloader .loader-cubes .loader-cube .loader-cube4::before {
-	-webkit-animation-delay: 0.9s;
-	animation-delay: 0.9s;
-}
-
-div#preloader .loader-cubes .loader-cube .loader-cube3 {
-	-webkit-transform: scale(1.1) rotateZ(180deg);
-	-ms-transform: scale(1.1) rotate(180deg);
-	transform: scale(1.1) rotateZ(180deg);
-}
-
-div#preloader .loader-cubes .loader-cube .loader-cube3::before {
-	-webkit-animation-delay: 0.6s;
-	animation-delay: 0.6s;
-}
+@keyframes l47 {
+	100% {background-position: 36.36%}
+  }
 
 /*=======  Margin Top =======*/
 .mt-10 {
@@ -2687,14 +2632,21 @@ a.colordifrante:hover {
 
 .banner-slider.banner-slider-one {
 	padding: 55px 0 100px;
-	background-image: url(../img/banner/banner-design.jpg);
+	/* background-image: url(../img/banner/banner-design.jpg);
 	background-color: #f5faff;
 	background-size: cover;
-	background-position: center;
+	background-position: center; */
 	position: relative;
 	margin-top: 9%;
 }
-
+.single-banner::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 620px;
+    background-color: #bdb6ed2b;
+	/* background-color: #0091ff3d; */
+}
 @media (max-width: 991px) {
 	.banner-slider.banner-slider-one {
 		padding: 140px 0;
@@ -4653,7 +4605,7 @@ a.colordifrante:hover {
 	color: #81a3bb;
 }
 .list-pricing-details li p{
-	color: blanchedalmond;
+	color: black;
 }
 .colorslip li p{
 	color: blanchedalmond;
@@ -5487,7 +5439,27 @@ img.simpelvedio {
 	.case-details-area .case-details-content .case-details-case img{
 		height: auto;
 	}
+	.case-details-area .case-details-content .case-details-case p{
+		width: 100% !important;
+		right: 2% !important;
+		font-size: 15px !important;
+	}
 }
+@media screen and (max-width: 315px) and (min-width: 230px){
+	.case-details-area .case-details-content .case-details-case{
+		height: 490px !important;
+	}
+	.latest-news-box .post-content{
+		padding: 25px 10px 30px !important;
+	}
+	.latest-news-box .post-content .title {
+		font-size: 16px !important;
+	}
+	.order-details .payment-box{
+		padding: 30px 5px !important;
+	}
+}
+
 .case-details-item{
 	position: relative;
     overflow: hidden;

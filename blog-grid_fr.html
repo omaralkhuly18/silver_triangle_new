@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!--====== Title ======-->
-    <title>Triangle-Blog Grid_EN</title>
+    <title>Triangle-Blog Grid_FR</title>
     <!--====== Favicon Icon ======-->
     <link rel="icon" type="image/x-icon" href="./assets/img/logo/logo.png" />
     <!--====== Bootstrap css ======-->
@@ -31,6 +31,79 @@
     <!--====== Jquery ======-->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
 </head>
+<style>
+    @media screen and (max-width: 3000px) and (min-width: 992px) {
+        .site-nav-menu {
+            width: 80%;
+        }
+
+        ul.primary-menu {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 1199px) and (max-width: 1900px) {
+
+        .header-two .header-navigation .navbar-btn a,
+        .header-three .header-navigation .navbar-btn a {
+            padding: 15px 10px;
+            font-size: 11px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+        .header-two .header-navigation .navbar-btn a,
+        .header-three .header-navigation .navbar-btn a {
+            padding: 15px 10px;
+            font-size: 11px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1900px) {
+
+        .header-two .header-navigation .primary-menu li a,
+        .header-three .header-navigation .primary-menu li a {
+            padding: 0;
+            font-size: 13px;
+        }
+
+        .site-nav-menu {
+            width: 99%;
+        }
+    }
+
+    @media screen and (max-width: 562px) and (min-width: 491px) {
+        .header-navigation .navbar-btn {
+            width: 50%;
+        }
+
+        .header-two .header-navigation .navbar-btn a,
+        .header-three .header-navigation .navbar-btn a {
+            padding: 12px 0 !important;
+            font-size: 11px !important;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 300px) and (min-width: 220px) {
+        .header-navigation.breakpoint-on .site-nav-menu {
+            padding: 50px 10px;
+            width: 230px !important;
+        }
+    }
+
+    @media screen and (max-width: 1000px) and (min-width: 992px) {
+
+        .header-two .header-navigation .primary-menu li a,
+        .header-three .header-navigation .primary-menu li a {
+            padding: 0 9px !important;
+            font-size: 10px !important;
+        }
+    }
+</style>
 
 <body>
     <!--====== Preloader Start ======-->
@@ -81,7 +154,7 @@
                 <!-- === logo === -->
                 <div class="header-left">
                     <div class="site-logo">
-                        <a href="home_en.html">
+                        <a href="home.html">
                             <!-- <h1 class="LogoWord">Silver</h1> -->
                             <img src="assets/img/logo/logo.png" alt="triangle">
                         </a>
@@ -92,39 +165,40 @@
                 <div class="site-nav-menu">
                     <ul class="primary-menu">
                         <li class="current">
-                            <a class="colornavpages" href="home_en.html"> Home </a>
+                            <a class="colornavpages" href="index_fr.html"> MAISON </a>
                         </li>
                         <li>
-                            <a class="nav-link colornavpages" href="about.html"> About-Us </a>
+                            <a class="nav-link colornavpages" href="about_fr.html"> À PROPOS DE NOUS </a>
                         </li>
                         <li>
-                            <a class="nav-link colornavpages" href="ourcompany.html"> Our-Company </a>
+                            <a class="nav-link colornavpages" href="ourcompany_fr.html"> NOTRE COMPAGNIE </a>
                         </li>
                         <li>
-                            <a class="colornavpages" href="services.html">Our services</a>
+                            <a class="colornavpages" href="services_fr.html">NOS SERVICES</a>
                         </li>
                         <li>
-                            <a class="colornavpages" href="works.html">works-us</a>
+                            <a class="colornavpages" href="works_fr.html">ÇA MarsE AVEC NOUS</a>
                         </li>
                         <li>
-                            <a class="colornavpages" href="blog-grid.html"> Blog</a>
+                            <a class="colornavpages" href="blog-grid_fr.html"> BLOG</a>
                         </li>
                         <li>
                             <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false"
-                                data-toggle="dropdown" aria-expanded="false"> Page </a>
+                                data-toggle="dropdown" aria-expanded="false"> PAGE </a>
                             <ul class="submenu">
-                                <li><a href="Our Portfolio.html"> Our-Portfolio</a></li>
-                                <li><a href="faq.html">faq</a></li>
-                                <li><a href="checkout.html">checkout</a></li>
-                                <li><a href="team.html">team</a></li>
+                                <li><a href="Our Portfolio_fr.html"> Notre portfolio</a></li>
+                                <li><a href="faq_fr.html">FAQ</a></li>
+                                <li><a href="checkout_fr.html">vérifier</a></li>
+                                <li><a href="team_fr.html">équipe</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="colornavpages" href="contact.html"> Contact-US</a>
+                            <a class="colornavpages" href="contact_fr.html"> CONTACTEZ-NOUS</a>
                         </li>
                     </ul>
                     <a href="" data-toggle="dropdown" aria-expanded="false" class="nav-close"><i
-                            class="fal fa-times"></i></a>
+                            class="fal fa-times"></i>
+                    </a>
                 </div>
 
                 <!-- === login/register === -->
@@ -146,7 +220,7 @@
                                     <a href="blog-grid.html"><span class="menu-text">English</span></a>
                                 </li>
                                 <li>
-                                    <a href="blog-grid_fr.html"><span class="menu-text">French</span></a>
+                                    <a href="blog-grid_fr.html"><span class="menu-text">Français</span></a>
                                 </li>
                                 <li>
                                     <a href="blog-grid_ar.html"><span class="menu-text">العربيه</span></a>
@@ -160,7 +234,7 @@
 
                         <a type="button" class="main-btn rounded-btn icon-right small-size lgri"
                             data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            Login/ registration <i class="fal fa-long-arrow-right transformrotate"></i></a>
+                            Connexion/inscription <i class="fal fa-long-arrow-right transformrotate"></i></a>
 
                         <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
                             data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
@@ -190,32 +264,33 @@
                                                         </div>
 
                                                         <div class="heading">
-                                                            <h2>welcome back</h2>
-                                                            <h6> Not registered yet</h6>
+                                                            <h2>content de te revoir</h2>
+                                                            <h6>Pas encore inscrit</h6>
                                                             <a href="" data-toggle="dropdown" aria-expanded="false"
                                                                 class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">Create account</a>
+                                                                aria-expanded="false">Créer un compte</a>
                                                         </div>
 
                                                         <div class="actual-form">
                                                             <div class="input-wrap">
                                                                 <input type="text" minlength="4" class="input-field"
                                                                     autocomplete="off" required />
-                                                                <label>Name</label>
+                                                                <label>Nom</label>
                                                             </div>
 
                                                             <div class="input-wrap">
                                                                 <input type="password" minlength="4" class="input-field"
                                                                     autocomplete="off" required />
-                                                                <label>Password</label>
+                                                                <label>Mot de passe</label>
                                                             </div>
 
-                                                            <input type="submit" value="Login" class="sign-btn" />
+                                                            <input type="submit" value="Se connecter"
+                                                                class="sign-btn" />
 
                                                             <p class="text">
 
-                                                                <a href="legal.html" class=" fontwordsbox ">
-                                                                    Get help</a>
+                                                                <a href="home_fr.html" class=" fontwordsbox ">
+                                                                    Obtenir de l'aide</a>
                                                             </p>
                                                         </div>
                                                     </form>
@@ -229,11 +304,12 @@
                                                         </div>
 
                                                         <div class="heading">
-                                                            <h2>Get started </h2>
-                                                            <h6> do you have an account </h6>
+                                                            <h2>Commencer</h2>
+                                                            <h6> Avez-vous un compte </h6>
                                                             <a href="" data-toggle="dropdown" aria-expanded="false"
                                                                 class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false"> Login
+                                                                aria-expanded="false">
+                                                                Se connecter
                                                             </a>
                                                         </div>
 
@@ -241,28 +317,28 @@
                                                             <div class="input-wrap">
                                                                 <input type="text" minlength="4" class="input-field"
                                                                     autocomplete="off" required />
-                                                                <label> Name </label>
+                                                                <label> Nom </label>
                                                             </div>
 
                                                             <div class="input-wrap">
                                                                 <input type="email" class="input-field"
                                                                     autocomplete="off" required />
-                                                                <label> Email </label>
+                                                                <label> E-mail </label>
                                                             </div>
 
                                                             <div class="input-wrap">
                                                                 <input type="password" minlength="4" class="input-field"
                                                                     autocomplete="off" required />
-                                                                <label> Password</label>
+                                                                <label> Mot de passe </label>
                                                             </div>
 
-                                                            <input type="submit" value=" registration "
+                                                            <input type="submit" value=" inscription "
                                                                 class="sign-btn" />
 
                                                             <p class="text">
 
-                                                                <a href="legal.html" class=" fontwordsbox ">
-                                                                    policy&Terms</a>
+                                                                <a href="legal_fr.html" class=" fontwordsbox ">
+                                                                    politique et conditions </a>
                                                             </p>
                                                         </div>
                                                     </form>
@@ -284,9 +360,9 @@
 
                                                         <div class="text-wrap">
                                                             <div class="text-group">
-                                                                <h2> Create your own courses</h2>
-                                                                <h2> Customize as you like</h2>
-                                                                <h2> Invite your friends here</h2>
+                                                                <h2> Créez vos propres cours</h2>
+                                                                <h2>Personnalisez comme vous le souhaitez</h2>
+                                                                <h2> Invitez vos amis ici</h2>
                                                             </div>
                                                         </div>
 
@@ -326,10 +402,10 @@
     <!--====== Page Title start ======-->
     <section class="page-title-area">
         <div class="container">
-            <h2 class="title changestyleabout">News Grid</h2>
+            <h2 class="title changestyleabout">Grille d'actualités</h2>
             <ul class="breadcrumb-nav">
-                <li><a href="home_en.html" class="activecolorstyle">Home</a></li>
-                <li class="active activecolorstyle">News</li>
+                <li><a href="home_fr.html" class="activecolorstyle">Maison</a></li>
+                <li class="active activecolorstyle">Nouvelles</li>
             </ul>
         </div>
     </section>
@@ -339,17 +415,17 @@
     <section class="blog-area section-gap">
         <div class="container">
             <div class="blog-grid-items row justify-content-center">
-                <!-- card 1 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-1.jpg" alt="">
                         <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">
-                            New Development Technologies
+                            Nouvelles technologies de développement
                         </a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    Articles about modern programming languages, new frameworks, and modern development
-                                    tools.
+                                    Articles sur les langages de programmation modernes, les nouveaux frameworks et le
+                                    développement moderne
+                                    outils.
                                 </a>
                             </h5>
                             <ul class="post-meta">
@@ -362,14 +438,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 2 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-2.jpg" alt="">
-                        <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">Technical articles</a>
+                        <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">Articles techniques</a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    Includes articles about new technologies, programming languages, and tools.
+                                    Comprend des articles sur les nouvelles technologies, les langages de programmation
+                                    et les outils.
                                 </a></h5>
                             <ul class="post-meta">
                                 <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
@@ -381,14 +457,13 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 3 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-3.jpg" alt="">
-                        <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">Sharing experiences</a>
+                        <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">Partager des expériences</a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    Presenting the experiences of developers and programmers in the company.
+                                    Présenter les expériences des développeurs et programmeurs de l'entreprise.
                                 </a></h5>
                             <ul class="post-meta">
                                 <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
@@ -400,15 +475,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 4 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-4.jpg" alt="">
-                        <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">Share Leadership
-                            Insights</a>
+                        <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">
+                            Share Leadership Insights
+                        </a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    Blog posts from company leaders about their vision and strategy.
+                                    Articles de blog rédigés par des dirigeants d’entreprise sur leur vision et leur
+                                    stratégie.
                                 </a></h5>
                             <ul class="post-meta">
                                 <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
@@ -420,15 +496,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 5 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-5.jpg" alt="">
                         <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">
-                            Information Security and Protection</a>
+                            Sécurité et protection des informations</a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    Articles on information security and best practices for preventing security threats.
+                                    Articles sur la sécurité des informations et les meilleures pratiques pour prévenir
+                                    les menaces de sécurité.
                                 </a></h5>
                             <ul class="post-meta">
                                 <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
@@ -440,17 +516,17 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 6 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-6.jpg" alt="">
                         <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">
-                            Customer and partner experiences
+                            Expériences clients et partenaires
                         </a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    Document success stories and challenges the company faces while dealing with
-                                    customers and partners.
+                                    Documenter les réussites et les défis auxquels l'entreprise est confrontée
+                                    lorsqu'elle fait face
+                                    clients et partenaires.
                                 </a></h5>
                             <ul class="post-meta">
                                 <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
@@ -462,15 +538,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 7 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-7.jpg" alt="">
-                        <a class="cat" href="" data-toggle="dropdown" aria-expanded="false"> Developer Experiences</a>
+                        <a class="cat" href="" data-toggle="dropdown" aria-expanded="false"> Expériences des
+                            développeurs</a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    Share stories and experiences of developers in the company while working on specific
-                                    projects.
+                                    Partagez les histoires et les expériences des développeurs de l'entreprise tout en
+                                    travaillant sur des sujets spécifiques.
+                                    projets.
                                 </a>
                             </h5>
                             <ul class="post-meta">
@@ -483,16 +560,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 8 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-8.jpg" alt="">
                         <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">
-                            Software Design and Engineering Ideas
+                            Idées de conception et d’ingénierie de logiciels
                         </a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    Articles on how to build efficient and maintainable software.
+                                    Articles sur la façon de créer des logiciels efficaces et maintenables.
                                 </a>
                             </h5>
                             <ul class="post-meta">
@@ -505,18 +581,18 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 9 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-9.jpg" alt="">
                         <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">
-                            Machine Learning Technology
+                            Technologie d'apprentissage automatique
                         </a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    Coverage of the latest developments in the field of artificial intelligence and
+                                    Couverture des derniers développements dans le domaine de l'intelligence
+                                    artificielle et
                                     machine
-                                    learning.
+                                    apprentissage.
                                 </a>
                             </h5>
                             <ul class="post-meta">
@@ -529,15 +605,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 10 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-10.jpg" alt="">
-                        <a class="cat" href="" data-toggle="dropdown" aria-expanded="false"> In this context</a>
+                        <a class="cat" href="" data-toggle="dropdown" aria-expanded="false"> Dans ce contexte</a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    a blog can be a way for a company to share its news, latest technologies, projects
-                                    and technical ideas with the technical community and its customers.</a>
+                                    Un blog peut être un moyen pour une entreprise de partager ses actualités, ses
+                                    dernières technologies, ses projets
+                                    et des idées techniques avec la communauté technique et ses clients.
+                                </a>
                             </h5>
                             <ul class="post-meta">
                                 <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
@@ -549,16 +626,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 11 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-11.jpg" alt="">
                         <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">
-                            Emerging Technologies Analysis
+                            Analyse des technologies émergentes
                         </a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    How to deal with technical challenges and continuous improvement.
+                                    Comment faire face aux défis techniques et à l'amélioration continue.
                                 </a>
                             </h5>
                             <ul class="post-meta">
@@ -571,17 +647,17 @@
                         </div>
                     </div>
                 </div>
-                <!-- card 12 -->
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-blog-grid mb-30">
                         <img src="assets/img/blog/blog-grid-12.jpg" alt="">
                         <a class="cat" href="" data-toggle="dropdown" aria-expanded="false">
-                            Advances in Artificial Intelligence
+                            Avancées de l’intelligence artificielle
                         </a>
                         <div class="blog-grid-overlay">
                             <h5 class="title"><a href="blog-details.html">
-                                    Coverage of the latest developments in the field of artificial intelligence and
-                                    machine learning.
+                                    Couverture des derniers développements dans le domaine de l'intelligence
+                                    artificielle et
+                                    apprentissage automatique.
                                 </a>
                             </h5>
                             <ul class="post-meta">
@@ -623,9 +699,11 @@
                         <div class="footer-left">
                             <img class="footer-logo" src="assets/img/logo/logo.png" alt="triangle">
                             <div class="word-footer directionslider">
-                                Website design and application control systems are broad fields that include many
-                                technologies and tools, and also include open source management systems that are popular
-                                on social media sites.
+                                La conception de sites Web et les systèmes de contrôle d'applications sont de vastes
+                                domaines qui incluent de nombreux
+                                technologies et outils, et incluent également des systèmes de gestion open source qui
+                                sont populaires
+                                sur les sites de médias sociaux.
                             </div>
                         </div>
 
@@ -639,10 +717,11 @@
                             <h4 class="widget-title"> services </h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="services.html"><i class="fal fa-angle-right"></i> Our services </a>
+                                    <li><a href="services_fr.html"><i class="fal fa-angle-right"></i> Nos services </a>
                                     </li>
-                                    <li><a href="services-details.html"><i class="fal fa-angle-right"></i> Details
-                                            services</a></li>
+                                    <li><a href="services-details_fr.html"><i class="fal fa-angle-right"></i>
+                                            Services détaillés
+                                        </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -651,12 +730,12 @@
                             <h4 class="widget-title"> pages</h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="Our Portfolio.html"><i class="fal fa-angle-right"></i>
-                                            Our-Portfolio</a>
+                                    <li><a href="Our Portfolio_fr.html"><i class="fal fa-angle-right"></i>
+                                            Notre portfolio</a>
                                     </li>
-                                    <li><a href="faq.html"><i class="fal fa-angle-right"></i> FAQ </a></li>
-                                    <li><a href="checkout.html"><i class="fal fa-angle-right"></i> checkout </a></li>
-                                    <li><a href="team.html"><i class="fal fa-angle-right"></i> Team </a></li>
+                                    <li><a href="faq_fr.html"><i class="fal fa-angle-right"></i> FAQ </a></li>
+                                    <li><a href="checkout_fr.html"><i class="fal fa-angle-right"></i> vérifier </a></li>
+                                    <li><a href="team_fr.html"><i class="fal fa-angle-right"></i> Équipe </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -667,30 +746,31 @@
                 <div class="col-lg-4 col-md-8 col-sm-10">
                     <div class="widget nav-widget row spacebetween">
                         <div class="widget nav-widget col-lg-6 col-md-6 col-sm-6">
-                            <h4 class="widget-title"> blog </h4>
+                            <h4 class="widget-title"> Blog </h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="blog-details.html"><i class="fal fa-angle-right"></i> Details Blog
+                                    <li><a href="blog-details_fr.html"><i class="fal fa-angle-right"></i> Détails Blogue
                                         </a></li>
-                                    <li><a href="blog-grid.html"><i class="fal fa-angle-right"></i> News Blog </a>
+                                    <li><a href="blog-grid_fr.html"><i class="fal fa-angle-right"></i> Blog d'actualités
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="widget contact-widget col-lg-6 col-md-6 col-sm-6">
-                            <h4 class="widget-title"> work hours </h4>
+                            <h4 class="widget-title"> Heures de travail </h4>
                             <ul>
-                                <li> Sunday - Wednesday: 9:00 A.M. - 6:00 P.M.</li>
-                                <li> Thursday : 9:00 A.M. - 5:00 P.M.</li>
-                                <li> Friday And holidays : 00:00 - 00:00</li>
+                                <li> Dimanche - Mercredi: 9:00 A.M. - 6:00 P.M.</li>
+                                <li> Jeudi : 9:00 A.M. - 5:00 P.M.</li>
+                                <li> Vendredi et jours fériés : 00:00 - 00:00</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p> @ Copyright by <a href="" data-toggle="dropdown" aria-expanded="false" data-toggle="dropdown"
+                <p> @ Droit d'auteur par <a href="" data-toggle="dropdown" aria-expanded="false" data-toggle="dropdown"
                         aria-expanded="false">
                         Silver triangle</a> - 2024</p>
             </div>

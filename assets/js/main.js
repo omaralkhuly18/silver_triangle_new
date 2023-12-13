@@ -227,7 +227,7 @@ function myFunction() {
 	//=== 02. Preloader
 	function preloader() {
 		if ($('#preloader').length) {
-			$('#preloader').delay(900).fadeOut(1000);
+			$('#preloader').delay(50).fadeOut(500);
 		}
 	}
 

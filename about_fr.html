@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!--====== Title ======-->
-    <title>triangle||About-Us_EN</title>
+    <title>triangle||About-Us_FR</title>
     <!--====== Favicon Icon ======-->
     <link rel="icon" type="image/x-icon" href="./assets/img/logo/logo.png" />
     <!--====== Bootstrap css ======-->
@@ -33,11 +33,83 @@
     <!--====== Jquery ======-->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
 </head>
+<style>
+    @media screen and (max-width: 3000px) and (min-width: 992px) {
+        .site-nav-menu {
+            width: 80%;
+        }
+
+        ul.primary-menu {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 1199px) and (max-width: 1900px) {
+
+        .header-two .header-navigation .navbar-btn a,
+        .header-three .header-navigation .navbar-btn a {
+            padding: 15px 10px;
+            font-size: 11px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+        .header-two .header-navigation .navbar-btn a,
+        .header-three .header-navigation .navbar-btn a {
+            padding: 15px 10px;
+            font-size: 11px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1900px) {
+
+        .header-two .header-navigation .primary-menu li a,
+        .header-three .header-navigation .primary-menu li a {
+            padding: 0;
+            font-size: 13px;
+        }
+
+        .site-nav-menu {
+            width: 99%;
+        }
+    }
+
+    @media screen and (max-width: 562px) and (min-width: 491px) {
+        .header-navigation .navbar-btn {
+            width: 50%;
+        }
+
+        .header-two .header-navigation .navbar-btn a,
+        .header-three .header-navigation .navbar-btn a {
+            padding: 12px 0 !important;
+            font-size: 11px !important;
+            width: 95%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 300px) and (min-width: 220px) {
+        .header-navigation.breakpoint-on .site-nav-menu {
+            padding: 50px 10px;
+            width: 230px !important;
+        }
+    }
+
+    @media screen and (max-width: 1000px) and (min-width: 992px) {
+
+        .header-two .header-navigation .primary-menu li a,
+        .header-three .header-navigation .primary-menu li a {
+            padding: 0 9px !important;
+            font-size: 10px !important;
+        }
+    }
+</style>
 
 <body>
     <!--====== Preloader Start ======-->
-
-    <div id="preloader" >
+    <div id="preloader">
         <div class="animationsintoppage">
             <div class="loader"></div>
         </div>
@@ -52,18 +124,25 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-sm-auto col-12">
                         <ul class="contact-info text-center">
-                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fal fa-envelope"></i>silvertriangle7@gmail.com</a></li>
-                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fal fa-phone"></i>011-008-674-44</a></li>
+                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                        class="fal fa-envelope"></i>silvertriangle7@gmail.com</a></li>
+                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                        class="fal fa-phone"></i>011-008-674-44</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-auto col-12">
                         <div class="social-icon text-center">
                             <ul>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-behance"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -76,7 +155,7 @@
                 <!-- === logo === -->
                 <div class="header-left">
                     <div class="site-logo">
-                        <a href="home_en.html">
+                        <a href="home.html">
                             <!-- <h1 class="LogoWord">Silver</h1> -->
                             <img src="assets/img/logo/logo.png" alt="triangle">
                         </a>
@@ -87,37 +166,39 @@
                 <div class="site-nav-menu">
                     <ul class="primary-menu">
                         <li class="current">
-                            <a class="colornavpages" href="home_en.html"> Home </a>
+                            <a class="colornavpages" href="index_fr.html"> MAISON </a>
                         </li>
                         <li>
-                            <a class="nav-link colornavpages" href="about.html"> About-Us </a>
+                            <a class="nav-link colornavpages" href="about_fr.html"> À PROPOS DE NOUS </a>
                         </li>
                         <li>
-                            <a class="nav-link colornavpages" href="ourcompany.html"> Our-Company </a>
+                            <a class="nav-link colornavpages" href="ourcompany_fr.html"> NOTRE COMPAGNIE </a>
                         </li>
                         <li>
-                            <a class="colornavpages" href="services.html">Our services</a>
+                            <a class="colornavpages" href="services_fr.html">NOS SERVICES</a>
                         </li>
                         <li>
-                            <a class="colornavpages" href="works.html">works-us</a>
+                            <a class="colornavpages" href="works_fr.html">ÇA MarsE AVEC NOUS</a>
                         </li>
                         <li>
-                            <a class="colornavpages" href="blog-grid.html"> Blog</a>
+                            <a class="colornavpages" href="blog-grid_fr.html"> BLOG</a>
                         </li>
                         <li>
-                            <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-expanded="false"> Page </a>
+                            <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false"
+                                data-toggle="dropdown" aria-expanded="false"> PAGE </a>
                             <ul class="submenu">
-                                <li><a href="Our Portfolio.html"> Our-Portfolio</a></li>
-                                <li><a href="faq.html">faq</a></li>
-                                <li><a href="checkout.html">checkout</a></li>
-                                <li><a href="team.html">team</a></li>
+                                <li><a href="Our Portfolio_fr.html"> Notre portfolio</a></li>
+                                <li><a href="faq_fr.html">FAQ</a></li>
+                                <li><a href="checkout_fr.html">vérifier</a></li>
+                                <li><a href="team_fr.html">équipe</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="colornavpages" href="contact.html"> Contact-US</a>
+                            <a class="colornavpages" href="contact_fr.html"> CONTACTEZ-NOUS</a>
                         </li>
                     </ul>
-                    <a href="" data-toggle="dropdown" aria-expanded="false" class="nav-close"><i class="fal fa-times"></i></a>
+                    <a href="" data-toggle="dropdown" aria-expanded="false" class="nav-close"><i
+                            class="fal fa-times"></i></a>
                 </div>
 
                 <!-- === login/register === -->
@@ -139,7 +220,7 @@
                                     <a href="about.html"><span class="menu-text">English</span></a>
                                 </li>
                                 <li>
-                                    <a href="about_fr.html"><span class="menu-text">French</span></a>
+                                    <a href="about_fr.html"><span class="menu-text">Français</span></a>
                                 </li>
                                 <li>
                                     <a href="about_ar.html"><span class="menu-text">العربيه</span></a>
@@ -153,7 +234,7 @@
 
                         <a type="button" class="main-btn rounded-btn icon-right small-size lgri"
                             data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            Login/ registration <i class="fal fa-long-arrow-right transformrotate"></i></a>
+                            Connexion/inscription <i class="fal fa-long-arrow-right transformrotate"></i></a>
 
                         <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
                             data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
@@ -183,32 +264,33 @@
                                                         </div>
 
                                                         <div class="heading">
-                                                            <h2>welcome back</h2>
-                                                            <h6> Not registered yet</h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false" class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">Create account</a>
+                                                            <h2>content de te revoir</h2>
+                                                            <h6>Pas encore inscrit</h6>
+                                                            <a href="" data-toggle="dropdown" aria-expanded="false"
+                                                                class="toggle-box" data-toggle="dropdown"
+                                                                aria-expanded="false">Créer un compte</a>
                                                         </div>
 
                                                         <div class="actual-form">
                                                             <div class="input-wrap">
                                                                 <input type="text" minlength="4" class="input-field"
                                                                     autocomplete="off" required />
-                                                                <label>Name</label>
+                                                                <label>Nom</label>
                                                             </div>
 
                                                             <div class="input-wrap">
                                                                 <input type="password" minlength="4" class="input-field"
                                                                     autocomplete="off" required />
-                                                                <label>Password</label>
+                                                                <label>Mot de passe</label>
                                                             </div>
 
-                                                            <input type="submit" value="Login" class="sign-btn" />
+                                                            <input type="submit" value="Se connecter"
+                                                                class="sign-btn" />
 
                                                             <p class="text">
 
-                                                                <a href="legal.html"
-                                                                    class=" fontwordsbox ">
-                                                                    Get help</a>
+                                                                <a href="home_fr.html" class=" fontwordsbox ">
+                                                                    Obtenir de l'aide</a>
                                                             </p>
                                                         </div>
                                                     </form>
@@ -222,10 +304,12 @@
                                                         </div>
 
                                                         <div class="heading">
-                                                            <h2>Get started </h2>
-                                                            <h6> do you have an account </h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false" class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false"> Login
+                                                            <h2>Commencer</h2>
+                                                            <h6> Avez-vous un compte </h6>
+                                                            <a href="" data-toggle="dropdown" aria-expanded="false"
+                                                                class="toggle-box" data-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                Se connecter
                                                             </a>
                                                         </div>
 
@@ -233,29 +317,28 @@
                                                             <div class="input-wrap">
                                                                 <input type="text" minlength="4" class="input-field"
                                                                     autocomplete="off" required />
-                                                                <label> Name </label>
+                                                                <label> Nom </label>
                                                             </div>
 
                                                             <div class="input-wrap">
                                                                 <input type="email" class="input-field"
                                                                     autocomplete="off" required />
-                                                                <label> Email </label>
+                                                                <label> E-mail </label>
                                                             </div>
 
                                                             <div class="input-wrap">
                                                                 <input type="password" minlength="4" class="input-field"
                                                                     autocomplete="off" required />
-                                                                <label> Password</label>
+                                                                <label> Mot de passe </label>
                                                             </div>
 
-                                                            <input type="submit" value=" registration "
+                                                            <input type="submit" value=" inscription "
                                                                 class="sign-btn" />
 
                                                             <p class="text">
 
-                                                                <a href="legal.html"
-                                                                    class=" fontwordsbox ">
-                                                                   policy&Terms</a>
+                                                                <a href="legal_fr.html" class=" fontwordsbox ">
+                                                                    politique et conditions </a>
                                                             </p>
                                                         </div>
                                                     </form>
@@ -277,9 +360,9 @@
 
                                                         <div class="text-wrap">
                                                             <div class="text-group">
-                                                                <h2> Create your own courses</h2>
-                                                                <h2> Customize as you like</h2>
-                                                                <h2> Invite your friends here</h2>
+                                                                <h2> Créez vos propres cours</h2>
+                                                                <h2>Personnalisez comme vous le souhaitez</h2>
+                                                                <h2> Invitez vos amis ici</h2>
                                                             </div>
                                                         </div>
 
@@ -319,10 +402,10 @@
     <!--====== Page Title start ======-->
     <section class="page-title-area">
         <div class="container">
-            <h2 class="title changestyleabout">About Us</h2>
+            <h2 class="title changestyleabout">À propos de nous</h2>
             <ul class="breadcrumb-nav">
-                <li><a href="home_en.html" class="activecolorstyle">Home</a></li>
-                <li class="active activecolorstyle">About</li>
+                <li><a href="home_fr.html" class="activecolorstyle">Maison</a></li>
+                <li class="active activecolorstyle">À propos</li>
             </ul>
         </div>
     </section>
@@ -334,20 +417,22 @@
             <div class="row dirctionsaboutus">
                 <div class="col-lg-5 col-md-8 wow fadeInLeft dirctionsaboutus" data-wow-delay="0.3s">
                     <div class="section-title with-right-border mb-md-gap-30">
-                        <span class="title-tag abdf">Our experience</span>
-                        <h2 class="title">Silver Triangle is a technology organization that develops and creates
-                            software and applications
+                        <span class="title-tag abdf">Notre expérience</span>
+                        <h2 class="title">Silver Triangle est une organisation technologique qui développe et crée
+                            logiciels et applications
                             Computer</h2>
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1 wow fadeInRight dirctionsaboutus" data-wow-delay="0.3s">
                     <div class="experience-text">
                         <p class="fs-16 text-color-2">
-                            Software and Application Development Creating computer programs or mobile applications to
-                            meet customer needs, chart analysis solutions, artificial intelligence applications, and
-                            many more.
+                            Développement de logiciels et d'applications Création de programmes informatiques ou
+                            d'applications mobiles pour
+                            répondre aux besoins des clients, aux solutions d'analyse de graphiques, aux applications
+                            d'intelligence artificielle et
+                            beaucoup plus.
                         </p>
-                        <a href="#READ" class="font-weight-bold mt-10 dflexend">Read More</a>
+                        <a href="#READ" class="font-weight-bold mt-10 dflexend">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -357,9 +442,10 @@
                         <img src="assets/img/feature-1.jpg" alt="">
                         <div class="feature-overlay">
                             <div class="content">
-                                <h5 class="title">Design & Development</h5>
-                                <p>Create computer programs or mobile applications to meet customer needs.</p>
-                                <a href="" data-toggle="dropdown" aria-expanded="false">Read More</a>
+                                <h5 class="title">Conception et développement</h5>
+                                <p>Créez des programmes informatiques ou des applications mobiles pour répondre aux
+                                    besoins des clients.</p>
+                                <a href="" data-toggle="dropdown" aria-expanded="false">En savoir plus</a>
                                 <i class="fal fa-laptop-code"></i>
                             </div>
                         </div>
@@ -370,10 +456,11 @@
                         <img src="assets/img/feature-2.jpg" alt="">
                         <div class="feature-overlay">
                             <div class="content">
-                                <h5 class="title">Technical Support</h5>
-                                <p>Providing technical support and maintenance services for software and applications
-                                    after their delivery.</p>
-                                <a href="" data-toggle="dropdown" aria-expanded="false">Read More</a>
+                                <h5 class="title">Soutien technique</h5>
+                                <p>Fournir des services de support technique et de maintenance pour les logiciels et les
+                                    applications
+                                    après leur livraison.</p>
+                                <a href="" data-toggle="dropdown" aria-expanded="false">En savoir plus</a>
                                 <i class="fal fa-headphones-alt"></i>
                             </div>
                         </div>
@@ -384,11 +471,11 @@
                         <img src="assets/img/feature-3.jpg" alt="">
                         <div class="feature-overlay">
                             <div class="content">
-                                <h5 class="title">Digital Marketing</h5>
-                                <p>Some programming companies contribute to open source projects, promoting
-                                    collaboration and innovation in a community
-                                    Wider development.</p>
-                                <a href="" data-toggle="dropdown" aria-expanded="false">Read More</a>
+                                <h5 class="title">Le marketing numérique</h5>
+                                <p>Certaines sociétés de programmation contribuent à des projets open source, promouvant
+                                    collaboration et innovation dans une communauté
+                                    Développement plus large.</p>
+                                <a href="" data-toggle="dropdown" aria-expanded="false">En savoir plus</a>
                                 <i class="fal fa-analytics"></i>
                             </div>
                         </div>
@@ -406,25 +493,30 @@
                 <div class="col-lg-6 col-md-10">
                     <div class="intro-video-with-shape mb-md-gap-50">
                         <img class="imagestyleabout" src="assets/img/about-intro-thumb.jpg" alt="Image">
-                        <a href="" data-toggle="dropdown" aria-expanded="false" class="video-popup"><i class="fas fa-play"></i></a>
+                        <a href="" data-toggle="dropdown" aria-expanded="false" class="video-popup"><i
+                                class="fas fa-play"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-10 directionslider">
                     <div class="feature-text-block">
                         <div class="section-title with-right-border mb-20">
-                            <span class="title-tag">Intro Video</span>
-                            <h2 class="title">How we growth our business.</h2>
+                            <span class="title-tag">Vidéo d'introduction</span>
+                            <h2 class="title">Comment nous développons notre entreprise.</h2>
                         </div>
-                        <p class="big-text mb-30"> The introduction of cloud and mobile technologies into enterprise
-                            software. </p>
+                        <p class="big-text mb-30"> L'introduction des technologies cloud et mobiles dans l'entreprise
+                            logiciel. </p>
                         <p>
-                            hether you are building an enterprise web portal or a state-of-the-art website, you always
-                            need the right modern tools. Well-built and maintained PHP frameworks provide those tools in
-                            abundance, allowing maintained PHP frameworks provide those tools in abundance, allowing
-                            developers to save time, re-use code, and streamline the back end. As software development
-                            tools continuously.
+                            Que vous construisiez un portail Web d'entreprise ou un site Web de pointe, vous avez
+                            toujours
+                            besoin des bons outils modernes. Des frameworks PHP bien construits et entretenus
+                            fournissent ces outils dans
+                            abondance, permettant aux frameworks PHP maintenus de fournir ces outils en abondance,
+                            permettant
+                            aux développeurs de gagner du temps, de réutiliser le code et de rationaliser le back-end.
+                            En tant que développement de logiciels
+                            outils en continu.
                         </p>
-                        <a class="main-btn mt-30" href="about.html">Learn More</a>
+                        <a class="main-btn mt-30" href="about_fr.html">Apprendre encore plus</a>
                     </div>
                 </div>
             </div>
@@ -438,10 +530,11 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center mb-80">
-                        <h2 class="title mb-10">Our History</h2>
+                        <h2 class="title mb-10">Notre histoire</h2>
                         <p class="text-color-2">
-                            Programming companies provide a range of services, including programming, testing,
-                            debugging, maintenance, and support.
+                            Les sociétés de programmation fournissent une gamme de services, notamment la programmation,
+                            les tests,
+                            débogage, maintenance et support.
                         </p>
                     </div>
                 </div>
@@ -450,9 +543,10 @@
                 <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
                     <div class="history-thumb" style="background-image: url(assets/img/history-1.jpg);"></div>
                     <div class="history-content">
-                        <span class="history-year">2018 - Startup</span>
-                        <h4 class="title">We specialize in different fields such as web development and mobile
-                            application development.</h4>
+                        <span class="history-year">2018 - Démarrer</span>
+                        <h4 class="title">Nous sommes spécialisés dans différents domaines tels que le développement web
+                            et mobile
+                            développement d'applications.</h4>
                     </div>
                     <div class="number-box">
                         <span>01</span>
@@ -461,9 +555,10 @@
                 <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
                     <div class="history-thumb" style="background-image: url(assets/img/history-2.jpg);"></div>
                     <div class="history-content">
-                        <span class="history-year">2020 - Startup</span>
-                        <h4 class="title">They also provide consulting services, helping customers define software
-                            requirements and provide solutions.</h4>
+                        <span class="history-year">2020 - Démarrer</span>
+                        <h4 class="title">Ils fournissent également des services de conseil, aidant les clients à
+                            définir des logiciels
+                            exigences et apporter des solutions.</h4>
                     </div>
                     <div class="number-box">
                         <span>02</span>
@@ -472,9 +567,10 @@
                 <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
                     <div class="history-thumb" style="background-image: url(assets/img/history-3.jpg);"></div>
                     <div class="history-content">
-                        <span class="history-year">2022 - Startup</span>
-                        <h4 class="title">These companies usually have a team of programmers, software engineers,
-                            designers, project managers, and quality assurance specialists.</h4>
+                        <span class="history-year">2022 - Démarrer</span>
+                        <h4 class="title">Ces entreprises disposent généralement d'une équipe de programmeurs,
+                            d'ingénieurs logiciels,
+                            concepteurs, chefs de projet et spécialistes de l’assurance qualité.</h4>
                     </div>
                     <div class="number-box">
                         <span>03</span>
@@ -483,9 +579,10 @@
                 <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
                     <div class="history-thumb" style="background-image: url(assets/img/history-4.jpg);"></div>
                     <div class="history-content">
-                        <span class="history-year">2023 - Startup</span>
-                        <h4 class="title">Many programming companies are adopting remote work models, allowing
-                            developers to collaborate from different geographical locations.</h4>
+                        <span class="history-year">2023 - Démarrer</span>
+                        <h4 class="title">De nombreuses sociétés de programmation adoptent des modèles de travail à
+                            distance, permettant
+                            les développeurs de collaborer à partir de différents emplacements géographiques.</h4>
                     </div>
                     <div class="number-box">
                         <span>04</span>
@@ -504,15 +601,16 @@
                     <div class="col-xl-6 col-lg-7">
                         <div class="section-title with-right-border mb-50">
                             <span class="title-tag abdf">Instructions</span>
-                            <h2 class="title">Program comments, documentation, and explanations.</h2>
+                            <h2 class="title">Commentaires, documentation et explications sur le programme.</h2>
                         </div>
 
                         <div class="accordion-four" id="accordionExample">
                             <div class="card">
                                 <div class="card-header" id="headingOne">
-                                    <a class="" href="" data-toggle="dropdown" aria-expanded="false" data-toggle="collapse" data-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        <span class="textltr">Explaining the code and understanding the code</span>
+                                    <a class="" href="" data-toggle="dropdown" aria-expanded="false"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <span class="textltr">Expliquer le code et comprendre le code</span>
                                         <i class="fal fa-magic"></i>
                                     </a>
                                 </div>
@@ -520,76 +618,90 @@
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <p>Provide explanations and comments to help other developers understand the
-                                            code faster and easier With documentation and annotations for functions and
+                                        <p>Fournir des explications et des commentaires pour aider les autres
+                                            développeurs à comprendre le
+                                            coder plus rapidement et plus facilement Avec de la documentation et des
+                                            annotations pour les fonctions et
                                             variables. </p>
                                     </div>
                                 </div>
                             </div> <!-- card -->
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
-                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false" data-toggle="collapse" data-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        <span class="textltr">Highlight creative ideas and code comments</span>
+                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <span class="textltr">Mettez en avant les idées créatives et les commentaires de
+                                            code</span>
                                         <i class="fal fa-magic"></i>
                                     </a>
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <p>Code comments can be used to explain and highlight creative or creative
-                                            aspects Unique techniques in the code.</p>
+                                        <p>Les commentaires de code peuvent être utilisés pour expliquer et mettre en
+                                            évidence une création ou une création
+                                            aspects Techniques uniques dans le code.</p>
                                     </div>
                                 </div>
                             </div> <!-- card -->
                             <div class="card">
                                 <div class="card-header" id="headingThree">
-                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false" data-toggle="collapse" data-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
-                                        <span class="textltr">Explanation of security documentation</span>
+                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span class="textltr">Explication de la documentation de sécurité</span>
                                         <i class="fal fa-magic"></i>
                                     </a>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <p>If there are security issues, comments can explain how they are checked
-                                            Security and avoid vulnerabilities.</p>
+                                        <p>S'il y a des problèmes de sécurité, les commentaires peuvent expliquer
+                                            comment ils sont vérifiés
+                                            Sécurité et éviter les vulnérabilités.</p>
                                     </div>
                                 </div>
                             </div> <!-- card -->
                             <div class="card">
                                 <div class="card-header" id="headingFour">
-                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false" data-toggle="collapse" data-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
-                                        <span class="textltr">Facilitate modification and education</span>
+                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <span class="textltr">Faciliter la modification et l’éducation</span>
                                         <i class="fal fa-magic"></i>
                                     </a>
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <p>The technical programming content helps in understanding the technical issues
-                                            and making adjustments Optimization is more effective and technical
-                                            programming content can be a tool to facilitate the process Learning for new
-                                            developers in the project. </p>
+                                        <p>Le contenu de la programmation technique aide à comprendre les problèmes
+                                            techniques
+                                            et faire des ajustements L'optimisation est plus efficace et plus technique
+                                            le contenu de la programmation peut être un outil pour faciliter le
+                                            processus. Apprendre pour de nouveaux
+                                            développeurs dans le projet.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingFive">
-                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false" data-toggle="collapse" data-target="#collapseFive"
-                                        aria-expanded="false" aria-controls="collapseFive">
-                                        <span class="textltr">Team cooperation and knowledge sharing</span>
+                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false"
+                                        data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        <span class="textltr">Coopération en équipe et partage de connaissances</span>
                                         <i class="fal fa-magic"></i>
                                     </a>
                                 </div>
                                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <p>Effective comments contribute to facilitating cooperation between team
-                                            members when they are working on the same project. Sharing knowledge and
-                                            clarification contributes to building an effective community of developers.
+                                        <p>Des commentaires efficaces contribuent à faciliter la coopération entre les
+                                            équipes
+                                            membres lorsqu’ils travaillent sur le même projet. Partager des
+                                            connaissances et
+                                            la clarification contribue à construire une communauté efficace de
+                                            développeurs.
                                         </p>
                                     </div>
                                 </div>
@@ -619,9 +731,11 @@
                         <div class="footer-left">
                             <img class="footer-logo" src="assets/img/logo/logo.png" alt="triangle">
                             <div class="word-footer directionslider">
-                                Website design and application control systems are broad fields that include many
-                                technologies and tools, and also include open source management systems that are popular
-                                on social media sites.
+                                La conception de sites Web et les systèmes de contrôle d'applications sont de vastes
+                                domaines qui incluent de nombreux
+                                technologies et outils, et incluent également des systèmes de gestion open source qui
+                                sont populaires
+                                sur les sites de médias sociaux.
                             </div>
                         </div>
 
@@ -635,10 +749,11 @@
                             <h4 class="widget-title"> services </h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="services.html"><i class="fal fa-angle-right"></i> Our services </a>
+                                    <li><a href="services_fr.html"><i class="fal fa-angle-right"></i> Nos services </a>
                                     </li>
-                                    <li><a href="services-details.html"><i class="fal fa-angle-right"></i> Details
-                                            services</a></li>
+                                    <li><a href="services-details_fr.html"><i class="fal fa-angle-right"></i>
+                                            Services détaillés
+                                        </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -647,12 +762,12 @@
                             <h4 class="widget-title"> pages</h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="Our Portfolio.html"><i class="fal fa-angle-right"></i>
-                                            Our-Portfolio</a>
+                                    <li><a href="Our Portfolio_fr.html"><i class="fal fa-angle-right"></i>
+                                            Notre portfolio</a>
                                     </li>
-                                    <li><a href="faq.html"><i class="fal fa-angle-right"></i> FAQ </a></li>
-                                    <li><a href="checkout.html"><i class="fal fa-angle-right"></i> checkout </a></li>
-                                    <li><a href="team.html"><i class="fal fa-angle-right"></i> Team </a></li>
+                                    <li><a href="faq_fr.html"><i class="fal fa-angle-right"></i> FAQ </a></li>
+                                    <li><a href="checkout_fr.html"><i class="fal fa-angle-right"></i> vérifier </a></li>
+                                    <li><a href="team_fr.html"><i class="fal fa-angle-right"></i> Équipe </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -663,30 +778,32 @@
                 <div class="col-lg-4 col-md-8 col-sm-10">
                     <div class="widget nav-widget row spacebetween">
                         <div class="widget nav-widget col-lg-6 col-md-6 col-sm-6">
-                            <h4 class="widget-title"> blog </h4>
+                            <h4 class="widget-title"> Blog </h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="blog-details.html"><i class="fal fa-angle-right"></i> Details Blog
+                                    <li><a href="blog-details_fr.html"><i class="fal fa-angle-right"></i> Détails Blogue
                                         </a></li>
-                                    <li><a href="blog-grid.html"><i class="fal fa-angle-right"></i> News Blog </a>
+                                    <li><a href="blog-grid_fr.html"><i class="fal fa-angle-right"></i> Blog d'actualités
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="widget contact-widget col-lg-6 col-md-6 col-sm-6">
-                            <h4 class="widget-title"> work hours </h4>
+                            <h4 class="widget-title"> Heures de travail </h4>
                             <ul>
-                                <li> Sunday - Wednesday: 9:00 A.M. - 6:00 P.M.</li>
-                                <li> Thursday : 9:00 A.M. - 5:00 P.M.</li>
-                                <li> Friday And holidays : 00:00 - 00:00</li>
+                                <li> Dimanche - Mercredi: 9:00 A.M. - 6:00 P.M.</li>
+                                <li> Jeudi : 9:00 A.M. - 5:00 P.M.</li>
+                                <li> Vendredi et jours fériés : 00:00 - 00:00</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p> @ Copyright by <a href="" data-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-expanded="false">
+                <p> @ Droit d'auteur par <a href="" data-toggle="dropdown" aria-expanded="false" data-toggle="dropdown"
+                        aria-expanded="false">
                         Silver triangle</a> - 2024</p>
             </div>
         </div>

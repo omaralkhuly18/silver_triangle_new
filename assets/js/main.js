@@ -46,6 +46,9 @@ function howcontactyouEn(){
 function howcontactyouAr(){
 	window.location.href= "contact_ar.html#hello";
 }
+function howcontactyouFr(){
+	window.location.href= "contact_fr.html#hello";
+}
 const inputs = document.querySelectorAll(".input-field");
 const toggle_btn = document.querySelectorAll(".toggle-box");
 const main = document.querySelector("main");

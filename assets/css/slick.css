@@ -1,6 +1,6 @@
 /* logo */
 .header-navigation {
-	height: 75px;
+	height: auto;
 	display: flex;
 }
 
@@ -709,6 +709,7 @@ label {
 	form {
 		padding: 0;
 		padding-left: 3%;
+		padding-right: 3%;
 	}
 
 	.toggle-box {
@@ -819,8 +820,13 @@ label {
 	}
 }
 @media screen and (max-width: 450px) and (min-width: 230px){
+	.header-navigation{
+		height: 65px !important;
+	}
+
 	.banner-slider.banner-slider-one{
-		padding: 42.5px 0 26% !important;
+		padding: 60px 0 26% !important;
+		margin-top: 15% !important;
 	}
 	.header-navigation{
 		background-color: #f4f3fc;

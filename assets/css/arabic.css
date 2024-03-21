@@ -77,6 +77,8 @@
 .header-navigation.breakpoint-on .site-nav-menu .primary-menu li .submenu a,
 .header-navigation .primary-menu li .submenu li a {
     display: flex !important;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-navigation.breakpoint-on .site-nav-menu .primary-menu li .dd-trigger {
@@ -111,6 +113,12 @@
     transform: rotate(182deg);
 }
 
+
+.main-btn::before {
+	position: absolute;
+	right: 0;
+    left: auto;
+}
 
 /* header */
 

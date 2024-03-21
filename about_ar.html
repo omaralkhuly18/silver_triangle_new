@@ -5,8 +5,12 @@
     <!--====== Required meta tags ======-->
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="description" content="" />
+    <meta name="description"
+        content="مرحبًا بك في silver Triangle حيث نجتمع لنقدم لكم أفضل الحلول التقنية لتلبية احتياجاتكم البرمجية." />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords"
+        content=" تطبيقات الويب , تطبيقات الهاتف المحمول , برمجة المواقع , تحليل البيانات , التصحيح والدعم الفني ">
+    <meta name="title" content=" silver Triangle ">
 
     <!--====== Title ======-->
     <title>triangle||About-Us_AR</title>
@@ -21,7 +25,7 @@
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!--====== Font Awesome ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- ====== font googel ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +41,7 @@
 <body>
     <!--====== Preloader Start ======-->
 
-    <div id="preloader" >
+    <div id="preloader">
         <div class="animationsintoppage">
             <div class="loader"></div>
         </div>
@@ -50,9 +54,11 @@
         <div class="header-topbar d-none d-sm-block">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-sm-auto col-12">
-                        <ul class="contact-info text-center">
-                            <li><a href="#"><i class="fal fa-envelope"></i>silvertriangle7@gmail.com</a></li>
+                    <div class="col-sm-auto col-12 style_apdaut">
+                        <ul class="contact-info text-center list_updaut">
+                            <li class="nav_updaut"><a class="link_updaut" href="#">
+                                <img class="img_updaut" src="assets/img/banner/envelope_email.svg" alt="">
+                                    silvertriangle7@gmail.com</a></li>
                             <li><a href="#"><i class="fal fa-phone"></i>011-008-674-44</a></li>
                         </ul>
                     </div>
@@ -98,6 +104,30 @@
                         <li>
                             <a class="colornavpages" href="servives_ar.html">الخدمات</a>
                         </li>
+                        <li id="lang">
+                            <a class="colornavpages" href="#" data-toggle="dropdown" aria-expanded="false"> اللغه
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="about.html"><span class="menu-text">English</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about_fr.html"><span class="menu-text">الفرنسيه</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about_ar.html"><span class="menu-text">العربيه</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li>
                             <a class="colornavpages" href="works_ar.html"> أعمالنا </a>
                         </li>
@@ -117,19 +147,177 @@
                         <li>
                             <a class="colornavpages" href="contact_ar.html"> إتصل بنا</a>
                         </li>
+                        <li id="authtacion">
+                            <div class="navbar-btn textalignright" style="display: block;">
+
+                                <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
+                                    data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm"
+                                    data-whatever="@mdo">
+                                    <i class="fas fa-user cdnfont"></i></a>
+
+                                <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content" style="border-radius: 1%;">
+
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+
+                                            <main class="login-main">
+                                                <div class="box">
+                                                    <div class="inner-box">
+                                                        <div class="forms-wrap">
+                                                            <!-- === box login === -->
+                                                            <form autocomplete="off" class="sign-in-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord textalignleft">Silver Triangle
+                                                                    </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading textalignleft">
+                                                                    <h2 class="">مرحبًا بعودتك</h2>
+                                                                    <h6> لم يتم تسجيلة بعدt</h6>
+                                                                    <a href="#" class="toggle-box"
+                                                                        data-toggle="dropdown"
+                                                                        aria-expanded="false">إنشاء حساب</a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>اسم</label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>كلمة المرور</label>
+                                                                    </div>
+
+                                                                    <input type="submit" value="تسجيل الدخول"
+                                                                        class="sign-btn" />
+
+                                                                    <p class="text">
+
+                                                                        <a href="index.html" class=" fontwordsbox ">
+                                                                            احصل على مساعدة</a>
+                                                                    </p>
+                                                                </div>
+                                                            </form>
+
+                                                            <!-- === box register === -->
+                                                            <form autocomplete="off" class="sign-up-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord textalignleft"> Silver Triangle
+                                                                    </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading textalignleft">
+                                                                    <h2 class="">البدء </h2>
+                                                                    <h6> هل لديك حساب </h6>
+                                                                    <a href="#" class="toggle-box"
+                                                                        data-toggle="dropdown" aria-expanded="false">
+                                                                        تسجيل الدخول
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> اسم </label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="email" class="input-field"
+                                                                            autocomplete="off" required />
+                                                                        <label> البريد إلكتروني</label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> كلمة المرور</label>
+                                                                    </div>
+
+                                                                    <input type="submit" value=" إشتراك "
+                                                                        class="sign-btn" />
+
+                                                                    <p class="text">
+
+                                                                        <a href="legal_ar.html" class=" fontwordsbox ">
+                                                                            القوانين </a>
+                                                                    </p>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <!-- === box image === -->
+                                                        <div class="carousel">
+
+                                                            <div class="images-wrapper">
+                                                                <img src="assets/img/inside/image1.png"
+                                                                    class="image img-1 show" alt="" />
+                                                                <img src="assets/img/inside/image2.png"
+                                                                    class="image img-2" alt="" />
+                                                                <img src="assets/img/inside/image3.png"
+                                                                    class="image img-3" alt="" />
+                                                            </div>
+
+                                                            <div class="text-slider">
+
+                                                                <div class="text-wrap">
+                                                                    <div class="text-group">
+                                                                        <h2> إنشاء الدورات الخاصة بك </h2>
+                                                                        <h2> تخصيص كما تريد </h2>
+                                                                        <h2> قم بدعوة أصدقائك هنا </h2>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="bullets">
+                                                                    <span class="active" data-value="1"></span>
+                                                                    <span data-value="2"></span>
+                                                                    <span data-value="3"></span>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </main>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
                     </ul>
                     <a href="#" class="nav-close"><i class="fal fa-times"></i></a>
                 </div>
 
                 <!-- === login/register === -->
                 <div class="header-extra d-flex align-items-center">
-
-                    <!-- === button header === -->
-                    <div class="nav-toggler">
-                        <span></span><span></span><span></span>
-                    </div>
                     <!-- the language -->
-                    <div class="iconlanguage" onclick="menuToggleLanguage();">
+                    <div class="iconlanguage thoeel" onclick="menuToggleLanguage();">
                         <span>
                             <!-- <i class="fas fa-language "></i> --><i class="fas fa-globe languageicons"></i>
 
@@ -137,28 +325,40 @@
                         <div class="profile_menu_Language">
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="about.html"><span class="menu-text">English</span></a>
+                                    <a href="about.html"><span class="menu-text">English</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="about_fr.html"><span class="menu-text">الفرنسيه</span></a>
+                                    <a href="about_fr.html"><span class="menu-text">الفرنسيه</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="about_ar.html"><span class="menu-text">العربيه</span></a>
+                                    <a href="about_ar.html"><span class="menu-text">العربيه</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <!-- the language -->
+                    <!-- === button header === -->
+                    <div class="nav-toggler">
+                        <span></span><span></span><span></span>
+                    </div>
                     <!-- === box login / register === -->
                     <div class="navbar-btn hoverstyle textalignright">
 
                         <a type="button" class="main-btn rounded-btn icon-right small-size lgri"
                             data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
                             تسجيل / إشتراك <i class="fal fa-long-arrow-right transformrotate"></i></a>
-
-                        <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            <i class="fas fa-user cdnfont"></i></a>
 
                         <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">

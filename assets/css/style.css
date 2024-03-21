@@ -1391,9 +1391,9 @@ div#preloader .loader {
 	display: inline-block;
 }
 
-.header-topbar .contact-info li:not(:last-child) {
+/* .header-topbar .contact-info li:not(:last-child) {
 	margin-right: 30px;
-}
+} */
 
 .header-topbar .contact-info li a {
 	color: #616161;

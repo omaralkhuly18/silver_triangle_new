@@ -21,23 +21,23 @@
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!--====== Font Awesome ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <!-- ====== font googel ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--====== Main Css ======-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!--====== Arabic Css ======-->
     <link rel="stylesheet" href="assets/css/arabic.css" />
+    <!-- ======== style login signup -->
+    <link rel="stylesheet" href="style_login_signup.css">
     <!--====== Jquery ======-->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <!-- ========== Font Awesome 5 Pro ========== -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 
 <body>
     <!--====== Preloader Start ======-->
 
-    <div id="preloader" >
+    <div id="preloader">
         <div class="animationsintoppage">
             <div class="loader"></div>
         </div>
@@ -50,20 +50,21 @@
         <div class="header-topbar d-none d-sm-block">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-sm-auto col-12">
-                        <ul class="contact-info text-center">
-                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fal fa-envelope"></i>silvertriangle7@gmail.com</a></li>
-                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fal fa-phone"></i>011-008-674-44</a></li>
+                    <div class="col-sm-auto col-12 style_apdaut">
+                        <ul class="contact-info text-center list_updaut">
+                            <li class="nav_updaut"><a class="link_updaut" href="#">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    silvertriangle7@gmail.com</a></li>
+                            <li><a href="#"><i class="fa-solid fa-phone"></i>011-008-674-44</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-auto col-12">
                         <div class="social-icon text-center">
                             <ul>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -83,7 +84,7 @@
                     </div>
                 </div>
 
-                <!-- === nav bar === -->
+                <!-- === nav bar === colornavpages-->
                 <div class="site-nav-menu">
                     <ul class="primary-menu">
                         <li class="current">
@@ -98,6 +99,30 @@
                         <li>
                             <a class="colornavpages" href="servives_ar.html">الخدمات</a>
                         </li>
+                        <li id="lang">
+                            <a class="colornavpages" href="#" data-toggle="dropdown" aria-expanded="false"> اللغه
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="details-pricing-services.html"><span class="menu-text">English</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="details-pricing-services_fr.html"><span class="menu-text">الفرنسيه</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="details-pricing-services_ar.html"><span class="menu-text">العربيه</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li>
                             <a class="colornavpages" href="works_ar.html"> أعمالنا </a>
                         </li>
@@ -105,7 +130,7 @@
                             <a class="colornavpages" href="blog-grid_ar.html"> مدونه</a>
                         </li>
                         <li>
-                            <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-expanded="false"> صفحات أخرى
+                            <a class="colornavpages" href="#" data-toggle="dropdown" aria-expanded="false"> صفحات أخرى
                             </a>
                             <ul class="submenu">
                                 <li><a href="Our Portfolio_ar.html"> الصفحه الشخصيه</a></li>
@@ -117,19 +142,180 @@
                         <li>
                             <a class="colornavpages" href="contact_ar.html"> إتصل بنا</a>
                         </li>
+                        <li id="authtacion">
+                            <div class="navbar-btn textalignright" style="display: block;">
+
+                                <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
+                                    data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm"
+                                    data-whatever="@mdo">
+                                    <i class="fas fa-user cdnfont"></i></a>
+
+                                <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content" style="border-radius: 1%;">
+
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+
+                                            <main class="login-main">
+                                                <div class="box">
+                                                    <div class="inner-box">
+                                                        <div class="forms-wrap">
+                                                            <!-- === box login === -->
+                                                            <form autocomplete="off" class="sign-in-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord textalignleft">Silver Triangle
+                                                                    </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading textalignleft">
+                                                                    <h2 class="">مرحبًا بعودتك</h2>
+                                                                    <h6> لم يتم تسجيلة بعدt</h6>
+                                                                    <a href="#" class="toggle-box"
+                                                                        data-toggle="dropdown"
+                                                                        onclick="change_to_sign_up()"
+                                                                        aria-expanded="false">إنشاء حساب</a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>اسم</label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>كلمة المرور</label>
+                                                                    </div>
+
+                                                                    <input type="submit" onclick="change_to_login()"
+                                                                        value="تسجيل الدخول" class="sign-btn" />
+
+                                                                    <p class="text">
+
+                                                                        <a href="index.html" class=" fontwordsbox ">
+                                                                            احصل على مساعدة</a>
+                                                                    </p>
+                                                                </div>
+                                                            </form>
+
+                                                            <!-- === box register === -->
+                                                            <form autocomplete="off" class="sign-up-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord textalignleft"> Silver Triangle
+                                                                    </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading textalignleft">
+                                                                    <h2 class="">البدء </h2>
+                                                                    <h6> هل لديك حساب </h6>
+                                                                    <a href="#" class="toggle-box"
+                                                                        onclick="change_to_login()"
+                                                                        data-toggle="dropdown" aria-expanded="false">
+                                                                        تسجيل الدخول
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> اسم </label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="email" class="input-field"
+                                                                            autocomplete="off" required />
+                                                                        <label> البريد إلكتروني</label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> كلمة المرور</label>
+                                                                    </div>
+
+                                                                    <input type="submit" value=" إشتراك "
+                                                                        onclick="change_to_sign_up()"
+                                                                        class="sign-btn" />
+
+                                                                    <p class="text">
+
+                                                                        <a href="legal_ar.html" class=" fontwordsbox ">
+                                                                            القوانين </a>
+                                                                    </p>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <!-- === box image === -->
+                                                        <div class="carousel">
+
+                                                            <div class="images-wrapper">
+                                                                <img src="assets/img/inside/image1.png"
+                                                                    class="image img-1 show" alt="" />
+                                                                <img src="assets/img/inside/image2.png"
+                                                                    class="image img-2" alt="" />
+                                                                <img src="assets/img/inside/image3.png"
+                                                                    class="image img-3" alt="" />
+                                                            </div>
+
+                                                            <div class="text-slider">
+
+                                                                <div class="text-wrap">
+                                                                    <div class="text-group">
+                                                                        <h2> إنشاء الدورات الخاصة بك </h2>
+                                                                        <h2> تخصيص كما تريد </h2>
+                                                                        <h2> قم بدعوة أصدقائك هنا </h2>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="bullets">
+                                                                    <span class="active" data-value="1"></span>
+                                                                    <span data-value="2"></span>
+                                                                    <span data-value="3"></span>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </main>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
                     </ul>
-                    <a href="" data-toggle="dropdown" aria-expanded="false" class="nav-close"><i class="fal fa-times"></i></a>
+                    <a href="#" class="nav-close"> <i class="fas fa-times"></i></a>
                 </div>
 
                 <!-- === login/register === -->
                 <div class="header-extra d-flex align-items-center">
-
-                    <!-- === button header === -->
-                    <div class="nav-toggler">
-                        <span></span><span></span><span></span>
-                    </div>
                     <!-- the language -->
-                    <div class="iconlanguage" onclick="menuToggleLanguage();">
+                    <div class="iconlanguage thoeel" onclick="menuToggleLanguage();">
                         <span>
                             <!-- <i class="fas fa-language "></i> --><i class="fas fa-globe languageicons"></i>
 
@@ -137,174 +323,119 @@
                         <div class="profile_menu_Language">
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="details-pricing-services.html"><span class="menu-text">English</span></a>
+                                    <a href="details-pricing-services.html"><span class="menu-text">English</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="details-pricing-services_fr.html"><span class="menu-text">الفرنسيه</span></a>
+                                    <a href="details-pricing-services_fr.html"><span class="menu-text">الفرنسيه</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="details-pricing-services_ar.html"><span
-                                            class="menu-text">العربيه</span></a>
+                                    <a href="details-pricing-services_ar.html"><span class="menu-text">العربيه</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <!-- the language -->
-                    <!-- === box login / register === -->
-                    <div class="navbar-btn hoverstyle textalignright">
+                    <!-- === button header === -->
+                    <div class="nav-toggler">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <!-- === box login / register === transformrotate-->
+                    <div class="navbar-btn hoverstyle ">
 
                         <a type="button" class="main-btn rounded-btn icon-right small-size lgri"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            تسجيل / إشتراك <i class="fal fa-long-arrow-right transformrotate"></i></a>
+                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForms"
+                            data-whatever="@mdo">
+                            تسجيل / إشتراك <i class="fa-solid fa-angle-left textalignright"></i></a>
 
-                        <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            <i class="fas fa-user cdnfont"></i></a>
-
-                        <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-                            <div class="modal-dialog">
-
-                                <div class="modal-content" style="border-radius: 1%;">
-
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-
-                                    <main class="login-main">
-                                        <div class="box">
-                                            <div class="inner-box">
-                                                <div class="forms-wrap">
-                                                    <!-- === box login === -->
-                                                    <form autocomplete="off" class="sign-in-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord textalignleft">Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading textalignleft">
-                                                            <h2 class="">مرحبًا بعودتك</h2>
-                                                            <h6> لم يتم تسجيلة بعدt</h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false" class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">إنشاء حساب</a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>اسم</label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>كلمة المرور</label>
-                                                            </div>
-
-                                                            <input type="submit" value="تسجيل الدخول"
-                                                                class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="index.html"
-                                                                    class=" fontwordsbox ">
-                                                                    احصل على مساعدة</a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                    <!-- === box register === -->
-                                                    <form autocomplete="off" class="sign-up-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord textalignleft"> Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading textalignleft">
-                                                            <h2 class="">البدء </h2>
-                                                            <h6> هل لديك حساب </h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false" class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false"> تسجيل الدخول
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> اسم </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="email" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> البريد إلكتروني</label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> كلمة المرور</label>
-                                                            </div>
-
-                                                            <input type="submit" value=" إشتراك " class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="legal_ar.html"
-                                                                    class=" fontwordsbox ">
-                                                                    السياسة والشروط </a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                </div>
-                                                <!-- === box image === -->
-                                                <div class="carousel">
-
-                                                    <div class="images-wrapper">
-                                                        <img src="assets/img/inside/image1.png" class="image img-1 show"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image2.png" class="image img-2"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image3.png" class="image img-3"
-                                                            alt="" />
-                                                    </div>
-
-                                                    <div class="text-slider">
-
-                                                        <div class="text-wrap">
-                                                            <div class="text-group">
-                                                                <h2> إنشاء الدورات الخاصة بك </h2>
-                                                                <h2> تخصيص كما تريد </h2>
-                                                                <h2> قم بدعوة أصدقائك هنا </h2>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="bullets">
-                                                            <span class="active" data-value="1"></span>
-                                                            <span data-value="2"></span>
-                                                            <span data-value="3"></span>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
+                        <div class="cotn_principal modal" id="loginForms" aria-hidden="true">
+                            <div class="div_close_tap_loginRig modal" type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <i class="far fa-times-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="cont_centrar">
+                                <div class="cont_login">
+                                    <div class="cont_info_log_sign_up">
+                                        <div class="col_md_login">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    سجّل دخولك الآن
+                                                </h2>
+                                                <p>
+                                                    مرحبًا! الرجاء إدخال معلومات تسجيل الدخول الخاصة بك
+                                                </p>
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    تسجيل دخول
+                                                </button>
                                             </div>
+                                        </div>
+                                        <div class="col_md_sign_up">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    أنشئ حسابًا جديدًا الآن
+                                                </h2>
+                                                <p>
+                                                    انضم إلى مجتمعنا - سجل العضوية الآن
+                                                </p>
 
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    إنشاء حساب
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cont_back_info">
+                                        <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                    </div>
+                                    <div class="cont_forms">
+                                        <div class="cont_img_back_">
+                                            <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                        </div>
+                                        <div class="cont_form_login">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                تسجيل دخول
+                                            </h2>
+                                            <input type="text" placeholder=" إيميل " />
+                                            <input type="password" placeholder=" كلمة السر " />
+                                            <div class="button_login_divLogin">
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    تسجيل دخول
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cont_form_sign_up">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                إنشاء حساب
+                                            </h2>
+                                            <input type="text" placeholder=" إيميل " />
+                                            <input type="text" placeholder=" إسم المستخدم " />
+                                            <input type="password" placeholder=" كلمة السر " />
+                                            <input type="password" placeholder=" تأكيد كلمة السر " />
+                                            <div class="button_signup_divSignup">
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    إنشاء حساب
+                                                </button>
+                                            </div>
                                         </div>
 
-                                    </main>
+                                    </div>
 
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -353,21 +484,21 @@
                         </div>
                         <ul class="list-pricing-details">
                             <li class="wow fadeInUp" data-wow-delay="0.5s">
-                                <h4 > نوع الخدمة </h4>
+                                <h4> نوع الخدمة </h4>
                                 <p>
                                     تطوير تطبيقات الويب أو الهاتف المحمول، تطوير البرمجيات المخصصة، تصميم وتطوير قواعد
                                     البيانات، إدارة المشاريع، الصيانة والدعم - كل هذه الخدمات تختلف في التكلفة.
                                 </p>
                             </li>
                             <li class="wow fadeInUp" data-wow-delay="0.6s">
-                                <h4 > حجم المشروع </h4>
+                                <h4> حجم المشروع </h4>
                                 <p>
                                     المشاريع الكبيرة تكون عادةً أكثر تعقيداً وتحتاج إلى فرق أكبر ووقت أطول، مما يؤثر على
                                     التكلفة.
                                 </p>
                             </li>
                             <li class="wow fadeInUp" data-wow-delay="0.7s">
-                                <h4 > التقنيات المستخدمة </h4>
+                                <h4> التقنيات المستخدمة </h4>
                                 <p>
                                     استخدام تقنيات حديثة قد يزيد من التكلفة. مثلاً، تطوير باستخدام تقنيات الذكاء
                                     الاصطناعي أو التعلم الآلي قد يكون أكثر تكلفة من تطوير تطبيق بسيط.
@@ -375,8 +506,7 @@
                             </li>
                         </ul>
                         <a data-animation="fadeInUp" data-delay="1.1s"
-                            class="main-btn rounded-btn icon-right small-size mt-5 " 
-                            href="checkout_ar.html">
+                            class="main-btn rounded-btn icon-right small-size mt-5 " href="checkout_ar.html">
                             الدفع <i class="fal fa-long-arrow-right transformrotate"></i>
                         </a>
                     </div>
@@ -418,9 +548,9 @@
                             <h4 class="widget-title"> خدمات </h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="servives_ar.html"><i class="fal fa-angle-right"></i>خدماتنا </a>
+                                    <li><a href="servives_ar.html"><i class="fas fa-chevron-right"></i> خدماتنا </a>
                                     </li>
-                                    <li><a href="services-details_ar.html"><i class="fal fa-angle-right"></i> خدمات
+                                    <li><a href="services-details_ar.html"><i class="fas fa-chevron-right"></i> خدمات
                                             التفاصيل </a></li>
                                 </ul>
                             </div>
@@ -430,13 +560,13 @@
                             <h4 class="widget-title"> الصفحات </h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="Our Portfolio_ar.html"><i class="fal fa-angle-right"></i>
+                                    <li><a href="Our Portfolio_ar.html"><i class="fas fa-chevron-right"></i>
                                             الصفحه الشخصيه </a>
                                     </li>
-                                    <li><a href="faq_ar.html"><i class="fal fa-angle-right"></i> الأسئله الشائعه </a>
+                                    <li><a href="faq_ar.html"><i class="fas fa-chevron-right"></i> الأسئله الشائعه </a>
                                     </li>
-                                    <li><a href="checkout_ar.html"><i class="fal fa-angle-right"></i> الدفع </a></li>
-                                    <li><a href="team_ar.html"><i class="fal fa-angle-right"></i> الفريق </a></li>
+                                    <li><a href="checkout_ar.html"><i class="fas fa-chevron-right"></i> الدفع </a></li>
+                                    <li><a href="team_ar.html"><i class="fas fa-chevron-right"></i> الفريق </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -450,9 +580,11 @@
                             <h4 class="widget-title"> مدونة </h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="blog-details_ar.html"><i class="fal fa-angle-right"></i> تفاصيل المدونه
+                                    <li><a href="blog-details_ar.html"><i class="fas fa-chevron-right"></i> تفاصيل
+                                            المدونه
                                         </a></li>
-                                    <li><a href="blog-grid_ar.html"><i class="fal fa-angle-right"></i> الجديد في المدونه
+                                    <li><a href="blog-grid_ar.html"><i class="fas fa-chevron-right"></i> الجديد في
+                                            المدونه
                                         </a>
                                     </li>
                                 </ul>
@@ -460,8 +592,8 @@
                         </div>
 
                         <div class="widget contact-widget col-lg-6 col-md-6 col-sm-6">
-                            <h4 class="widget-title"> ساعات العمل </h4>
-                            <ul>
+                            <h4 class="widget-title style_specific"> ساعات العمل </h4>
+                            <ul class="list_style_specific">
                                 <li> الأحدالأربعاء : A.M 9:00 - 6:00 P.M.</li>
                                 <li> الخميس : A.M 9:00 - 6:00 P.M.</li>
                                 <li> الجمعه و الإجازات : 00:00 - 00:00</li>
@@ -471,7 +603,7 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                <p> @ Copyright by <a href="" data-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-expanded="false">
+                <p> @ Copyright by <a href="#" data-toggle="dropdown" aria-expanded="false">
                         Silver triangle</a> - 2024</p>
             </div>
         </div>
@@ -494,6 +626,8 @@
     <script src="assets/js/jquery.easypiechart.min.js"></script>
     <!--====== Syotimer ======-->
     <script src="assets/js/jquery.syotimer.min.js"></script>
+    <!-- ======= script Login Righister -->
+    <script src="assets/js/js_login_signup.js"></script>
     <!--====== Wow ======-->
     <script src="assets/js/wow.min.js"></script>
     <!--====== Main JS ======-->

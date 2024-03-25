@@ -21,29 +21,47 @@
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!--====== Font Awesome ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <!-- ====== font googel ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--====== Main Css ======-->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- ======== style france -->
+    <link rel="stylesheet" href="assets/css/france.css">
+    <!-- ======== style login signup -->
+    <link rel="stylesheet" href="assets/css/style_login_signup.css">
+    <!-- ========== Font Awesome 5 Pro ========== -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!--====== Font Awesome ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <!--====== Jquery ======-->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
-    <!--====== Preloader Start ======-->
-
+    <!--====== loading Start ======-->
     <div id="preloader">
-        <div class="animationsintoppage">
+        <!-- <div class="animationsintoppage">
             <div class="loader"></div>
+        </div> -->
+        <div class="scene">
+            <div class="cube-wrapper">
+                <div class="cube">
+                    <div class="cube-faces">
+                        <div class="cube-face shadow"></div>
+                        <div class="cube-face bottom"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face front"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--====== Preloader End ======-->
+    <!--====== loading End ======-->
 
     <!--====== Header Part Start ======-->
-    <header class="header-two header-full-width sticky-header">
+    <header class="header-two header-full-width sticky-header background_style_priveat">
         <!-- ======= Top Bar ======== -->
         <div class="header-topbar d-none d-sm-block">
             <div class="container-fluid">
@@ -109,7 +127,7 @@
                         <li>
                             <a class="colornavpages" href="blog-grid_fr.html"> BLOG</a>
                         </li>
-                        <li>
+                        <li class="style_france">
                             <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false"
                                 data-toggle="dropdown" aria-expanded="false"> PAGE </a>
                             <ul class="submenu">
@@ -122,10 +140,195 @@
                         <li>
                             <a class="colornavpages" href="contact_fr.html"> CONTACTEZ-NOUS</a>
                         </li>
+                        <li id="lang">
+                            <a class="colornavpages" href="#" data-toggle="dropdown" aria-expanded="false"> la langue
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="works.html"><span class="menu-text">Anglais</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="works_fr.html"><span class="menu-text">Français</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="works_ar.html"><span class="menu-text">arabe</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="authtacion">
+                            <div class="navbar-btn" style="display: block;">
+                                <a type="button" class="main-btn rounded-btn icon-right small-size neww"
+                                    data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm"
+                                    data-whatever="@mdo">
+                                    <i class="fas fa-user cdnfont"></i></a>
+
+                                <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content" style="border-radius: 1%;">
+
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+
+                                            <main class="login-main">
+                                                <div class="box">
+                                                    <div class="inner-box">
+                                                        <div class="forms-wrap">
+                                                            <!-- === box login === -->
+                                                            <form autocomplete="off" class="sign-in-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord">Silver Triangle </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading">
+                                                                    <h2>content de te revoir</h2>
+                                                                    <h6>Pas encore inscrit</h6>
+                                                                    <a href="" data-toggle="dropdown"
+                                                                        aria-expanded="false" class="toggle-box"
+                                                                        data-toggle="dropdown"
+                                                                        aria-expanded="false">Créer un compte</a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>Nom</label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>Mot de passe</label>
+                                                                    </div>
+
+                                                                    <input type="submit" value="Se connecter"
+                                                                        class="sign-btn" />
+
+                                                                    <p class="text">
+
+                                                                        <a href="home_fr.html" class=" fontwordsbox ">
+                                                                            Obtenir de l'aide</a>
+                                                                    </p>
+                                                                </div>
+                                                            </form>
+
+                                                            <!-- === box register === -->
+                                                            <form autocomplete="off" class="sign-up-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord"> Silver Triangle </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading">
+                                                                    <h2>Commencer</h2>
+                                                                    <h6> Avez-vous un compte </h6>
+                                                                    <a href="" data-toggle="dropdown"
+                                                                        aria-expanded="false" class="toggle-box"
+                                                                        data-toggle="dropdown" aria-expanded="false">
+                                                                        Se connecter
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> Nom </label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="email" class="input-field"
+                                                                            autocomplete="off" required />
+                                                                        <label> E-mail </label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> Mot de passe </label>
+                                                                    </div>
+
+                                                                    <input type="submit" value=" inscription "
+                                                                        class="sign-btn" />
+
+                                                                    <p class="text">
+
+                                                                        <a href="legal_fr.html" class=" fontwordsbox ">
+                                                                            politique et conditions </a>
+                                                                    </p>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <!-- === box image === -->
+                                                        <div class="carousel">
+
+                                                            <div class="images-wrapper">
+                                                                <img src="assets/img/inside/image1.png"
+                                                                    class="image img-1 show" alt="" />
+                                                                <img src="assets/img/inside/image2.png"
+                                                                    class="image img-2" alt="" />
+                                                                <img src="assets/img/inside/image3.png"
+                                                                    class="image img-3" alt="" />
+                                                            </div>
+
+                                                            <div class="text-slider">
+
+                                                                <div class="text-wrap">
+                                                                    <div class="text-group">
+                                                                        <h2> Créez vos propres cours</h2>
+                                                                        <h2>Personnalisez comme vous le souhaitez</h2>
+                                                                        <h2> Invitez vos amis ici</h2>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="bullets">
+                                                                    <span class="active" data-value="1"></span>
+                                                                    <span data-value="2"></span>
+                                                                    <span data-value="3"></span>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </main>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
                     </ul>
                     <a href="" data-toggle="dropdown" aria-expanded="false" class="nav-close"><i
-                            class="fal fa-times"></i>
-                    </a>
+                            class="fal fa-times"></i></a>
                 </div>
 
                 <!-- === login/register === -->
@@ -136,183 +339,123 @@
                         <span></span><span></span><span></span>
                     </div>
                     <!-- the language -->
-                    <div class="iconlanguage" onclick="menuToggleLanguage();">
+                    <div class="iconlanguage thoeel" onclick="menuToggleLanguage();">
                         <span>
-                            <!-- <i class="fas fa-language "></i> --><i class="fas fa-globe languageicons"></i>
+                            <i class="fas fa-globe languageicons"></i>
 
                         </span>
                         <div class="profile_menu_Language">
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="works.html"><span class="menu-text">English</span></a>
+                                    <a href="works.html"><span class="menu-text">Anglais</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="works_fr.html"><span class="menu-text">Français</span></a>
+                                    <a href="works_fr.html"><span class="menu-text">Français</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="works_ar.html"><span class="menu-text">العربيه</span></a>
+                                    <a href="works_ar.html"><span class="menu-text">L'arabe</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <!-- the language -->
                     <!-- === box login / register === -->
-                    <div class="navbar-btn hoverstyle">
+                    <div class="navbar-btn hoverstyle ">
 
                         <a type="button" class="main-btn rounded-btn icon-right small-size lgri"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            Connexion/inscription <i class="fal fa-long-arrow-right transformrotate"></i></a>
+                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForms"
+                            data-whatever="@mdo">
+                            S'inscrire/se connecter <i class="fa-solid fa-angle-right textalignright"></i></a>
 
-                        <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            <i class="fas fa-user cdnfont"></i></a>
-
-                        <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-                            <div class="modal-dialog">
-
-                                <div class="modal-content" style="border-radius: 1%;">
-
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-
-                                    <main class="login-main">
-                                        <div class="box">
-                                            <div class="inner-box">
-                                                <div class="forms-wrap">
-                                                    <!-- === box login === -->
-                                                    <form autocomplete="off" class="sign-in-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord">Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading">
-                                                            <h2>content de te revoir</h2>
-                                                            <h6>Pas encore inscrit</h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false"
-                                                                class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">Créer un compte</a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>Nom</label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>Mot de passe</label>
-                                                            </div>
-
-                                                            <input type="submit" value="Se connecter"
-                                                                class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="home_fr.html" class=" fontwordsbox ">
-                                                                    Obtenir de l'aide</a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                    <!-- === box register === -->
-                                                    <form autocomplete="off" class="sign-up-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord"> Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading">
-                                                            <h2>Commencer</h2>
-                                                            <h6> Avez-vous un compte </h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false"
-                                                                class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">
-                                                                Se connecter
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Nom </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="email" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> E-mail </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Mot de passe </label>
-                                                            </div>
-
-                                                            <input type="submit" value=" inscription "
-                                                                class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="legal_fr.html" class=" fontwordsbox ">
-                                                                    politique et conditions </a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                </div>
-                                                <!-- === box image === -->
-                                                <div class="carousel">
-
-                                                    <div class="images-wrapper">
-                                                        <img src="assets/img/inside/image1.png" class="image img-1 show"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image2.png" class="image img-2"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image3.png" class="image img-3"
-                                                            alt="" />
-                                                    </div>
-
-                                                    <div class="text-slider">
-
-                                                        <div class="text-wrap">
-                                                            <div class="text-group">
-                                                                <h2> Créez vos propres cours</h2>
-                                                                <h2>Personnalisez comme vous le souhaitez</h2>
-                                                                <h2> Invitez vos amis ici</h2>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="bullets">
-                                                            <span class="active" data-value="1"></span>
-                                                            <span data-value="2"></span>
-                                                            <span data-value="3"></span>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
+                        <div class="cotn_principal modal" id="loginForms" aria-hidden="true">
+                            <div class="div_close_tap_loginRig modal" type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <i class="far fa-times-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="cont_centrar">
+                                <div class="cont_login">
+                                    <div class="cont_info_log_sign_up">
+                                        <div class="col_md_login">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    Connecte-toi maintenant
+                                                </h2>
+                                                <p>
+                                                    Accueillir! S'il vous plaît entrer vos informations de connexion
+                                                </p>
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    Se connecter
+                                                </button>
                                             </div>
+                                        </div>
+                                        <div class="col_md_sign_up">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    Créez un nouveau compte maintenant
+                                                </h2>
+                                                <p>
+                                                    Rejoignez notre communauté - inscrivez-vous maintenant
+                                                </p>
 
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    Créer un compte
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cont_back_info">
+                                        <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                    </div>
+                                    <div class="cont_forms">
+                                        <div class="cont_img_back_">
+                                            <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                        </div>
+                                        <div class="cont_form_login">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                Se connecter
+                                            </h2>
+                                            <input type="text" placeholder=" E-mail " />
+                                            <input type="password" placeholder=" mot de passe" />
+                                            <div class="button_login_divLogin">
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    Se connecter
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cont_form_sign_up">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                Créer un compte
+                                            </h2>
+                                            <input type="text" placeholder=" E-mail " />
+                                            <input type="text" placeholder=" utilisateur nom" />
+                                            <input type="password" placeholder="  mot de passe" />
+                                            <input type="password" placeholder=" mot de passe confirmation" />
+                                            <div class="button_signup_divSignup">
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    Créer un compte
+                                                </button>
+                                            </div>
                                         </div>
 
-                                    </main>
+                                    </div>
 
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -369,8 +512,7 @@
                         </div>
                     </div>
                     <div class="case-live-btn text-center">
-                        <a class="main-btn" href="" 
-                        data-toggle="dropdown" aria-expanded="false">Aperçu en direct</a>
+                        <a class="main-btn" href="" data-toggle="dropdown" aria-expanded="false">Aperçu en direct</a>
                     </div>
                 </div>
             </div>
@@ -385,7 +527,8 @@
 
                     C'est l'un des domaines de programmation préférés de la majorité des programmeurs et il occupe le
                     première place parmi les emplois de programmeurs sur
-                    Au niveau mondial, et ce n'est pas étonnant, car c'est un domaine facile à apprendre et de haut niveau.
+                    Au niveau mondial, et ce n'est pas étonnant, car c'est un domaine facile à apprendre et de haut
+                    niveau.
                     demande sur le marché du travail. Il n’existe pas de start-up ou de start-up
                     Une entreprise doit développer son propre site Web pour prouver sa présence dans le monde numérique.
                     demande de...
@@ -394,9 +537,11 @@
                 <div class="case-details-case mt-25">
                     <img src="assets/img/portfolio/case-content-thumb.jpg" alt="">
                     <p class="textalignright">
-                        Le développement Web comprend la planification et la conception d'interfaces de sites Web, ainsi que l'écriture du logiciel.
+                        Le développement Web comprend la planification et la conception d'interfaces de sites Web, ainsi
+                        que l'écriture du logiciel.
                         code nécessaire au fonctionnement du site
-                        Comprend la maintenance et le développement du site Web selon les besoins. Le domaine du développement Web est divisé
+                        Comprend la maintenance et le développement du site Web selon les besoins. Le domaine du
+                        développement Web est divisé
                         en trois spécialisations :
                     </p>
                 </div>
@@ -407,13 +552,15 @@
                         <img src="assets/img/portfolio/case-details-item-1.jpg" alt="">
                         <div class="post-workinweb">
                             <span class="workpragraph textalignright">
-                               Développement front-end
+                                Développement front-end
                             </span>
                             <h5 class="directionslider textalignright">
                                 <a class="titlework directionslider textalignright" href="#worksfront">
-                                    Il est responsable de la partie visuelle du site que voient les utilisateurs finaux, car il est le
+                                    Il est responsable de la partie visuelle du site que voient les utilisateurs finaux,
+                                    car il est le
                                     celui qui le conçoit
-                                    Pages et sections du site Web, menus et détermine les types de polices, les couleurs, etc.
+                                    Pages et sections du site Web, menus et détermine les types de polices, les
+                                    couleurs, etc.
                                 </a>
                             </h5>
                         </div>
@@ -428,7 +575,8 @@
                             </span>
                             <h5 class="directionslider textalignright">
                                 <a class="titlework directionslider textalignright" href="#worksback">
-                                    Il est responsable de la partie technique du site qui s'exécute sur le serveur utilisant
+                                    Il est responsable de la partie technique du site qui s'exécute sur le serveur
+                                    utilisant
                                     les langages PHP, MySQL
                                     , oups, java, python...etc.
                                 </a>
@@ -446,7 +594,8 @@
                             <h5 class="directionslider textalignright">
                                 <a class="titlework directionslider textalignright" href="#worksFullstack">
                                     Ou ce qu'on appelle un développeur full-stack, est un programmeur qui a...
-                                    Des compétences qui lui permettent de développer le front et le back end du site internet. Il est
+                                    Des compétences qui lui permettent de développer le front et le back end du site
+                                    internet. Il est
                                     responsable de tout...
                                     Aspects du développement de sites Web côté client et serveur.
                                 </a>
@@ -461,12 +610,15 @@
                     <li id="worksfront">
                         <h5>Développement front-end</h5>
                         <p>
-                            Il est responsable de la partie visible du site Web que voient les utilisateurs finaux. Il est celui
+                            Il est responsable de la partie visible du site Web que voient les utilisateurs finaux. Il
+                            est celui
                             qui conçoit les pages, les sections du site et les menus, et détermine les types de polices
                             et les couleurs...etc. Ce domaine requiert un sens artistique
-                            Et une pensée créative pour créer des conceptions conviviales et les mettre en œuvre de manière appropriée.
+                            Et une pensée créative pour créer des conceptions conviviales et les mettre en œuvre de
+                            manière appropriée.
                             technologies logicielles
-                            Un spécialiste du développement front-end de sites Web doit connaître de nombreuses technologies telles que
+                            Un spécialiste du développement front-end de sites Web doit connaître de nombreuses
+                            technologies telles que
                             HTML5, CSS3, JavaScript et connaître les bibliothèques et frameworks les plus importants.
                         </p>
                     </li>
@@ -475,10 +627,12 @@
                         <p>
                             Il est responsable de la partie technique du site fonctionnant sur le serveur, et de son
                             les responsabilités incluent la création de fonctionnalités
-                            Un site principal qui gère les bases de données du site et surveille les performances du serveur et
+                            Un site principal qui gère les bases de données du site et surveille les performances du
+                            serveur et
                             nécessite un développeur d'interface
                             Contexte : Expérience avec des langages côté serveur tels que Java, Ruby, PHP et Python.
-                            Cela nécessite également une connaissance de Python et des systèmes de gestion de bases de données tels que MySQL et
+                            Cela nécessite également une connaissance de Python et des systèmes de gestion de bases de
+                            données tels que MySQL et
                             MongoDB
                             Fondamentaux des langages front-end et collaboration avec les développeurs front-end.
                         </p>
@@ -486,7 +640,8 @@
                     <li id="worksFullstack">
                         <h5> Développement full-stack</h5>
                         <p>
-                            Ou ce qu'on appelle un développeur full stack, c'est un programmeur qui possède les compétences nécessaires pour
+                            Ou ce qu'on appelle un développeur full stack, c'est un programmeur qui possède les
+                            compétences nécessaires pour
                             Lui permet de développer le front et le back end du site. Il est responsable de tout
                             aspects du développement de sites Web
                             Côté client et serveur.
@@ -632,6 +787,8 @@
     <script src="assets/js/jquery.easypiechart.min.js"></script>
     <!--====== Syotimer ======-->
     <script src="assets/js/jquery.syotimer.min.js"></script>
+    <!-- ======= script login signup -->
+    <script src="assets/js/js_login_signup.js"></script>
     <!--====== Wow ======-->
     <script src="assets/js/wow.min.js"></script>
     <!--====== Main JS ======-->

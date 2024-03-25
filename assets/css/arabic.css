@@ -394,6 +394,12 @@
     text-align: right;
 }
 
+@media (max-width: 767px) {
+	.width_specific{
+		justify-content: end !important;
+	}
+}
+
 /* section about page */
 
 /*====== Experience Area Start ======*/

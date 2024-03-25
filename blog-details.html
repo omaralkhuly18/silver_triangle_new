@@ -21,47 +21,68 @@
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!--====== Font Awesome ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <!-- ====== font googel ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--====== Main Css ======-->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- ======== style login signup -->
+    <link rel="stylesheet" href="assets/css/style_login_signup.css">
+    <!-- ========== Font Awesome 5 Pro ========== -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!--====== Font Awesome ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <!--====== Jquery ======-->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
-    <!--====== Preloader Start ======-->
-
-    <div id="preloader" >
-        <div class="animationsintoppage">
+    <!--====== loading Start ======-->
+    <div id="preloader">
+        <!-- <div class="animationsintoppage">
             <div class="loader"></div>
+        </div> -->
+        <div class="scene">
+            <div class="cube-wrapper">
+                <div class="cube">
+                    <div class="cube-faces">
+                        <div class="cube-face shadow"></div>
+                        <div class="cube-face bottom"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face front"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--====== Preloader End ======-->
+    <!--====== loading End ======-->
 
     <!--====== Header Part Start ======-->
-    <header class="header-two header-full-width sticky-header">
+    <header class="header-two header-full-width sticky-header background_style_priveat">
         <!-- ======= Top Bar ======== -->
         <div class="header-topbar d-none d-sm-block">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-sm-auto col-12">
                         <ul class="contact-info text-center">
-                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fal fa-envelope"></i>silvertriangle7@gmail.com</a></li>
-                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fal fa-phone"></i>011-008-674-44</a></li>
+                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                        class="fal fa-envelope"></i>silvertriangle7@gmail.com</a></li>
+                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                        class="fal fa-phone"></i>011-008-674-44</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-auto col-12">
                         <div class="social-icon text-center">
                             <ul>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -88,7 +109,7 @@
                             <a class="colornavpages" href="home_en.html"> Home </a>
                         </li>
                         <li>
-                            <a class="nav-link colornavpages" href="about.html"> About-Us</a>
+                            <a class="nav-link colornavpages" href="about.html"> About-Us </a>
                         </li>
                         <li>
                             <a class="nav-link colornavpages" href="ourcompany.html"> Our-Company </a>
@@ -96,6 +117,7 @@
                         <li>
                             <a class="colornavpages" href="services.html">Our services</a>
                         </li>
+
                         <li>
                             <a class="colornavpages" href="works.html">works-us</a>
                         </li>
@@ -103,7 +125,8 @@
                             <a class="colornavpages" href="blog-grid.html"> Blog</a>
                         </li>
                         <li>
-                            <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-expanded="false"> Page </a>
+                            <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false"
+                                data-toggle="dropdown" aria-expanded="false"> Page </a>
                             <ul class="submenu">
                                 <li><a href="Our Portfolio.html"> Our-Portfolio</a></li>
                                 <li><a href="faq.html">faq</a></li>
@@ -114,8 +137,187 @@
                         <li>
                             <a class="colornavpages" href="contact.html"> Contact-US</a>
                         </li>
+                        <li id="lang">
+                            <a class="colornavpages" href="#" data-toggle="dropdown" aria-expanded="false"> la langue
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="blog-details.html"><span class="menu-text">English</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog-details_fr.html"><span class="menu-text">French</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog-details_ar.html"><span class="menu-text">Arabic</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="authtacion">
+                            <div class="navbar-btn" style="display: block;">
+                                <a type="button" class=" main-btn rounded-btn icon-right small-size neww"
+                                    data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm"
+                                    data-whatever="@mdo">
+                                    <i class="fas fa-user cdnfont"></i></a>
+
+                                <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content" style="border-radius: 1%;">
+
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+
+                                            <main class="login-main">
+                                                <div class="box">
+                                                    <div class="inner-box">
+                                                        <div class="forms-wrap">
+                                                            <!-- === box login === -->
+                                                            <form autocomplete="off" class="sign-in-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord">Silver Triangle </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading">
+                                                                    <h2>welcome back</h2>
+                                                                    <h6> Not registered yet</h6>
+                                                                    <a href="" data-toggle="dropdown"
+                                                                        aria-expanded="false" class="toggle-box"
+                                                                        data-toggle="dropdown"
+                                                                        aria-expanded="false">Create account</a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>Name</label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>Password</label>
+                                                                    </div>
+
+                                                                    <input type="submit" value="Login"
+                                                                        class="sign-btn" />
+                                                                    <a href="home_en.html" class=" fontwordsbox ">
+                                                                        Get help</a>
+                                                                </div>
+                                                            </form>
+
+                                                            <!-- === box register === -->
+                                                            <form autocomplete="off" class="sign-up-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord"> Silver Triangle </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading">
+                                                                    <h2>Get started </h2>
+                                                                    <h6> do you have an account </h6>
+                                                                    <a href="" data-toggle="dropdown"
+                                                                        aria-expanded="false" class="toggle-box"
+                                                                        data-toggle="dropdown" aria-expanded="false">
+                                                                        Login
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> Name </label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="email" class="input-field"
+                                                                            autocomplete="off" required />
+                                                                        <label> Email </label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> Password</label>
+                                                                    </div>
+                                                                    <input type="submit" value=" registration "
+                                                                        class="sign-btn" />
+
+                                                                    <a href="legal.html" class=" fontwordsbox ">
+                                                                        policy&Terms</a>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <!-- === box image === -->
+                                                        <div class="carousel">
+
+                                                            <div class="images-wrapper">
+                                                                <img src="assets/img/inside/image1.png"
+                                                                    class="image img-1 show" alt="" />
+                                                                <img src="assets/img/inside/image2.png"
+                                                                    class="image img-2" alt="" />
+                                                                <img src="assets/img/inside/image3.png"
+                                                                    class="image img-3" alt="" />
+                                                            </div>
+
+                                                            <div class="text-slider">
+
+                                                                <div class="text-wrap">
+                                                                    <div class="text-group">
+                                                                        <h2> Create your own courses</h2>
+                                                                        <h2> Customize as you like</h2>
+                                                                        <h2> Invite your friends here</h2>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="bullets">
+                                                                    <span class="active" data-value="1"></span>
+                                                                    <span data-value="2"></span>
+                                                                    <span data-value="3"></span>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </main>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
                     </ul>
-                    <a href="" data-toggle="dropdown" aria-expanded="false" class="nav-close"><i class="fal fa-times"></i></a>
+                    <a href="" data-toggle="dropdown" aria-expanded="false" class="nav-close"><i
+                            class="fal fa-times"></i></a>
                 </div>
 
                 <!-- === login/register === -->
@@ -126,7 +328,7 @@
                         <span></span><span></span><span></span>
                     </div>
                     <!-- the language -->
-                    <div class="iconlanguage" onclick="menuToggleLanguage();">
+                    <div class="iconlanguage thoeel" onclick="menuToggleLanguage();">
                         <span>
                             <!-- <i class="fas fa-language "></i> --><i class="fas fa-globe languageicons"></i>
 
@@ -134,173 +336,115 @@
                         <div class="profile_menu_Language">
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="blog-details.html"><span class="menu-text">English</span></a>
+                                    <a href="blog-details.html"><span class="menu-text">English</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="blog-details_fr.html"><span class="menu-text">French</span></a>
+                                    <a href="blog-details_fr.html"><span class="menu-text">French</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="blog-details_ar.html"><span class="menu-text">العربيه</span></a>
+                                    <a href="blog-details_ar.html"><span class="menu-text">Arabic</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <!-- the language -->
                     <!-- === box login / register === -->
-                    <div class="navbar-btn hoverstyle">
+                    <div class="navbar-btn hoverstyle ">
 
                         <a type="button" class="main-btn rounded-btn icon-right small-size lgri"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            Login/ registration <i class="fal fa-long-arrow-right transformrotate"></i></a>
+                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForms"
+                            data-whatever="@mdo">
+                            Register/Login <i class="fa-solid fa-angle-right textalignright"></i></a>
 
-                        <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            <i class="fas fa-user cdnfont"></i></a>
-
-                        <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-                            <div class="modal-dialog">
-
-                                <div class="modal-content" style="border-radius: 1%;">
-
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-
-                                    <main class="login-main">
-                                        <div class="box">
-                                            <div class="inner-box">
-                                                <div class="forms-wrap">
-                                                    <!-- === box login === -->
-                                                    <form autocomplete="off" class="sign-in-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord">Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading">
-                                                            <h2>welcome back</h2>
-                                                            <h6> Not registered yet</h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false" class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">Create account</a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>Name</label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>Password</label>
-                                                            </div>
-
-                                                            <input type="submit" value="Login" class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="home_en.html"
-                                                                    class=" fontwordsbox ">
-                                                                    Get help</a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                    <!-- === box register === -->
-                                                    <form autocomplete="off" class="sign-up-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord"> Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading">
-                                                            <h2>Get started </h2>
-                                                            <h6> do you have an account </h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false" class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false"> Login
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Name </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="email" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Email </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Password</label>
-                                                            </div>
-
-                                                            <input type="submit" value=" registration "
-                                                                class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="legal.html"
-                                                                    class=" fontwordsbox ">
-                                                                   policy&Terms</a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                </div>
-                                                <!-- === box image === -->
-                                                <div class="carousel">
-
-                                                    <div class="images-wrapper">
-                                                        <img src="assets/img/inside/image1.png" class="image img-1 show"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image2.png" class="image img-2"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image3.png" class="image img-3"
-                                                            alt="" />
-                                                    </div>
-
-                                                    <div class="text-slider">
-
-                                                        <div class="text-wrap">
-                                                            <div class="text-group">
-                                                                <h2> Create your own courses</h2>
-                                                                <h2> Customize as you like</h2>
-                                                                <h2> Invite your friends here</h2>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="bullets">
-                                                            <span class="active" data-value="1"></span>
-                                                            <span data-value="2"></span>
-                                                            <span data-value="3"></span>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
+                        <div class="cotn_principal modal" id="loginForms" aria-hidden="true">
+                            <div class="div_close_tap_loginRig modal" type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <i class="far fa-times-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="cont_centrar">
+                                <div class="cont_login">
+                                    <div class="cont_info_log_sign_up">
+                                        <div class="col_md_login">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    Log in now
+                                                </h2>
+                                                <p>
+                                                    Welcome! Please enter your login information
+                                                </p>
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    Login
+                                                </button>
                                             </div>
+                                        </div>
+                                        <div class="col_md_sign_up">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    Create a new account now
+                                                </h2>
+                                                <p>
+                                                    Join our community - register now
+                                                </p>
 
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    Create an account
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cont_back_info">
+                                        <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                    </div>
+                                    <div class="cont_forms">
+                                        <div class="cont_img_back_">
+                                            <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                        </div>
+                                        <div class="cont_form_login">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                Login
+                                            </h2>
+                                            <input type="text" placeholder=" Email " />
+                                            <input type="password" placeholder=" password" />
+                                            <div class="button_login_divLogin">
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    Login
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cont_form_sign_up">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                Create an account
+                                            </h2>
+                                            <input type="text" placeholder=" Email " />
+                                            <input type="text" placeholder=" user name" />
+                                            <input type="password" placeholder="  password" />
+                                            <input type="password" placeholder=" password confirmation" />
+                                            <div class="button_signup_divSignup">
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    Create an account
+                                                </button>
+                                            </div>
                                         </div>
 
-                                    </main>
+                                    </div>
 
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -340,9 +484,12 @@
                         </h3>
 
                         <ul class="post-meta">
-                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fal fa-eye"></i>100 Views</a></li>
-                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fal fa-comments"></i>30 Comments</a></li>
-                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fal fa-calendar-alt"></i>24th March 2020</a></li>
+                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fal fa-eye"></i>100
+                                    Views</a></li>
+                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                        class="fal fa-comments"></i>30 Comments</a></li>
+                            <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                        class="fal fa-calendar-alt"></i>24th March 2020</a></li>
                         </ul>
 
                         <p class="mb-20 dirctionsaboutus ">
@@ -467,11 +614,16 @@
                                 <div class="social-share">
                                     <h5>Social Share</h5>
                                     <ul>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-vk"></i></a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-whatsapp"></i></a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-blogger-b"></i></a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                                    class="fab fa-twitter"></i></a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                                    class="fab fa-vk"></i></a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                                    class="fab fa-whatsapp"></i></a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                                    class="fab fa-blogger-b"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -481,7 +633,8 @@
                             <div class="post-nav">
                                 <div class="prev-post">
                                     <span>Prev Post</span>
-                                    <h3><a href="" data-toggle="dropdown" aria-expanded="false">Tips On Minimalist</a></h3>
+                                    <h3><a href="" data-toggle="dropdown" aria-expanded="false">Tips On Minimalist</a>
+                                    </h3>
                                 </div>
                                 <div class="next-post">
                                     <span>Next Post</span>
@@ -502,7 +655,8 @@
                                             <div class="content">
                                                 <span class="date"><i class="fal fa-calendar-alt"></i> 24th March
                                                     2020</span>
-                                                <h4><a href="" data-toggle="dropdown" aria-expanded="false">A series of iOS 7 inspire vector icons sense.</a></h4>
+                                                <h4><a href="" data-toggle="dropdown" aria-expanded="false">A series of
+                                                        iOS 7 inspire vector icons sense.</a></h4>
                                                 <p class="dirctionsaboutus">Lorem ipsum dolor sit amet, conse ctet ur
                                                     adipisicing elit, sed
                                                     doing.</p>
@@ -517,7 +671,8 @@
                                             <div class="content">
                                                 <span class="date"><i class="fal fa-calendar-alt"></i> 24th March
                                                     2020</span>
-                                                <h4><a href="" data-toggle="dropdown" aria-expanded="false">A series of iOS 7 inspire vector icons sense.</a></h4>
+                                                <h4><a href="" data-toggle="dropdown" aria-expanded="false">A series of
+                                                        iOS 7 inspire vector icons sense.</a></h4>
                                                 <p class="dirctionsaboutus">Lorem ipsum dolor sit amet, conse ctet ur
                                                     adipisicing elit, sed
                                                     doing.</p>
@@ -564,7 +719,8 @@
                                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                             consequat.
                                         </p>
-                                        <a href="" data-toggle="dropdown" aria-expanded="false" class="reply-link"><i class="fal fa-reply"></i> Reply</a>
+                                        <a href="" data-toggle="dropdown" aria-expanded="false" class="reply-link"><i
+                                                class="fal fa-reply"></i> Reply</a>
                                     </div>
                                     <ul class="children">
                                         <li>
@@ -581,7 +737,8 @@
                                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                                                     ad minim veniam, quis nostrud exercitation
                                                 </p>
-                                                <a href="" data-toggle="dropdown" aria-expanded="false" class="reply-link"><i class="fal fa-reply"></i> Reply</a>
+                                                <a href="" data-toggle="dropdown" aria-expanded="false"
+                                                    class="reply-link"><i class="fal fa-reply"></i> Reply</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -602,7 +759,8 @@
                                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                             consequat.
                                         </p>
-                                        <a href="" data-toggle="dropdown" aria-expanded="false" class="reply-link"><i class="fal fa-reply"></i> Reply</a>
+                                        <a href="" data-toggle="dropdown" aria-expanded="false" class="reply-link"><i
+                                                class="fal fa-reply"></i> Reply</a>
                                     </div>
                                 </li>
 
@@ -651,11 +809,16 @@
                                     sed do eiusmod tempor
                                     incididunt ut labore.</p>
                                 <ul>
-                                    <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-behance"></i></a></li>
-                                    <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                                class="fab fa-twitter"></i></a></li>
+                                    <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                                class="fab fa-behance"></i></a></li>
+                                    <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                                class="fab fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -729,22 +892,32 @@
                         <div class="widget categories-widget">
                             <h4 class="widget-title">Categories</h4>
                             <ul>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false">Business<span>26</span></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false">Consultant<span>30</span></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false">Creative<span>71</span></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false">UI/UX<span>56</span></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false">Technology<span>60</span></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false">Business<span>26</span></a>
+                                </li>
+                                <li><a href="" data-toggle="dropdown"
+                                        aria-expanded="false">Consultant<span>30</span></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false">Creative<span>71</span></a>
+                                </li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false">UI/UX<span>56</span></a>
+                                </li>
+                                <li><a href="" data-toggle="dropdown"
+                                        aria-expanded="false">Technology<span>60</span></a></li>
                             </ul>
                         </div>
 
                         <div class="widget social-links">
                             <h4 class="widget-title">Never Miss News</h4>
                             <ul>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-behance"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
+                                            class="fab fa-pinterest"></i></a></li>
                             </ul>
                         </div>
 
@@ -753,30 +926,42 @@
                             <div class="twitter-feeds">
                                 <div class="twitter-feed-item">
                                     <ul>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Rescue - #Gutenberg ready @ wordpress</a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Theme for Creative Bloggers available on</a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">@ ThemeForest https://t.co/2r1POjOjgV</a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">C… https://t.co/rDAnPyClu1</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Rescue - #Gutenberg
+                                                ready @ wordpress</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Theme for Creative
+                                                Bloggers available on</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">@ ThemeForest
+                                                https://t.co/2r1POjOjgV</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">C…
+                                                https://t.co/rDAnPyClu1</a></li>
                                     </ul>
                                     <span>November 25, 2018</span>
                                     <i class="fab fa-twitter"></i>
                                 </div>
                                 <div class="twitter-feed-item">
                                     <ul>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Rescue - #Gutenberg ready @ wordpress</a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Theme for Creative Bloggers available on</a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">@ ThemeForest https://t.co/2r1POjOjgV</a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">C… https://t.co/rDAnPyClu1</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Rescue - #Gutenberg
+                                                ready @ wordpress</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Theme for Creative
+                                                Bloggers available on</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">@ ThemeForest
+                                                https://t.co/2r1POjOjgV</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">C…
+                                                https://t.co/rDAnPyClu1</a></li>
                                     </ul>
                                     <span>November 25, 2018</span>
                                     <i class="fab fa-twitter"></i>
                                 </div>
                                 <div class="twitter-feed-item">
                                     <ul>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Rescue - #Gutenberg ready @ wordpress</a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Theme for Creative Bloggers available on</a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">@ ThemeForest https://t.co/2r1POjOjgV</a></li>
-                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">C… https://t.co/rDAnPyClu1</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Rescue - #Gutenberg
+                                                ready @ wordpress</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">Theme for Creative
+                                                Bloggers available on</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">@ ThemeForest
+                                                https://t.co/2r1POjOjgV</a></li>
+                                        <li><a href="" data-toggle="dropdown" aria-expanded="false">C…
+                                                https://t.co/rDAnPyClu1</a></li>
                                     </ul>
                                     <span>November 25, 2018</span>
                                     <i class="fab fa-twitter"></i>
@@ -787,15 +972,24 @@
                         <div class="widget instagram-feed-widget">
                             <h4 class="widget-title">Instagram Feeds</h4>
                             <ul>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img src="assets/img/sidebar/instagram-1.jpg" alt="instagram"></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img src="assets/img/sidebar/instagram-2.jpg" alt="instagram"></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img src="assets/img/sidebar/instagram-3.jpg" alt="instagram"></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img src="assets/img/sidebar/instagram-4.jpg" alt="instagram"></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img src="assets/img/sidebar/instagram-5.jpg" alt="instagram"></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img src="assets/img/sidebar/instagram-6.jpg" alt="instagram"></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img src="assets/img/sidebar/instagram-7.jpg" alt="instagram"></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img src="assets/img/sidebar/instagram-8.jpg" alt="instagram"></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img src="assets/img/sidebar/instagram-9.jpg" alt="instagram"></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img
+                                            src="assets/img/sidebar/instagram-1.jpg" alt="instagram"></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img
+                                            src="assets/img/sidebar/instagram-2.jpg" alt="instagram"></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img
+                                            src="assets/img/sidebar/instagram-3.jpg" alt="instagram"></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img
+                                            src="assets/img/sidebar/instagram-4.jpg" alt="instagram"></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img
+                                            src="assets/img/sidebar/instagram-5.jpg" alt="instagram"></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img
+                                            src="assets/img/sidebar/instagram-6.jpg" alt="instagram"></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img
+                                            src="assets/img/sidebar/instagram-7.jpg" alt="instagram"></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img
+                                            src="assets/img/sidebar/instagram-8.jpg" alt="instagram"></a></li>
+                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><img
+                                            src="assets/img/sidebar/instagram-9.jpg" alt="instagram"></a></li>
                             </ul>
                         </div>
 
@@ -915,7 +1109,8 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                <p> @ Copyright by <a href="" data-toggle="dropdown" aria-expanded="false" data-toggle="dropdown" aria-expanded="false">
+                <p> @ Copyright by <a href="" data-toggle="dropdown" aria-expanded="false" data-toggle="dropdown"
+                        aria-expanded="false">
                         Silver triangle</a> - 2024</p>
             </div>
         </div>
@@ -938,6 +1133,8 @@
     <script src="assets/js/jquery.easypiechart.min.js"></script>
     <!--====== Syotimer ======-->
     <script src="assets/js/jquery.syotimer.min.js"></script>
+    <!-- ======= script login signup -->
+    <script src="assets/js/js_login_signup.js"></script>
     <!--====== Wow ======-->
     <script src="assets/js/wow.min.js"></script>
     <!--====== Main JS ======-->

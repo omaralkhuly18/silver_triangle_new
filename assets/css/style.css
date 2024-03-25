@@ -658,6 +658,9 @@ a.neww {
 }
 
 /*======= Preloader =======*/
+.background_style_priveat{
+	background-color: rgb(255 255 255 / 39%);
+}
 div#preloader {
 	margin: auto;
 	position: fixed;
@@ -8733,6 +8736,35 @@ img.simpelvedio {
 	.accordion-three .card .card-body {
 		padding: 0 20px 20px;
 	}
+	.page-title-answer .card_five_elments{
+		font-size: 12px;
+	}
+	.page-title-answer button::before{
+		right: 10px !important;
+	}
+	.page-title-answer .card-header{
+		padding: 3% 0%;
+	}
+
+	.page-title-answer button{
+	  padding: 1% 1%;
+	}
+}
+
+@media screen and (max-width: 348px) and (min-width: 230px) {
+	.page-title-answer i{
+		display: none;
+	}
+	.page-title-answer button::before{
+		margin-top: 10%;
+		left: 24px;
+	}
+	.page-title-answer .card-header{
+		padding: 3% 3%;
+	}
+	.page-title-answer button {
+		padding: 5% 1%;
+	}
 }
 
 .page-title-answer {
@@ -8753,6 +8785,42 @@ img.simpelvedio {
 	background-size: cover;
 	background-position: center;
 	z-index: -1;
+}
+
+.page-title-answer .card {
+    border-radius: 40px !important;
+    border: 0;
+    border-top: 2px solid transparent;
+    margin-bottom: 20px;
+    justify-content: center;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(132, 190, 255, 0.1);
+    box-shadow: 0px 8px 16px 0px rgba(132, 190, 255, 0.1);
+}
+
+.page-title-answer button{
+	position: relative;
+}
+
+.page-title-answer button::before{
+	position: absolute;
+    content: "►" !important;
+    right: 36px;
+    font-size: 16px;
+    font-family: "Font Awesome 5 Pro";
+    color: #99b1c8;
+}
+
+.page-title-answer button:hover{
+	text-decoration: none !important;
+}
+
+.page-title-answer button:focus{
+	box-shadow: none !important;
+	text-decoration: none !important;
+}
+
+.page-title-answer .card_five_elments{
+	color: #7a95b4;
 }
 
 .accordion-three.accordion-three-two {
@@ -8913,7 +8981,7 @@ img.simpelvedio {
 	}
 
 	.width_specific{
-		justify-content: end !important;
+		justify-content: flex-start !important;
 	}
 }
 

@@ -21,31 +21,45 @@
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!--====== Font Awesome ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <!-- ====== font googel ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--====== Main Css ======-->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!--====== Arabic Css ======-->
-    <!-- <link rel="stylesheet" href="assets/css/arabic.css" /> -->
+    <!-- ======== style login signup -->
+    <link rel="stylesheet" href="assets/css/style_login_signup.css">
+    <!-- ========== Font Awesome 5 Pro ========== -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!--====== Font Awesome ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <!--====== Jquery ======-->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
-    <!--====== Preloader Start ======-->
-
+    <!--====== loading Start ======-->
     <div id="preloader">
-        <div class="animationsintoppage">
+        <!-- <div class="animationsintoppage">
             <div class="loader"></div>
+        </div> -->
+        <div class="scene">
+            <div class="cube-wrapper">
+                <div class="cube">
+                    <div class="cube-faces">
+                        <div class="cube-face shadow"></div>
+                        <div class="cube-face bottom"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face front"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--====== Preloader End ======-->
+    <!--====== loading End ======-->
 
     <!-- ======= Top Bar ======== -->
-    <header class="header-two header-full-width sticky-header">
+    <header class="header-two header-full-width sticky-header background_style_priveat">
         <!-- ======= Top Bar ======== -->
         <div class="header-topbar d-none d-sm-block">
             <div class="container-fluid">
@@ -65,8 +79,6 @@
                                             class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
                                             class="fab fa-twitter"></i></a></li>
-                                <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
-                                            class="fab fa-behance"></i></a></li>
                                 <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
                                             class="fab fa-linkedin-in"></i></a></li>
                                 <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
@@ -105,6 +117,26 @@
                         <li>
                             <a class="colornavpages" href="services.html">Our services</a>
                         </li>
+
+                        <li>
+                            <a class="colornavpages" href="works.html">works-us</a>
+                        </li>
+                        <li>
+                            <a class="colornavpages" href="blog-grid.html"> Blog</a>
+                        </li>
+                        <li>
+                            <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false"
+                                data-toggle="dropdown" aria-expanded="false"> Page </a>
+                            <ul class="submenu">
+                                <li><a href="Our Portfolio.html"> Our-Portfolio</a></li>
+                                <li><a href="faq.html">faq</a></li>
+                                <li><a href="checkout.html">checkout</a></li>
+                                <li><a href="team.html">team</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="colornavpages" href="contact.html"> Contact-US</a>
+                        </li>
                         <li id="lang">
                             <a class="colornavpages" href="#" data-toggle="dropdown" aria-expanded="false"> la langue
                             </a>
@@ -128,25 +160,6 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                        <li>
-                            <a class="colornavpages" href="works.html">works-us</a>
-                        </li>
-                        <li>
-                            <a class="colornavpages" href="blog-grid.html"> Blog</a>
-                        </li>
-                        <li>
-                            <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false"
-                                data-toggle="dropdown" aria-expanded="false"> Page </a>
-                            <ul class="submenu">
-                                <li><a href="Our Portfolio.html"> Our-Portfolio</a></li>
-                                <li><a href="faq.html">faq</a></li>
-                                <li><a href="checkout.html">checkout</a></li>
-                                <li><a href="team.html">team</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="colornavpages" href="contact.html"> Contact-US</a>
                         </li>
                         <li id="authtacion">
                             <div class="navbar-btn" style="display: block;">
@@ -204,8 +217,8 @@
 
                                                                     <input type="submit" value="Login"
                                                                         class="sign-btn" />
-                                                                        <a href="home_en.html" class=" fontwordsbox ">
-                                                                            Get help</a>
+                                                                    <a href="home_en.html" class=" fontwordsbox ">
+                                                                        Get help</a>
                                                                 </div>
                                                             </form>
 
@@ -250,8 +263,8 @@
                                                                     <input type="submit" value=" registration "
                                                                         class="sign-btn" />
 
-                                                                        <a href="legal.html" class=" fontwordsbox ">
-                                                                            policy&Terms</a>
+                                                                    <a href="legal.html" class=" fontwordsbox ">
+                                                                        policy&Terms</a>
                                                                 </div>
                                                             </form>
 
@@ -345,157 +358,93 @@
                     </div>
                     <!-- the language -->
                     <!-- === box login / register === -->
-                    <div class="navbar-btn hoverstyle">
+                    <div class="navbar-btn hoverstyle ">
 
                         <a type="button" class="main-btn rounded-btn icon-right small-size lgri"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            Login/ registration 
-                            <i class="fal fa-long-arrow-right transformrotate"></i></a>
+                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForms"
+                            data-whatever="@mdo">
+                            Register/Login <i class="fa-solid fa-angle-right textalignright"></i></a>
 
-                        <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-                            <div class="modal-dialog">
-
-                                <div class="modal-content" style="border-radius: 1%;">
-
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-
-                                    <main class="login-main">
-                                        <div class="box">
-                                            <div class="inner-box">
-                                                <div class="forms-wrap">
-                                                    <!-- === box login === -->
-                                                    <form autocomplete="off" class="sign-in-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord">Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading">
-                                                            <h2>welcome back</h2>
-                                                            <h6> Not registered yet</h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false"
-                                                                class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">Create account</a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>Name</label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>Password</label>
-                                                            </div>
-
-                                                            <input type="submit" value="Login" class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="home_en.html" class=" fontwordsbox ">
-                                                                    Get help</a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                    <!-- === box register === -->
-                                                    <form autocomplete="off" class="sign-up-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord"> Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading">
-                                                            <h2>Get started </h2>
-                                                            <h6> do you have an account </h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false"
-                                                                class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false"> Login
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Name </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="email" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Email </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Password</label>
-                                                            </div>
-
-                                                            <input type="submit" value=" registration "
-                                                                class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="legal.html" class=" fontwordsbox ">
-                                                                    policy&Terms</a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                </div>
-                                                <!-- === box image === -->
-                                                <div class="carousel">
-
-                                                    <div class="images-wrapper">
-                                                        <img src="assets/img/inside/image1.png" class="image img-1 show"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image2.png" class="image img-2"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image3.png" class="image img-3"
-                                                            alt="" />
-                                                    </div>
-
-                                                    <div class="text-slider">
-
-                                                        <div class="text-wrap">
-                                                            <div class="text-group">
-                                                                <h2> Create your own courses</h2>
-                                                                <h2> Customize as you like</h2>
-                                                                <h2> Invite your friends here</h2>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="bullets">
-                                                            <span class="active" data-value="1"></span>
-                                                            <span data-value="2"></span>
-                                                            <span data-value="3"></span>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
+                        <div class="cotn_principal modal" id="loginForms" aria-hidden="true">
+                            <div class="div_close_tap_loginRig modal" type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <i class="far fa-times-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="cont_centrar">
+                                <div class="cont_login">
+                                    <div class="cont_info_log_sign_up">
+                                        <div class="col_md_login">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    Log in now
+                                                </h2>
+                                                <p>
+                                                    Welcome! Please enter your login information
+                                                </p>
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    Login
+                                                </button>
                                             </div>
+                                        </div>
+                                        <div class="col_md_sign_up">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    Create a new account now
+                                                </h2>
+                                                <p>
+                                                    Join our community - register now
+                                                </p>
 
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    Create an account
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cont_back_info">
+                                        <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                    </div>
+                                    <div class="cont_forms">
+                                        <div class="cont_img_back_">
+                                            <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                        </div>
+                                        <div class="cont_form_login">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                Login
+                                            </h2>
+                                            <input type="text" placeholder=" Email " />
+                                            <input type="password" placeholder=" password" />
+                                            <div class="button_login_divLogin">
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    Login
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cont_form_sign_up">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                Create an account
+                                            </h2>
+                                            <input type="text" placeholder=" Email " />
+                                            <input type="text" placeholder=" user name" />
+                                            <input type="password" placeholder="  password" />
+                                            <input type="password" placeholder=" password confirmation" />
+                                            <div class="button_signup_divSignup">
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    Create an account
+                                                </button>
+                                            </div>
                                         </div>
 
-                                    </main>
+                                    </div>
 
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -686,6 +635,9 @@
                     </div>
                 </div>
             </div>
+            <div class="width_specific">
+                <i class="fas fa-arrow-down class_icon_top"></i>
+            </div>
         </div>
     </section>
     <!--====== History Area End ======-->
@@ -701,95 +653,109 @@
                             <h2 class="title">Program comments, documentation, and explanations.</h2>
                         </div>
 
-                        <div class="accordion-four" id="accordionExample">
+                        <div class="accordion" id="accordionExample">
                             <div class="card">
                                 <div class="card-header" id="headingOne">
-                                    <a class="" href="" data-toggle="dropdown" aria-expanded="false"
-                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        <span class="textltr">Explaining the code and understanding the code</span>
-                                        <i class="fal fa-magic"></i>
-                                    </a>
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <span class="card_five_elments">Explaining the code and understanding the code</span>
+                                            <i class="fas fa-magic"></i>
+                                        </button>
+
+                                    </h2>
                                 </div>
 
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <p>Provide explanations and comments to help other developers understand the
-                                            code faster and easier With documentation and annotations for functions and
-                                            variables. </p>
-                                    </div>
-                                </div>
-                            </div> <!-- card -->
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false"
-                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                        <span class="textltr">Highlight creative ideas and code comments</span>
-                                        <i class="fal fa-magic"></i>
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p>Code comments can be used to explain and highlight creative or creative
-                                            aspects Unique techniques in the code.</p>
-                                    </div>
-                                </div>
-                            </div> <!-- card -->
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false"
-                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <span class="textltr">Explanation of security documentation</span>
-                                        <i class="fal fa-magic"></i>
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p>If there are security issues, comments can explain how they are checked
-                                            Security and avoid vulnerabilities.</p>
-                                    </div>
-                                </div>
-                            </div> <!-- card -->
-                            <div class="card">
-                                <div class="card-header" id="headingFour">
-                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false"
-                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
-                                        <span class="textltr">Facilitate modification and education</span>
-                                        <i class="fal fa-magic"></i>
-                                    </a>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <p>The technical programming content helps in understanding the technical issues
-                                            and making adjustments Optimization is more effective and technical
-                                            programming content can be a tool to facilitate the process Learning for new
-                                            developers in the project. </p>
+                                        Provide explanations and comments to help other developers understand the code
+                                        faster and easier
+                                        With documentation and annotations for functions and variables
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
-                                <div class="card-header" id="headingFive">
-                                    <a class="collapsed" href="" data-toggle="dropdown" aria-expanded="false"
-                                        data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-                                        aria-controls="collapseFive">
-                                        <span class="textltr">Team cooperation and knowledge sharing</span>
-                                        <i class="fal fa-magic"></i>
-                                    </a>
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <span class="card_five_elments">Highlight creative ideas and code comments</span>
+                                            <i class="fas fa-magic"></i>
+                                        </button>
+                                    </h2>
                                 </div>
-                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <p>Effective comments contribute to facilitating cooperation between team
-                                            members when they are working on the same project. Sharing knowledge and
-                                            clarification contributes to building an effective community of developers.
-                                        </p>
+                                        Code comments can be used to explain and highlight creative or creative aspects
+                                        Unique techniques in the code.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <span class="card_five_elments">Explanation of security documentation</span>
+                                            <i class="fas fa-magic"></i>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Effective feedback facilitates collaboration between team members when they are
+                                        working on the same task
+                                        The project, sharing knowledge and clarification contributes to building an
+                                        effective community of developers
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            <span class="card_five_elments">Facilitate modification and education</span>
+                                            <i class="fas fa-magic"></i>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        The technical programming content helps in understanding the technical issues
+                                        and making adjustments
+                                        Optimization is more effective and technical programming content can be a tool
+                                        to facilitate the process
+                                        Learning for new developers in the project.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingfive">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            <span class="card_five_elments">Team cooperation and knowledge sharing</span>
+                                            <i class="fas fa-magic"></i>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingfive"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Effective feedback facilitates collaboration between team members when they are
+                                        working on the same task
+                                        The project, sharing knowledge and clarification contributes to building an
+                                        effective community of developers
                                     </div>
                                 </div>
                             </div>
@@ -834,9 +800,9 @@
                             <h4 class="widget-title"> services </h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="services.html"><i class="fal fa-angle-right"></i> Our services </a>
+                                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our services </a>
                                     </li>
-                                    <li><a href="services-details.html"><i class="fal fa-angle-right"></i> Details
+                                    <li><a href="services-details.html"><i class="fas fa-chevron-right"></i> Details
                                             services</a></li>
                                 </ul>
                             </div>
@@ -846,12 +812,12 @@
                             <h4 class="widget-title"> pages</h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="Our Portfolio.html"><i class="fal fa-angle-right"></i>
+                                    <li><a href="Our Portfolio.html"><i class="fas fa-chevron-right"></i>
                                             Our-Portfolio</a>
                                     </li>
-                                    <li><a href="faq.html"><i class="fal fa-angle-right"></i> FAQ </a></li>
-                                    <li><a href="checkout.html"><i class="fal fa-angle-right"></i> checkout </a></li>
-                                    <li><a href="team.html"><i class="fal fa-angle-right"></i> Team </a></li>
+                                    <li><a href="faq.html"><i class="fas fa-chevron-right"></i> FAQ </a></li>
+                                    <li><a href="checkout.html"><i class="fas fa-chevron-right"></i> checkout </a></li>
+                                    <li><a href="team.html"><i class="fas fa-chevron-right"></i> Team </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -865,9 +831,9 @@
                             <h4 class="widget-title"> blog </h4>
                             <div class="footer-list">
                                 <ul>
-                                    <li><a href="blog-details.html"><i class="fal fa-angle-right"></i> Details Blog
+                                    <li><a href="blog-details.html"><i class="fas fa-chevron-right"></i> Details Blog
                                         </a></li>
-                                    <li><a href="blog-grid.html"><i class="fal fa-angle-right"></i> News Blog </a>
+                                    <li><a href="blog-grid.html"><i class="fas fa-chevron-right"></i>News Blog </a>
                                     </li>
                                 </ul>
                             </div>
@@ -893,8 +859,6 @@
     </footer>
     <!--====== Footer PART ENDS ======-->
 
-    <!--====== Bootstrap ======-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!--====== Slick slider ======-->
     <script src="assets/js/slick.min.js"></script>
     <!--====== Magnific ======-->
@@ -909,10 +873,14 @@
     <script src="assets/js/jquery.easypiechart.min.js"></script>
     <!--====== Syotimer ======-->
     <script src="assets/js/jquery.syotimer.min.js"></script>
+    <!-- ======= script login signup -->
+    <script src="assets/js/js_login_signup.js"></script>
     <!--====== Wow ======-->
     <script src="assets/js/wow.min.js"></script>
     <!--====== Main JS ======-->
     <script src="assets/js/main.js"></script>
+    <!--====== Bootstrap ======-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

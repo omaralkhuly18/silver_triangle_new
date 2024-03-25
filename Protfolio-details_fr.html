@@ -10,10 +10,6 @@
 
     <!--====== Title ======-->
     <title>Triangle-Our Portfolio_FR</title>
-    <!-- ====== font googel ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <!--====== Favicon Icon ======-->
     <link rel="icon" type="image/x-icon" href="./assets/img/logo/logo.png" />
     <!--====== Bootstrap css ======-->
@@ -25,24 +21,47 @@
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!--====== Font Awesome ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--====== Main Css ======-->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- ======== style france -->
+    <link rel="stylesheet" href="assets/css/france.css">
+    <!-- ======== style login signup -->
+    <link rel="stylesheet" href="assets/css/style_login_signup.css">
+    <!-- ========== Font Awesome 5 Pro ========== -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!--====== Font Awesome ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <!--====== Jquery ======-->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
-    <!--====== Preloader Start ======-->
+    <!--====== loading Start ======-->
     <div id="preloader">
-        <div class="animationsintoppage">
+        <!-- <div class="animationsintoppage">
             <div class="loader"></div>
+        </div> -->
+        <div class="scene">
+            <div class="cube-wrapper">
+                <div class="cube">
+                    <div class="cube-faces">
+                        <div class="cube-face shadow"></div>
+                        <div class="cube-face bottom"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face front"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--====== Preloader End ======-->
+    <!--====== loading End ======-->
 
     <!--====== Header Part Start ======-->
-    <header class="header-two header-full-width sticky-header">
+    <header class="header-two header-full-width sticky-header background_style_priveat">
         <!-- ======= Top Bar ======== -->
         <div class="header-topbar d-none d-sm-block">
             <div class="container-fluid">
@@ -108,7 +127,7 @@
                         <li>
                             <a class="colornavpages" href="blog-grid_fr.html"> BLOG</a>
                         </li>
-                        <li>
+                        <li class="style_france">
                             <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false"
                                 data-toggle="dropdown" aria-expanded="false"> PAGE </a>
                             <ul class="submenu">
@@ -121,10 +140,195 @@
                         <li>
                             <a class="colornavpages" href="contact_fr.html"> CONTACTEZ-NOUS</a>
                         </li>
+                        <li id="lang">
+                            <a class="colornavpages" href="#" data-toggle="dropdown" aria-expanded="false"> la langue
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="Protfolio-details.html"><span class="menu-text">Anglais</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Protfolio-details_fr.html"><span class="menu-text">Français</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Protfolio-details_ar.html"><span class="menu-text">arabe</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="authtacion">
+                            <div class="navbar-btn" style="display: block;">
+                                <a type="button" class="main-btn rounded-btn icon-right small-size neww"
+                                    data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm"
+                                    data-whatever="@mdo">
+                                    <i class="fas fa-user cdnfont"></i></a>
+
+                                <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content" style="border-radius: 1%;">
+
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+
+                                            <main class="login-main">
+                                                <div class="box">
+                                                    <div class="inner-box">
+                                                        <div class="forms-wrap">
+                                                            <!-- === box login === -->
+                                                            <form autocomplete="off" class="sign-in-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord">Silver Triangle </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading">
+                                                                    <h2>content de te revoir</h2>
+                                                                    <h6>Pas encore inscrit</h6>
+                                                                    <a href="" data-toggle="dropdown"
+                                                                        aria-expanded="false" class="toggle-box"
+                                                                        data-toggle="dropdown"
+                                                                        aria-expanded="false">Créer un compte</a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>Nom</label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>Mot de passe</label>
+                                                                    </div>
+
+                                                                    <input type="submit" value="Se connecter"
+                                                                        class="sign-btn" />
+
+                                                                    <p class="text">
+
+                                                                        <a href="home_fr.html" class=" fontwordsbox ">
+                                                                            Obtenir de l'aide</a>
+                                                                    </p>
+                                                                </div>
+                                                            </form>
+
+                                                            <!-- === box register === -->
+                                                            <form autocomplete="off" class="sign-up-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord"> Silver Triangle </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading">
+                                                                    <h2>Commencer</h2>
+                                                                    <h6> Avez-vous un compte </h6>
+                                                                    <a href="" data-toggle="dropdown"
+                                                                        aria-expanded="false" class="toggle-box"
+                                                                        data-toggle="dropdown" aria-expanded="false">
+                                                                        Se connecter
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> Nom </label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="email" class="input-field"
+                                                                            autocomplete="off" required />
+                                                                        <label> E-mail </label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> Mot de passe </label>
+                                                                    </div>
+
+                                                                    <input type="submit" value=" inscription "
+                                                                        class="sign-btn" />
+
+                                                                    <p class="text">
+
+                                                                        <a href="legal_fr.html" class=" fontwordsbox ">
+                                                                            politique et conditions </a>
+                                                                    </p>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <!-- === box image === -->
+                                                        <div class="carousel">
+
+                                                            <div class="images-wrapper">
+                                                                <img src="assets/img/inside/image1.png"
+                                                                    class="image img-1 show" alt="" />
+                                                                <img src="assets/img/inside/image2.png"
+                                                                    class="image img-2" alt="" />
+                                                                <img src="assets/img/inside/image3.png"
+                                                                    class="image img-3" alt="" />
+                                                            </div>
+
+                                                            <div class="text-slider">
+
+                                                                <div class="text-wrap">
+                                                                    <div class="text-group">
+                                                                        <h2> Créez vos propres cours</h2>
+                                                                        <h2>Personnalisez comme vous le souhaitez</h2>
+                                                                        <h2> Invitez vos amis ici</h2>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="bullets">
+                                                                    <span class="active" data-value="1"></span>
+                                                                    <span data-value="2"></span>
+                                                                    <span data-value="3"></span>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </main>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
                     </ul>
                     <a href="" data-toggle="dropdown" aria-expanded="false" class="nav-close"><i
-                            class="fal fa-times"></i>
-                    </a>
+                            class="fal fa-times"></i></a>
                 </div>
 
                 <!-- === login/register === -->
@@ -135,183 +339,123 @@
                         <span></span><span></span><span></span>
                     </div>
                     <!-- the language -->
-                    <div class="iconlanguage" onclick="menuToggleLanguage();">
+                    <div class="iconlanguage thoeel" onclick="menuToggleLanguage();">
                         <span>
-                            <!-- <i class="fas fa-language "></i> --><i class="fas fa-globe languageicons"></i>
+                            <i class="fas fa-globe languageicons"></i>
 
                         </span>
                         <div class="profile_menu_Language">
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="Protfolio-details.html"><span class="menu-text">English</span></a>
+                                    <a href="Protfolio-details.html"><span class="menu-text">Anglais</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="Protfolio-details_fr.html"><span class="menu-text">Français</span></a>
+                                    <a href="Protfolio-details_fr.html"><span class="menu-text">Français</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="Protfolio-details_ar.html"><span class="menu-text">العربيه</span></a>
+                                    <a href="Protfolio-details_ar.html"><span class="menu-text">L'arabe</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <!-- the language -->
                     <!-- === box login / register === -->
-                    <div class="navbar-btn hoverstyle">
+                    <div class="navbar-btn hoverstyle ">
 
                         <a type="button" class="main-btn rounded-btn icon-right small-size lgri"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            Connexion/inscription <i class="fal fa-long-arrow-right transformrotate"></i></a>
+                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForms"
+                            data-whatever="@mdo">
+                            S'inscrire/se connecter <i class="fa-solid fa-angle-right textalignright"></i></a>
 
-                        <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            <i class="fas fa-user cdnfont"></i></a>
-
-                        <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-                            <div class="modal-dialog">
-
-                                <div class="modal-content" style="border-radius: 1%;">
-
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-
-                                    <main class="login-main">
-                                        <div class="box">
-                                            <div class="inner-box">
-                                                <div class="forms-wrap">
-                                                    <!-- === box login === -->
-                                                    <form autocomplete="off" class="sign-in-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord">Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading">
-                                                            <h2>content de te revoir</h2>
-                                                            <h6>Pas encore inscrit</h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false"
-                                                                class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">Créer un compte</a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>Nom</label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>Mot de passe</label>
-                                                            </div>
-
-                                                            <input type="submit" value="Se connecter"
-                                                                class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="home_fr.html" class=" fontwordsbox ">
-                                                                    Obtenir de l'aide</a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                    <!-- === box register === -->
-                                                    <form autocomplete="off" class="sign-up-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord"> Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading">
-                                                            <h2>Commencer</h2>
-                                                            <h6> Avez-vous un compte </h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false"
-                                                                class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">
-                                                                Se connecter
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Nom </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="email" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> E-mail </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Mot de passe </label>
-                                                            </div>
-
-                                                            <input type="submit" value=" inscription "
-                                                                class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="legal_fr.html" class=" fontwordsbox ">
-                                                                    politique et conditions </a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                </div>
-                                                <!-- === box image === -->
-                                                <div class="carousel">
-
-                                                    <div class="images-wrapper">
-                                                        <img src="assets/img/inside/image1.png" class="image img-1 show"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image2.png" class="image img-2"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image3.png" class="image img-3"
-                                                            alt="" />
-                                                    </div>
-
-                                                    <div class="text-slider">
-
-                                                        <div class="text-wrap">
-                                                            <div class="text-group">
-                                                                <h2> Créez vos propres cours</h2>
-                                                                <h2>Personnalisez comme vous le souhaitez</h2>
-                                                                <h2> Invitez vos amis ici</h2>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="bullets">
-                                                            <span class="active" data-value="1"></span>
-                                                            <span data-value="2"></span>
-                                                            <span data-value="3"></span>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
+                        <div class="cotn_principal modal" id="loginForms" aria-hidden="true">
+                            <div class="div_close_tap_loginRig modal" type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <i class="far fa-times-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="cont_centrar">
+                                <div class="cont_login">
+                                    <div class="cont_info_log_sign_up">
+                                        <div class="col_md_login">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    Connecte-toi maintenant
+                                                </h2>
+                                                <p>
+                                                    Accueillir! S'il vous plaît entrer vos informations de connexion
+                                                </p>
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    Se connecter
+                                                </button>
                                             </div>
+                                        </div>
+                                        <div class="col_md_sign_up">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    Créez un nouveau compte maintenant
+                                                </h2>
+                                                <p>
+                                                    Rejoignez notre communauté - inscrivez-vous maintenant
+                                                </p>
 
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    Créer un compte
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cont_back_info">
+                                        <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                    </div>
+                                    <div class="cont_forms">
+                                        <div class="cont_img_back_">
+                                            <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                        </div>
+                                        <div class="cont_form_login">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                Se connecter
+                                            </h2>
+                                            <input type="text" placeholder=" E-mail " />
+                                            <input type="password" placeholder=" mot de passe" />
+                                            <div class="button_login_divLogin">
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    Se connecter
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cont_form_sign_up">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                Créer un compte
+                                            </h2>
+                                            <input type="text" placeholder=" E-mail " />
+                                            <input type="text" placeholder=" utilisateur nom" />
+                                            <input type="password" placeholder="  mot de passe" />
+                                            <input type="password" placeholder=" mot de passe confirmation" />
+                                            <div class="button_signup_divSignup">
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    Créer un compte
+                                                </button>
+                                            </div>
                                         </div>
 
-                                    </main>
+                                    </div>
 
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -349,12 +493,13 @@
                             </div>
                             <div class="blog-standard-content">
                                 <a href="" data-toggle="dropdown" aria-expanded="false" class="cat">Entreprise</a>
-                                <h2 class="title">Voici quelques techniques courantes qui peuvent être utilisées pour le référencement
+                                <h2 class="title">Voici quelques techniques courantes qui peuvent être utilisées pour le
+                                    référencement
                                 </h2>
                                 <ul class="post-meta">
                                     <li><i class="fal fa-eye"></i> 232 Vues</li>
                                     <li><i class="fal fa-comments"></i> 35 commentaires</li>
-                                    <li><i class="fal fa-calendar-alt"></i> 24th  Mars 2019</li>
+                                    <li><i class="fal fa-calendar-alt"></i> 24th Mars 2019</li>
                                 </ul>
                                 <p>
                                     Search Engine Optimization (Search Engine Optimization or SEO) is a process aimed at
@@ -384,14 +529,16 @@
                             </div>
                             <div class="blog-standard-content">
                                 <a href="" data-toggle="dropdown" aria-expanded="false" class="cat">Entreprise</a>
-                                <h2 class="title">Recherche de mots-clés Effectuez des recherches minutieuses pour identifier les mots-clés.</h2>
+                                <h2 class="title">Recherche de mots-clés Effectuez des recherches minutieuses pour
+                                    identifier les mots-clés.</h2>
                                 <ul class="post-meta">
                                     <li><i class="fal fa-eye"></i> 232 Vues</li>
                                     <li><i class="fal fa-comments"></i> 35 commentaires</li>
-                                    <li><i class="fal fa-calendar-alt"></i> 24th  Mars 2019</li>
+                                    <li><i class="fal fa-calendar-alt"></i> 24th Mars 2019</li>
                                 </ul>
                                 <p>
-                                    Effectuez des recherches minutieuses pour identifier les mots-clés liés à votre secteur ou à votre site
+                                    Effectuez des recherches minutieuses pour identifier les mots-clés liés à votre
+                                    secteur ou à votre site
                                     contenu. Ciblez les mots-clés pertinents que votre public cible recherche et utilise
                                     stratégiquement dans les titres et le contenu des pages.
                                 </p>
@@ -414,16 +561,19 @@
                             </div>
                             <div class="blog-standard-content">
                                 <a href="" data-toggle="dropdown" aria-expanded="false" class="cat">Entreprise</a>
-                                <h2 class="title"> Améliorez la structure du site : organisez le contenu de votre site de manière élégante et
+                                <h2 class="title"> Améliorez la structure du site : organisez le contenu de votre site
+                                    de manière élégante et
                                     manière conviviale. </h2>
                                 <ul class="post-meta">
                                     <li><i class="fal fa-eye"></i> 232 Vues</li>
                                     <li><i class="fal fa-comments"></i> 35 commentaires</li>
-                                    <li><i class="fal fa-calendar-alt"></i> 24th  Mars 2019</li>
+                                    <li><i class="fal fa-calendar-alt"></i> 24th Mars 2019</li>
                                 </ul>
                                 <p>
-                                    Organisez le contenu de votre site de manière élégante et conviviale. Utiliser des taxonomies,
-                                    catégories et liens internes pour aider à améliorer l’expérience utilisateur et faciliter la recherche
+                                    Organisez le contenu de votre site de manière élégante et conviviale. Utiliser des
+                                    taxonomies,
+                                    catégories et liens internes pour aider à améliorer l’expérience utilisateur et
+                                    faciliter la recherche
                                     les moteurs comprennent la structure du site.
                                 </p>
                                 <div class="blog-standard-footer">
@@ -442,16 +592,19 @@
                         <div class="single-blog-standard mb-30">
                             <div class="blog-standard-content">
                                 <a href="" data-toggle="dropdown" aria-expanded="false" class="cat">Entreprise</a>
-                                <h2 class="title">Créer du contenu de haute qualité Créer du contenu unique et précieux pour
+                                <h2 class="title">Créer du contenu de haute qualité Créer du contenu unique et précieux
+                                    pour
                                     attirer et engager les visiteurs.</h2>
                                 <ul class="post-meta">
                                     <li><i class="fal fa-eye"></i> 232 Vues</li>
                                     <li><i class="fal fa-comments"></i> 35 commentaires</li>
-                                    <li><i class="fal fa-calendar-alt"></i> 24th  Mars 2019</li>
+                                    <li><i class="fal fa-calendar-alt"></i> 24th Mars 2019</li>
                                 </ul>
                                 <p>
-                                    Améliorer la structure du site Organisez le contenu de votre site de manière élégante et conviviale
-                                    chemin. Utilisez des taxonomies, des catégories et des liens internes pour aider à améliorer l'utilisateur
+                                    Améliorer la structure du site Organisez le contenu de votre site de manière
+                                    élégante et conviviale
+                                    chemin. Utilisez des taxonomies, des catégories et des liens internes pour aider à
+                                    améliorer l'utilisateur
                                     expérience et aider les moteurs de recherche à comprendre la structure du site.
                                 </p>
                                 <div class="blog-standard-footer">
@@ -473,17 +626,20 @@
                             </div>
                             <div class="blog-standard-content">
                                 <a href="" data-toggle="dropdown" aria-expanded="false" class="cat">Entreprise</a>
-                                <h2 class="title"> Création de liens Travailler à la création de liens réels et de haute qualité à partir de Silver
+                                <h2 class="title"> Création de liens Travailler à la création de liens réels et de haute
+                                    qualité à partir de Silver
                                     Triangle</h2>
                                 <ul class="post-meta">
                                     <li><i class="fal fa-eye"></i> 232 Vues</li>
                                     <li><i class="fal fa-comments"></i> 35 commentaires</li>
-                                    <li><i class="fal fa-calendar-alt"></i> 24th  Mars 2019</li>
+                                    <li><i class="fal fa-calendar-alt"></i> 24th Mars 2019</li>
                                 </ul>
                                 <p>
-                                    Travaillez à créer des liens réels et de haute qualité à partir du site Web Silver Triangle afin que
+                                    Travaillez à créer des liens réels et de haute qualité à partir du site Web Silver
+                                    Triangle afin que
                                     votre site a une bonne réputation dans votre domaine de travail. Liens provenant de
-                                    les sites faisant autorité aident à améliorer la position de votre site dans les résultats de recherche.
+                                    les sites faisant autorité aident à améliorer la position de votre site dans les
+                                    résultats de recherche.
                                 </p>
                                 <div class="blog-standard-footer">
                                     <div class="footer-left">
@@ -504,15 +660,18 @@
                             </div>
                             <div class="blog-standard-content">
                                 <a href="" data-toggle="dropdown" aria-expanded="false" class="cat">Entreprise</a>
-                                <h2 class="title">Optimisez les titres de pages et les méta descriptions Optimisez la page de votre site
+                                <h2 class="title">Optimisez les titres de pages et les méta descriptions Optimisez la
+                                    page de votre site
                                     titres</h2>
                                 <ul class="post-meta">
                                     <li><i class="fal fa-eye"></i> 232 Vues</li>
                                     <li><i class="fal fa-comments"></i> 35 commentaires</li>
-                                    <li><i class="fal fa-calendar-alt"></i> 24th  Mars 2019</li>
+                                    <li><i class="fal fa-calendar-alt"></i> 24th Mars 2019</li>
                                 </ul>
-                                <p>Optimisez les titres de pages et les méta descriptions Optimisez les titres de pages de votre site (titre
-                                    titres) pour être clair et décrire les méta (résumés des pages dans les résultats de recherche) de manière
+                                <p>Optimisez les titres de pages et les méta descriptions Optimisez les titres de pages
+                                    de votre site (titre
+                                    titres) pour être clair et décrire les méta (résumés des pages dans les résultats de
+                                    recherche) de manière
                                     manière attrayante et expressive.</p>
                                 <div class="blog-standard-footer">
                                     <div class="footer-left">
@@ -547,8 +706,10 @@
                                 <img src="assets/img/sidebar/blog-about.png" alt="">
                                 <h6 class="title">Rosalina D. Willaimson</h6>
                                 <p>
-                                    J'ai suffisamment d'expérience pour réaliser la conception et le développement que le client
-                                    veut, et de l'écouter suffisamment pour lui fournir un service aux meilleurs niveaux.
+                                    J'ai suffisamment d'expérience pour réaliser la conception et le développement que
+                                    le client
+                                    veut, et de l'écouter suffisamment pour lui fournir un service aux meilleurs
+                                    niveaux.
                                 </p>
                                 <ul>
                                     <li><a href="" data-toggle="dropdown" aria-expanded="false"><i
@@ -579,7 +740,7 @@
                                         <h4 class="title">It should be noted that SEO is an ongoing process and requires
                                             patience and perseverance</h4>
                                     </a>
-                                    <span><i class="fal fa-calendar-alt"></i>24th  Mars 2019</span>
+                                    <span><i class="fal fa-calendar-alt"></i>24th Mars 2019</span>
                                     <img src="assets/img/sidebar/feeds-1.png" alt="Image">
                                 </div>
                                 <div class="news-feed-item">
@@ -587,7 +748,7 @@
                                         <h4 class="title">It should be noted that SEO is an ongoing process and requires
                                             patience and perseverance</h4>
                                     </a>
-                                    <span><i class="fal fa-calendar-alt"></i>24th  Mars 2019</span>
+                                    <span><i class="fal fa-calendar-alt"></i>24th Mars 2019</span>
                                     <img src="assets/img/sidebar/feeds-1.png" alt="Image">
                                 </div>
                                 <div class="news-feed-item">
@@ -595,7 +756,7 @@
                                         <h4 class="title">It should be noted that SEO is an ongoing process and requires
                                             patience and perseverance</h4>
                                     </a>
-                                    <span><i class="fal fa-calendar-alt"></i>24th  Mars 2019</span>
+                                    <span><i class="fal fa-calendar-alt"></i>24th Mars 2019</span>
                                     <img src="assets/img/sidebar/feeds-1.png" alt="Image">
                                 </div>
                                 <div class="news-feed-item">
@@ -603,7 +764,7 @@
                                         <h4 class="title">It should be noted that SEO is an ongoing process and requires
                                             patience and perseverance</h4>
                                     </a>
-                                    <span><i class="fal fa-calendar-alt"></i>24th  Mars 2019</span>
+                                    <span><i class="fal fa-calendar-alt"></i>24th Mars 2019</span>
                                     <img src="assets/img/sidebar/feeds-1.png" alt="Image">
                                 </div>
                             </div>
@@ -644,17 +805,17 @@
                                 <div class="twitter-feed-item">
                                     <ul>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            silvertriangle7@gmail.com
-                                        </a></li>
+                                                silvertriangle7@gmail.com
+                                            </a></li>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            Thème pour les blogueurs créatifs disponible sur
-                                        </a></li>
+                                                Thème pour les blogueurs créatifs disponible sur
+                                            </a></li>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            silvertriangle7@gmail.com
-                                        </a></li>
+                                                silvertriangle7@gmail.com
+                                            </a></li>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            silvertriangle7@gmail.com
-                                        </a></li>
+                                                silvertriangle7@gmail.com
+                                            </a></li>
                                     </ul>
                                     <span>November 25, 2018</span>
                                     <i class="fab fa-twitter"></i>
@@ -662,17 +823,17 @@
                                 <div class="twitter-feed-item">
                                     <ul>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            silvertriangle7@gmail.com
-                                        </a></li>
+                                                silvertriangle7@gmail.com
+                                            </a></li>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            Thème pour les blogueurs créatifs disponible sur
-                                        </a></li>
+                                                Thème pour les blogueurs créatifs disponible sur
+                                            </a></li>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            silvertriangle7@gmail.com
-                                        </a></li>
+                                                silvertriangle7@gmail.com
+                                            </a></li>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            silvertriangle7@gmail.com
-                                        </a></li>
+                                                silvertriangle7@gmail.com
+                                            </a></li>
                                     </ul>
                                     <span>November 25, 2018</span>
                                     <i class="fab fa-twitter"></i>
@@ -680,17 +841,17 @@
                                 <div class="twitter-feed-item">
                                     <ul>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            silvertriangle7@gmail.com
-                                        </a></li>
+                                                silvertriangle7@gmail.com
+                                            </a></li>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            Thème pour les blogueurs créatifs disponible sur
-                                        </a></li>
+                                                Thème pour les blogueurs créatifs disponible sur
+                                            </a></li>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            silvertriangle7@gmail.com
-                                        </a></li>
+                                                silvertriangle7@gmail.com
+                                            </a></li>
                                         <li><a href="" data-toggle="dropdown" aria-expanded="false">
-                                            silvertriangle7@gmail.com
-                                        </a></li>
+                                                silvertriangle7@gmail.com
+                                            </a></li>
                                     </ul>
                                     <span>November 25, 2018</span>
                                     <i class="fab fa-twitter"></i>
@@ -862,6 +1023,8 @@
     <script src="assets/js/jquery.easypiechart.min.js"></script>
     <!--====== Syotimer ======-->
     <script src="assets/js/jquery.syotimer.min.js"></script>
+    <!-- ======= script login signup -->
+    <script src="assets/js/js_login_signup.js"></script>
     <!--====== Wow ======-->
     <script src="assets/js/wow.min.js"></script>
     <!--====== Main JS ======-->

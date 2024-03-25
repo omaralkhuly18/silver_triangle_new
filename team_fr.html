@@ -10,10 +10,6 @@
 
     <!--====== Title ======-->
     <title>triangle||Team_EN</title>
-    <!-- ====== font googel ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <!--====== Favicon Icon ======-->
     <link rel="icon" type="image/x-icon" href="./assets/img/logo/logo.png" />
     <!--====== Bootstrap css ======-->
@@ -25,97 +21,47 @@
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <!--====== Font Awesome ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!--====== Main Css ======-->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- ======== style france -->
+    <link rel="stylesheet" href="assets/css/france.css">
+    <!-- ======== style login signup -->
+    <link rel="stylesheet" href="assets/css/style_login_signup.css">
+    <!-- ========== Font Awesome 5 Pro ========== -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!--====== Font Awesome ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
     <!--====== Jquery ======-->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
 </head>
-<style>
-    @media screen and (max-width: 3000px) and (min-width: 992px) {
-        .site-nav-menu {
-            width: 80%;
-        }
-
-        ul.primary-menu {
-            width: 100%;
-        }
-    }
-
-    @media (min-width: 1199px) and (max-width: 1900px) {
-
-        .header-two .header-navigation .navbar-btn a,
-        .header-three .header-navigation .navbar-btn a {
-            padding: 15px 10px;
-            font-size: 11px;
-        }
-    }
-
-    @media (min-width: 992px) and (max-width: 1199px) {
-
-        .header-two .header-navigation .navbar-btn a,
-        .header-three .header-navigation .navbar-btn a {
-            padding: 15px 10px;
-            font-size: 11px;
-        }
-    }
-
-    @media (min-width: 992px) and (max-width: 1900px) {
-
-        .header-two .header-navigation .primary-menu li a,
-        .header-three .header-navigation .primary-menu li a {
-            padding: 0;
-            font-size: 13px;
-        }
-
-        .site-nav-menu {
-            width: 99%;
-        }
-    }
-
-    @media screen and (max-width: 562px) and (min-width: 491px) {
-        .header-navigation .navbar-btn {
-            width: 50%;
-        }
-
-        .header-two .header-navigation .navbar-btn a,
-        .header-three .header-navigation .navbar-btn a {
-            padding: 12px 0 !important;
-            font-size: 11px !important;
-            width: 95%;
-            display: flex;
-            justify-content: center;
-        }
-    }
-
-    @media screen and (max-width: 300px) and (min-width: 220px) {
-        .header-navigation.breakpoint-on .site-nav-menu {
-            padding: 50px 10px;
-            width: 230px !important;
-        }
-    }
-
-    @media screen and (max-width: 1000px) and (min-width: 992px) {
-
-        .header-two .header-navigation .primary-menu li a,
-        .header-three .header-navigation .primary-menu li a {
-            padding: 0 9px !important;
-            font-size: 10px !important;
-        }
-    }
-</style>
 
 <body>
-    <!--====== Preloader Start ======-->
+    <!--====== loading Start ======-->
     <div id="preloader">
-        <div class="animationsintoppage">
+        <!-- <div class="animationsintoppage">
             <div class="loader"></div>
+        </div> -->
+        <div class="scene">
+            <div class="cube-wrapper">
+                <div class="cube">
+                    <div class="cube-faces">
+                        <div class="cube-face shadow"></div>
+                        <div class="cube-face bottom"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face front"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--====== Preloader End ======-->
+    <!--====== loading End ======-->
 
     <!--====== Header Part Start ======-->
-    <header class="header-two header-full-width sticky-header">
+    <header class="header-two header-full-width sticky-header background_style_priveat">
         <!-- ======= Top Bar ======== -->
         <div class="header-topbar d-none d-sm-block">
             <div class="container-fluid">
@@ -181,23 +127,208 @@
                         <li>
                             <a class="colornavpages" href="blog-grid_fr.html"> BLOG</a>
                         </li>
-                        <li>
+                        <li class="style_france">
                             <a class="colornavpages" href="" data-toggle="dropdown" aria-expanded="false"
                                 data-toggle="dropdown" aria-expanded="false"> PAGE </a>
                             <ul class="submenu">
-                                <li><a href="Our Portfolio_fr.html"> Notre portfolio</a></li>
-                                <li><a href="faq_fr.html">FAQ</a></li>
-                                <li><a href="checkout_fr.html">vérifier</a></li>
-                                <li><a href="team_fr.html">équipe</a></li>
+                                <li ><a href="Our Portfolio_fr.html"> Notre portfolio</a></li>
+                                <li ><a href="faq_fr.html">FAQ</a></li>
+                                <li ><a href="checkout_fr.html">vérifier</a></li>
+                                <li ><a href="team_fr.html">équipe</a></li>
                             </ul>
                         </li>
                         <li>
                             <a class="colornavpages" href="contact_fr.html"> CONTACTEZ-NOUS</a>
                         </li>
+                        <li id="lang">
+                            <a class="colornavpages" href="#" data-toggle="dropdown" aria-expanded="false"> la langue
+                            </a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="team.html"><span class="menu-text">Anglais</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="team_fr.html"><span class="menu-text">Français</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="team_ar.html"><span class="menu-text">arabe</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="authtacion">
+                            <div class="navbar-btn" style="display: block;">
+                                <a type="button" class="main-btn rounded-btn icon-right small-size neww"
+                                    data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm"
+                                    data-whatever="@mdo">
+                                    <i class="fas fa-user cdnfont"></i></a>
+
+                                <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                    <div class="modal-dialog">
+
+                                        <div class="modal-content" style="border-radius: 1%;">
+
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+
+                                            <main class="login-main">
+                                                <div class="box">
+                                                    <div class="inner-box">
+                                                        <div class="forms-wrap">
+                                                            <!-- === box login === -->
+                                                            <form autocomplete="off" class="sign-in-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord">Silver Triangle </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading">
+                                                                    <h2>content de te revoir</h2>
+                                                                    <h6>Pas encore inscrit</h6>
+                                                                    <a href="" data-toggle="dropdown"
+                                                                        aria-expanded="false" class="toggle-box"
+                                                                        data-toggle="dropdown"
+                                                                        aria-expanded="false">Créer un compte</a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>Nom</label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label>Mot de passe</label>
+                                                                    </div>
+
+                                                                    <input type="submit" value="Se connecter"
+                                                                        class="sign-btn" />
+
+                                                                    <p class="text">
+
+                                                                        <a href="home_fr.html" class=" fontwordsbox ">
+                                                                            Obtenir de l'aide</a>
+                                                                    </p>
+                                                                </div>
+                                                            </form>
+
+                                                            <!-- === box register === -->
+                                                            <form autocomplete="off" class="sign-up-form">
+                                                                <div class="logobox">
+                                                                    <h1 class="LogoWord"> Silver Triangle </h1>
+                                                                    <!-- <img src="./img/logo.png" alt="easyclass" /> -->
+
+                                                                </div>
+
+                                                                <div class="heading">
+                                                                    <h2>Commencer</h2>
+                                                                    <h6> Avez-vous un compte </h6>
+                                                                    <a href="" data-toggle="dropdown"
+                                                                        aria-expanded="false" class="toggle-box"
+                                                                        data-toggle="dropdown" aria-expanded="false">
+                                                                        Se connecter
+                                                                    </a>
+                                                                </div>
+
+                                                                <div class="actual-form">
+                                                                    <div class="input-wrap">
+                                                                        <input type="text" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> Nom </label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="email" class="input-field"
+                                                                            autocomplete="off" required />
+                                                                        <label> E-mail </label>
+                                                                    </div>
+
+                                                                    <div class="input-wrap">
+                                                                        <input type="password" minlength="4"
+                                                                            class="input-field" autocomplete="off"
+                                                                            required />
+                                                                        <label> Mot de passe </label>
+                                                                    </div>
+
+                                                                    <input type="submit" value=" inscription "
+                                                                        class="sign-btn" />
+
+                                                                    <p class="text">
+
+                                                                        <a href="legal_fr.html" class=" fontwordsbox ">
+                                                                            politique et conditions </a>
+                                                                    </p>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+                                                        <!-- === box image === -->
+                                                        <div class="carousel">
+
+                                                            <div class="images-wrapper">
+                                                                <img src="assets/img/inside/image1.png"
+                                                                    class="image img-1 show" alt="" />
+                                                                <img src="assets/img/inside/image2.png"
+                                                                    class="image img-2" alt="" />
+                                                                <img src="assets/img/inside/image3.png"
+                                                                    class="image img-3" alt="" />
+                                                            </div>
+
+                                                            <div class="text-slider">
+
+                                                                <div class="text-wrap">
+                                                                    <div class="text-group">
+                                                                        <h2> Créez vos propres cours</h2>
+                                                                        <h2>Personnalisez comme vous le souhaitez</h2>
+                                                                        <h2> Invitez vos amis ici</h2>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="bullets">
+                                                                    <span class="active" data-value="1"></span>
+                                                                    <span data-value="2"></span>
+                                                                    <span data-value="3"></span>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </main>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
                     </ul>
                     <a href="" data-toggle="dropdown" aria-expanded="false" class="nav-close"><i
-                            class="fal fa-times"></i>
-                    </a>
+                            class="fal fa-times"></i></a>
                 </div>
 
                 <!-- === login/register === -->
@@ -208,183 +339,123 @@
                         <span></span><span></span><span></span>
                     </div>
                     <!-- the language -->
-                    <div class="iconlanguage" onclick="menuToggleLanguage();">
+                    <div class="iconlanguage thoeel" onclick="menuToggleLanguage();">
                         <span>
-                            <!-- <i class="fas fa-language "></i> --><i class="fas fa-globe languageicons"></i>
+                            <i class="fas fa-globe languageicons"></i>
 
                         </span>
                         <div class="profile_menu_Language">
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="team.html"><span class="menu-text">English</span></a>
+                                    <a href="team.html"><span class="menu-text">Anglais</span>
+                                        <img class="Flags_language" src="assets/img/icon/u_s_a_flag.png"
+                                            alt="United States of America Flag">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="team_fr.html"><span class="menu-text">Français</span></a>
+                                    <a href="team_fr.html"><span class="menu-text">Français</span>
+                                        <img class="Flags_language" src="assets/img/icon/france_flag.png"
+                                            alt="France Flag">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="team_ar.html"><span class="menu-text">العربيه</span></a>
+                                    <a href="team_ar.html"><span class="menu-text">L'arabe</span>
+                                        <img class="Flags_language" src="assets/img/icon/saudi_arabia_flag.png"
+                                            alt="Saudi Arabia Flag">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <!-- the language -->
                     <!-- === box login / register === -->
-                    <div class="navbar-btn hoverstyle">
+                    <div class="navbar-btn hoverstyle ">
 
                         <a type="button" class="main-btn rounded-btn icon-right small-size lgri"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            Connexion/inscription <i class="fal fa-long-arrow-right transformrotate"></i></a>
+                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForms"
+                            data-whatever="@mdo">
+                            S'inscrire/se connecter <i class="fa-solid fa-angle-right textalignright"></i></a>
 
-                        <a type="button" class="d-none main-btn rounded-btn icon-right small-size neww"
-                            data-animation="fadeInUp" data-toggle="modal" data-target="#loginForm" data-whatever="@mdo">
-                            <i class="fas fa-user cdnfont"></i></a>
-
-                        <div class="modal fade model-lg" id="loginForm" style="top: 8%;" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-                            <div class="modal-dialog">
-
-                                <div class="modal-content" style="border-radius: 1%;">
-
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-
-                                    <main class="login-main">
-                                        <div class="box">
-                                            <div class="inner-box">
-                                                <div class="forms-wrap">
-                                                    <!-- === box login === -->
-                                                    <form autocomplete="off" class="sign-in-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord">Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading">
-                                                            <h2>content de te revoir</h2>
-                                                            <h6>Pas encore inscrit</h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false"
-                                                                class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">Créer un compte</a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>Nom</label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label>Mot de passe</label>
-                                                            </div>
-
-                                                            <input type="submit" value="Se connecter"
-                                                                class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="home_fr.html" class=" fontwordsbox ">
-                                                                    Obtenir de l'aide</a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                    <!-- === box register === -->
-                                                    <form autocomplete="off" class="sign-up-form">
-                                                        <div class="logobox">
-                                                            <h1 class="LogoWord"> Silver Triangle </h1>
-                                                            <!-- <img src="./img/logo.png" alt="easyclass" /> -->
-
-                                                        </div>
-
-                                                        <div class="heading">
-                                                            <h2>Commencer</h2>
-                                                            <h6> Avez-vous un compte </h6>
-                                                            <a href="" data-toggle="dropdown" aria-expanded="false"
-                                                                class="toggle-box" data-toggle="dropdown"
-                                                                aria-expanded="false">
-                                                                Se connecter
-                                                            </a>
-                                                        </div>
-
-                                                        <div class="actual-form">
-                                                            <div class="input-wrap">
-                                                                <input type="text" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Nom </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="email" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> E-mail </label>
-                                                            </div>
-
-                                                            <div class="input-wrap">
-                                                                <input type="password" minlength="4" class="input-field"
-                                                                    autocomplete="off" required />
-                                                                <label> Mot de passe </label>
-                                                            </div>
-
-                                                            <input type="submit" value=" inscription "
-                                                                class="sign-btn" />
-
-                                                            <p class="text">
-
-                                                                <a href="legal_fr.html" class=" fontwordsbox ">
-                                                                    politique et conditions </a>
-                                                            </p>
-                                                        </div>
-                                                    </form>
-
-                                                </div>
-                                                <!-- === box image === -->
-                                                <div class="carousel">
-
-                                                    <div class="images-wrapper">
-                                                        <img src="assets/img/inside/image1.png" class="image img-1 show"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image2.png" class="image img-2"
-                                                            alt="" />
-                                                        <img src="assets/img/inside/image3.png" class="image img-3"
-                                                            alt="" />
-                                                    </div>
-
-                                                    <div class="text-slider">
-
-                                                        <div class="text-wrap">
-                                                            <div class="text-group">
-                                                                <h2> Créez vos propres cours</h2>
-                                                                <h2>Personnalisez comme vous le souhaitez</h2>
-                                                                <h2> Invitez vos amis ici</h2>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="bullets">
-                                                            <span class="active" data-value="1"></span>
-                                                            <span data-value="2"></span>
-                                                            <span data-value="3"></span>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
+                        <div class="cotn_principal modal" id="loginForms" aria-hidden="true">
+                            <div class="div_close_tap_loginRig modal" type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <i class="far fa-times-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="cont_centrar">
+                                <div class="cont_login">
+                                    <div class="cont_info_log_sign_up">
+                                        <div class="col_md_login">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    Connecte-toi maintenant
+                                                </h2>
+                                                <p>
+                                                    Accueillir! S'il vous plaît entrer vos informations de connexion
+                                                </p>
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    Se connecter
+                                                </button>
                                             </div>
+                                        </div>
+                                        <div class="col_md_sign_up">
+                                            <div class="cont_ba_opcitiy">
+                                                <h2>
+                                                    Créez un nouveau compte maintenant
+                                                </h2>
+                                                <p>
+                                                    Rejoignez notre communauté - inscrivez-vous maintenant
+                                                </p>
 
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    Créer un compte
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cont_back_info">
+                                        <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                    </div>
+                                    <div class="cont_forms">
+                                        <div class="cont_img_back_">
+                                            <img src="assets/img/about-intro-thumb.jpg" alt="">
+                                        </div>
+                                        <div class="cont_form_login">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                Se connecter
+                                            </h2>
+                                            <input type="text" placeholder=" E-mail " />
+                                            <input type="password" placeholder=" mot de passe" />
+                                            <div class="button_login_divLogin">
+                                                <button class="btn_login" onclick="change_to_login()">
+                                                    Se connecter
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="cont_form_sign_up">
+                                            <a href="#" onclick="hidden_login_and_sign_up()">
+                                                <i class="fas fa-times"></i>
+                                            </a>
+                                            <h2>
+                                                Créer un compte
+                                            </h2>
+                                            <input type="text" placeholder=" E-mail " />
+                                            <input type="text" placeholder=" utilisateur nom" />
+                                            <input type="password" placeholder="  mot de passe" />
+                                            <input type="password" placeholder=" mot de passe confirmation" />
+                                            <div class="button_signup_divSignup">
+                                                <button class="btn_sign_up" onclick="change_to_sign_up()">
+                                                    Créer un compte
+                                                </button>
+                                            </div>
                                         </div>
 
-                                    </main>
+                                    </div>
 
                                 </div>
-
                             </div>
-
                         </div>
 
                     </div>
@@ -712,6 +783,8 @@
     <script src="assets/js/jquery.easypiechart.min.js"></script>
     <!--====== Syotimer ======-->
     <script src="assets/js/jquery.syotimer.min.js"></script>
+    <!-- ======= script login signup -->
+    <script src="assets/js/js_login_signup.js"></script>
     <!--====== Wow ======-->
     <script src="assets/js/wow.min.js"></script>
     <!--====== Main JS ======-->

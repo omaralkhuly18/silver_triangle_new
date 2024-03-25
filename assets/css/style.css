@@ -657,9 +657,14 @@ a.neww {
 	background-position: center;
 }
 
-/*======= Preloader =======*/
+/*======= loading style start her =======*/
 .background_style_priveat{
 	background-color: rgb(255 255 255 / 39%);
+}
+@media screen and (max-width: 992px) and (min-width: 230px) {
+	.background_style_priveat{
+		background-color: rgb(255 255 255 / 24%);
+	}
 }
 div#preloader {
 	margin: auto;
@@ -679,7 +684,9 @@ div#preloader {
 	justify-content: center;
 }
 
-.animationsintoppage {
+/*======= loading style end her =======*/
+
+/* .animationsintoppage {
 	width: 100%;
 	height: 100%;
 }
@@ -717,7 +724,7 @@ div#preloader .loader {
 	100% {
 		background-position: 36.36%
 	}
-}
+} */
 
 /*=======  Margin Top =======*/
 .mt-10 {
@@ -4689,7 +4696,7 @@ a.colordifrante:hover {
 	left: 0;
 	font-family: "Font Awesome 5 Pro";
 	font-weight: 300;
-	content: "";
+	content: "►";
 }
 
 .feature-list li:not(:last-child),

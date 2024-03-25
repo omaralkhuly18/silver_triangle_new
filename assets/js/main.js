@@ -230,7 +230,7 @@ function myFunction() {
 	//=== 02. Preloader
 	function preloader() {
 		if ($('#preloader').length) {
-			$('#preloader').delay(50).fadeOut(500);
+			$('#preloader').delay(500).fadeOut(900);
 		}
 	}
 
@@ -503,9 +503,11 @@ function myFunction() {
 			dots: false,
 			fade: true,
 			arrows: true,
-			prevArrow: '<span class="prev"><i class="fal fa-angle-left"></i></span>',
-			nextArrow: '<span class="next"><i class="fal fa-angle-right"></i></span>',
+			prevArrow: '<span class="prev"><i class="fa-solid fa-angle-left"></i></span>',
+			nextArrow: '<span class="next"><i class="fa-solid fa-angle-right"></i></span>',
 		});
+// <i class="fal fa-angle-left"></i>
+// <i class="fal fa-angle-right"></i>
 
 		function doAnimations(elements) {
 			var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';

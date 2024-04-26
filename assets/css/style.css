@@ -661,6 +661,9 @@ a.neww {
 .background_style_priveat{
 	background-color: rgb(255 255 255 / 39%);
 }
+.style_ourcompany_header{
+	background-color: rgb(22 53 88 / 34%) !important;
+}
 @media screen and (max-width: 992px) and (min-width: 230px) {
 	.background_style_priveat{
 		background-color: rgb(255 255 255 / 24%);
@@ -1412,6 +1415,10 @@ div#preloader .loader {
 .header-topbar .contact-info li a {
 	color: #616161;
 	font-size: 14px;
+}
+
+.style_ourcompany_header .header-topbar .contact-info li a{
+	color: white;
 }
 
 .header-topbar .contact-info li i {
@@ -2740,10 +2747,10 @@ a.colordifrante:hover {
 
 .banner-slider.banner-slider-one {
 	padding: 55px 0 100px;
-	/* background-image: url(../img/banner/banner-design.jpg);
+	background-image: url(../img/blog/company_silver.jpg);
 	background-color: #f5faff;
 	background-size: cover;
-	background-position: center; */
+	background-position: center;
 	position: relative;
 	margin-top: 9%;
 }
@@ -2753,8 +2760,8 @@ a.colordifrante:hover {
 	content: "";
 	width: 100%;
 	height: 620px;
-	/* background-color: #bdb6ed2b;
-	background-color: #0091ff3d; */
+	background-color: #bdb6ed2b;
+	background-color: #0091ff3d;
 }
 
 @media (max-width: 991px) {
@@ -3459,14 +3466,13 @@ a.colordifrante:hover {
 	height: 100%;
 	z-index: -1;
 	content: "";
-	background-color: #002249;
-	opacity: 0.9;
+	background-color: #b4d7f1;
+    opacity: 0.3;
 }
 
 .banner-section-three .banner-content .title-tag {
 	font-size: 30px;
 	color: #fff;
-	opacity: 0.5;
 	position: relative;
 	padding-left: 145px;
 	padding-right: 145px;
@@ -3549,7 +3555,6 @@ a.colordifrante:hover {
 .banner-section-three .banner-content p {
 	font-size: 24px;
 	color: #fff;
-	opacity: 0.8;
 	margin-top: -10px;
 	padding-bottom: 26px;
 }

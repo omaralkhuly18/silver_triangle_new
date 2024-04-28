@@ -2910,11 +2910,11 @@ a.colordifrante:hover {
 
 @media screen and (max-width: 445px) and (min-width: 230px){
 	.banner-text .main-btn.rounded-btn {
-		top: 8rem;
+		top: 8.5rem;
 	}
 
 	.font_size{
-		font-size: 1.5rem;
+		font-size: 1.2rem !important;
 	}
 }
 

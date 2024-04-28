@@ -2884,6 +2884,10 @@ a.colordifrante:hover {
 	padding-bottom: 200px;
 }
 
+.font_size{
+	font-size: 35px;
+}
+
 .banner-text .main-btn.rounded-btn {
     top: 14rem;
 }

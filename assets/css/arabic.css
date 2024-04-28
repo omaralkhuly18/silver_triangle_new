@@ -135,6 +135,10 @@
     text-align: left;
 }
 
+.banner-slider.banner-slider-one{
+    background-position: center;
+}
+
 .banner-text {
     text-align: right;
 }

@@ -230,7 +230,7 @@ function myFunction() {
 	//=== 02. Preloader
 	function preloader() {
 		if ($('#preloader').length) {
-			$('#preloader').delay(500).fadeOut(900);
+			$('#preloader').delay(500).fadeOut(500);
 		}
 	}
 
